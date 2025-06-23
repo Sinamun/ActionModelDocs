@@ -74,9 +74,9 @@
           "icon": "newspaper"
         },
         {
-      "anchor": "Dashboard",
+      "anchor": "Action Model Dashboard",
       "href": "https://docs.actionmodel.com",
-      "icon": "layout-dashboard"
+      "icon": "gauge"
     },
     {
       "anchor": "Download Extension",
