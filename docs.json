@@ -72,7 +72,42 @@
           "anchor": "Blog",
           "href": "https://actionmodel.com",
           "icon": "newspaper"
-        }
+        },
+        {
+      "anchor": "Documentation",
+      "href": "https://docs.actionmodel.com",
+      "icon": "book-open-cover"
+    },
+    {
+      "anchor": "Community",
+      "href": "https://actionmodel.com",
+      "icon": "slack"
+    },
+    {
+      "anchor": "Blog",
+      "href": "https://actionmodel.com",
+      "icon": "newspaper"
+    },
+    {
+      "anchor": "X",
+      "href": "https://x.com/actionmodel",
+      "icon": "x-twitter"
+    },
+    {
+      "anchor": "GitHub",
+      "href": "https://github.com/actionmodel",
+      "icon": "github"
+    },
+    {
+      "anchor": "LinkedIn",
+      "href": "https://linkedin.com/company/actionmodel",
+      "icon": "linkedin"
+    },
+    {
+      "anchor": "Instagram",
+      "href": "https://instagram.com/actionmodel",
+      "icon": "instagram"
+    }
       ]
     }
   },
