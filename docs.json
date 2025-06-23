@@ -129,12 +129,13 @@
     }
   },
   "footer": {
-    "socials": {
-      "x": "https://x.com/actionmodel",
-      "github": "https://github.com/actionmodel",
-      "linkedin": "https://linkedin.com/company/actionmodel",
-      "linkedin": "https://linkedin.com/company/actionmodel",
-      "instagram": "https://instagram.com/actionmodel"
-    }
+  "socials": {
+    "x": "https://x.com/actionmodel",
+    "linkedin": "https://linkedin.com/company/actionmodel",
+    "instagram": "https://instagram.com/actionmodel",
+    "youtube": "https://youtube.com/@actionmodel",
+    "discord": "https://discord.gg/actionmodel",
+    "telegram": "https://t.me/actionmodel"
+  }
   }
 }
