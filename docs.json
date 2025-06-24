@@ -17,6 +17,7 @@
             "group": "Introduction to Action Model",
             "pages": [
               "introduction-to-actionmodel/TheCommunity",
+              "introduction-to-actionmodel/TheProblemwithAPIs",
               "quickstart"
             ]
           },
