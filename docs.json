@@ -19,7 +19,8 @@
               "introduction-to-actionmodel/TheCommunity",
               "quickstart"
             ]
-          },{
+          },
+          {
             "group": "Get Started",
             "pages": [
               "index",
