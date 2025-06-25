@@ -26,8 +26,12 @@
   {
     "group": "Products & Technology",
     "pages": [
-      "introduction-to-actionmodel/Large Action Models (LAMs) Are the Future",
-      "quickstart"
+      "Extension",
+      "Desktop App",
+      "VPC",
+      "Telegram Bot",
+      "Extension", 
+      "API"
     ]
   },
  [ 
