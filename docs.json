@@ -13,35 +13,33 @@
       {
         "tab": "Guides",
         "groups": [
-  {
-    "group": "Introduction to Action Model",
-    "pages": [
-      "introduction-to-actionmodel/The Community Owned AI Future",
-      "introduction-to-actionmodel/TheProblem with APIs",
-      "introduction-to-actionmodel/Graphical Interfaces Are King",
-      "introduction-to-actionmodel/Large Action Models (LAMs) Are the Future",
-      "quickstart"
-    ]
-  },
-  {
-    "group": "Products & Technology",
-    "pages": [
-      "Extension",
-      "Desktop App",
-      "VPC",
-      "Telegram Bot",
-      "Extension", 
-      "API"
-    ]
-  },
- [ 
-   {
-    "group": "Get Started",
-    "pages": []
-  }
-],
           {
-          "pages": [
+            "group": "Introduction to Action Model",
+            "pages": [
+              "introduction-to-actionmodel/The Community Owned AI Future",
+              "introduction-to-actionmodel/TheProblem with APIs",
+              "introduction-to-actionmodel/Graphical Interfaces Are King",
+              "introduction-to-actionmodel/Large Action Models (LAMs) Are the Future",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Products & Technology",
+            "pages": [
+              "Extension",
+              "Desktop App",
+              "VPC",
+              "Telegram Bot",
+              "API"
+            ]
+          },
+          {
+            "group": "Get Started",
+            "pages": []
+          },
+          {
+            "group": "Miscellaneous",
+            "pages": [
               "index",
               "quickstart",
               "essentials/code",
@@ -101,15 +99,15 @@
           "icon": "newspaper"
         },
         {
-      "anchor": "Action Model Dashboard",
-      "href": "https://docs.actionmodel.com",
-      "icon": "gauge"
-    },
-    {
-      "anchor": "Download Extension",
-      "href": "https://actionmodel.com",
-      "icon": "download"
-    }
+          "anchor": "Action Model Dashboard",
+          "href": "https://docs.actionmodel.com",
+          "icon": "gauge"
+        },
+        {
+          "anchor": "Download Extension",
+          "href": "https://actionmodel.com",
+          "icon": "download"
+        }
       ]
     }
   },
@@ -131,13 +129,13 @@
     }
   },
   "footer": {
-  "socials": {
-    "x": "https://x.com/actionmodel",
-    "linkedin": "https://linkedin.com/company/actionmodel",
-    "instagram": "https://instagram.com/actionmodel",
-    "youtube": "https://youtube.com/@actionmodel",
-    "discord": "https://discord.gg/actionmodel",
-    "telegram": "https://t.me/actionmodel"
-  }
+    "socials": {
+      "x": "https://x.com/actionmodel",
+      "linkedin": "https://linkedin.com/company/actionmodel",
+      "instagram": "https://instagram.com/actionmodel",
+      "youtube": "https://youtube.com/@actionmodel",
+      "discord": "https://discord.gg/actionmodel",
+      "telegram": "https://t.me/actionmodel"
+    }
   }
 }
