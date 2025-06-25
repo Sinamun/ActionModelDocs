@@ -17,9 +17,9 @@
             "group": "Introduction to Action Model",
             "pages": [
               "introduction-to-actionmodel/TheCommunityOwnedAIFuture",
-              "introduction-to-actionmodel/TheProblem with APIs",
-              "introduction-to-actionmodel/Graphical Interfaces Are King",
-              "introduction-to-actionmodel/Large Action Models (LAMs) Are the Future",
+              "introduction-to-actionmodel/TheProblemwithAPIs",
+              "introduction-to-actionmodel/GraphicalInterfacesareKing",
+              "introduction-to-actionmodel/LargeActionModelsLAMsAretheFuture",
               "quickstart"
             ]
           },
