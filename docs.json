@@ -78,6 +78,17 @@
               "tokenomics/Token Distribution"
             ]
           },
+                                        {
+            "group": "Partnerships",
+            "pages": [
+              "partnerships/Data",
+              "partnerships/Core API",
+              "partnerships/VPC API",
+              "partnerships/Processing & DePIN",
+              "partnerships/Bounty Programmes"
+
+            ]
+          },
           {
             "group": "Get Started",
             "pages": []
