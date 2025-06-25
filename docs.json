@@ -53,6 +53,17 @@
               "rewardmechanisms/Other Reward Mechanisms"
             ]
           },
+                              {
+            "group": "Dashboard",
+            "pages": [
+              "dashboard/Referrals",
+              "dashboard/Bounties",
+              "dashboard/Custom Agent",
+              "dashboard/Background Training",
+              "dashboard/Websites & Block List",
+              "dashboard/VPC Agent"
+            ]
+          },
           {
             "group": "Get Started",
             "pages": []
