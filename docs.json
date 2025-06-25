@@ -47,6 +47,7 @@
                     {
             "group": "Reward Mechanisms",
             "pages": [
+              "rewardmechanisms/BackgroundTraining",
               "rewardmechanisms/Bounties",
               "rewardmechanisms/OtherRewardMechanisms"
             ]
