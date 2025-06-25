@@ -57,34 +57,34 @@
             "pages": [
               "dashboard/Referrals",
               "dashboard/Bounties",
-              "dashboard/Custom Agent",
-              "dashboard/Background Training",
-              "dashboard/Websites & Block List",
-              "dashboard/VPC Agent"
+              "dashboard/CustomAgent",
+              "dashboard/BackgroundTraining",
+              "dashboard/WebsitesBlockList",
+              "dashboard/VPCAgent"
             ]
           },
                                         {
             "group": "Tokenomics & $LAM Token Utility",
             "pages": [
               "tokenomics/Training",
-              "tokenomics/Token Gas (Time)",
-              "tokenomics/Cost Per Action (LAM CPA)",
+              "tokenomics/TokenGas",
+              "tokenomics/CostPerAction",
               "tokenomics/API",
               "tokenomics/VPC",
-              "tokenomics/Private & Enterprise Training",
+              "tokenomics/PrivateEnterpriseTraining",
               "tokenomics/Marketplace",
-              "tokenomics/Deflationary Model",
-              "tokenomics/Token Distribution"
+              "tokenomics/DeflationaryModel",
+              "tokenomics/TokenDistribution"
             ]
           },
                                         {
             "group": "Partnerships",
             "pages": [
               "partnerships/Data",
-              "partnerships/Core API",
-              "partnerships/VPC API",
-              "partnerships/Processing & DePIN",
-              "partnerships/Bounty Programmes"
+              "partnerships/CoreAPI",
+              "partnerships/VPCAPI",
+              "partnerships/ProcessingDePIN",
+              "partnerships/BountyProgrammes"
 
             ]
           },
