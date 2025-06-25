@@ -37,12 +37,12 @@
           {
             "group": "Training the LAM",
             "pages": [
-              "trainingthelam/Action Tree",
-              "trainingthelam/Extension & Desktop Training",
-              "trainingthelam/Background Training & Workflow Training",
-              "trainingthelam/The Action Tree (Public)",
-              "trainingthelam/The Action Tree (Private)",
-              "trainingthelam/Security & Privacy"
+              "trainingthelam/ActionTree",
+              "trainingthelam/ExtensionDesktopTraining",
+              "trainingthelam/BackgroundTraining",
+              "trainingthelam/TheActionTreePublic",
+              "trainingthelam/TheActionTreePrivate",
+              "trainingthelam/SecurityPrivacy"
             ]
           },
                     {
