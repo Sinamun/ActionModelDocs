@@ -64,6 +64,19 @@
               "dashboard/VPC Agent"
             ]
           },
+                                        {
+            "group": "Tokenomics & $LAM Token Utility",
+            "pages": [
+              "tokenomics/Training",
+              "tokenomics/Token Gas (Time)",
+              "tokenomics/Cost Per Action (LAM CPA)",
+              "tokenomics/API",
+              "tokenomics/VPC",
+              "tokenomics/Private & Enterprise Training",
+              "tokenomics/Deflationary Model",
+              "tokenomics/Token Distribution"
+            ]
+          },
           {
             "group": "Get Started",
             "pages": []
@@ -91,8 +104,8 @@
           }
         ]
       },
-      {
-        "tab": "API Reference",
+        {
+      "tab": "API Reference",
         "groups": [
           {
             "group": "API Documentation",
