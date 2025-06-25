@@ -26,11 +26,12 @@
           {
             "group": "Products & Technology",
             "pages": [
-              "Extension",
-              "Desktop App",
-              "VPC",
-              "Telegram Bot",
-              "API"
+              "productstechnology/Extension",
+              "productstechnology/Desktop App",
+              "productstechnology/VPC",
+              "productstechnology/Telegram Bot",
+              "productstechnology/Extension",
+              "productstechnology/API"
             ]
           },
           {
