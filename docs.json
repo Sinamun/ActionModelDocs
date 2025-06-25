@@ -38,7 +38,6 @@
             "pages": [
               "trainingthelam/ActionTree",
               "trainingthelam/ExtensionDesktopTraining",
-              "trainingthelam/BackgroundTraining",
               "trainingthelam/TheActionTreePublic",
               "trainingthelam/TheActionTreePrivate",
               "trainingthelam/SecurityPrivacy"
@@ -47,7 +46,6 @@
                     {
             "group": "Reward Mechanisms",
             "pages": [
-              "rewardmechanisms/BackgroundTraining2",
               "rewardmechanisms/Bounties",
               "rewardmechanisms/OtherRewardMechanisms"
             ]
