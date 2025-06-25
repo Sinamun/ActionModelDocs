@@ -45,6 +45,14 @@
               "trainingthelam/Security & Privacy"
             ]
           },
+                    {
+            "group": "Reward Mechanisms",
+            "pages": [
+              "rewardmechanisms/Background Training",
+              "rewardmechanisms/Bounties",
+              "rewardmechanisms/Other Reward Mechanisms"
+            ]
+          },
           {
             "group": "Get Started",
             "pages": []
