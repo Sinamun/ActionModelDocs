@@ -38,6 +38,7 @@
             "pages": [
               "trainingthelam/ActionTree",
               "trainingthelam/ExtensionDesktopTraining",
+              "trainingthelam/BackgroundWorkflowTraining",
               "trainingthelam/TheActionTreePublic",
               "trainingthelam/TheActionTreePrivate",
               "trainingthelam/SecurityPrivacy"
