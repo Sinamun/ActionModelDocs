@@ -36,13 +36,13 @@
           {
             "group": "Training the LAM",
             "pages": [
-              "trainingthelam/ActionTest",
-              "trainingthelam/ActionTree",
-              "trainingthelam/ExtensionDesktopTraining",
-              "trainingthelam/BackgroundWorkflowTraining",
-              "trainingthelam/TheActionTreePublic",
-              "trainingthelam/TheActionTreePrivate",
-              "trainingthelam/SecurityPrivacy"
+              "trainingthelam/ActionTest.mdx",
+              "trainingthelam/ActionTree.mdx",
+              "trainingthelam/ExtensionDesktopTraining.mdx",
+              "trainingthelam/BackgroundWorkflowTraining.mdx",
+              "trainingthelam/TheActionTreePublic.mdx",
+              "trainingthelam/TheActionTreePrivate.mdx",
+              "trainingthelam/SecurityPrivacy.mdx"
             ]
           },
                     {
