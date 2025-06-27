@@ -36,6 +36,7 @@
           {
             "group": "Training the LAM",
             "pages": [
+              "trainingthelam/ActionTest",
               "trainingthelam/ActionTree",
               "trainingthelam/ExtensionDesktopTraining",
               "trainingthelam/BackgroundWorkflowTraining",
