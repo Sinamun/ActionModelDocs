@@ -36,7 +36,7 @@
           {
             "group": "Training the LAM",
             "pages": [
-              "ActionTree",
+              "trainingthelam/ActionTree",
               "ExtensionDesktopTraining",
               "BackgroundWorkflowTraining",
               "TheActionTreePublic",
