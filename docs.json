@@ -16,51 +16,51 @@
           {
             "group": "Introduction to Action Model",
             "pages": [
-              "introduction-to-actionmodel/TheCommunityOwnedAIFuture",
-              "introduction-to-actionmodel/TheProblemwithAPIs",
-              "introduction-to-actionmodel/GraphicalInterfacesareKing",
-              "introduction-to-actionmodel/LargeActionModelsAretheFuture"
+              "TheCommunityOwnedAIFuture",
+              "TheProblemwithAPIs",
+              "GraphicalInterfacesareKing",
+              "LargeActionModelsAretheFuture"
             ]
           },
           {
             "group": "Products & Technology",
             "pages": [
-              "productstechnology/Extension1",
-              "productstechnology/DesktopApp",
-              "productstechnology/VirtualPrivateComputer",
-              "productstechnology/TelegramBot",
-              "productstechnology/Extension2",
-              "productstechnology/API"
+              "Extension1",
+              "DesktopApp",
+              "VirtualPrivateComputer",
+              "TelegramBot",
+              "Extension2",
+              "API"
             ]
           },
           {
             "group": "Training the LAM",
             "pages": [
-              "trainingthelam/ActionTree",
-              "trainingthelam/ExtensionDesktopTraining",
-              "trainingthelam/BackgroundWorkflowTraining",
-              "trainingthelam/TheActionTreePublic",
-              "trainingthelam/TheActionTreePrivate",
-              "trainingthelam/SecurityPrivacy"
+              "ActionTree",
+              "ExtensionDesktopTraining",
+              "BackgroundWorkflowTraining",
+              "TheActionTreePublic",
+              "TheActionTreePrivate",
+              "SecurityPrivacy"
             ]
           },
                     {
             "group": "Reward Mechanisms",
             "pages": [
-              "rewardmechanisms/BackgroundTraining",
-              "rewardmechanisms/Bounties",
-              "rewardmechanisms/OtherRewardMechanisms"
+              "BackgroundTraining",
+              "Bounties",
+              "OtherRewardMechanisms"
             ]
           },
                               {
             "group": "Dashboard",
             "pages": [
-              "dashboard/Referrals",
-              "dashboard/Bounties",
-              "dashboard/CustomAgent",
-              "dashboard/BackgroundTraining2",
-              "dashboard/WebsitesBlockList",
-              "dashboard/VPCAgent"
+              "Referrals",
+              "Bounties",
+              "CustomAgent",
+              "BackgroundTraining2",
+              "WebsitesBlockList",
+              "VPCAgent"
             ]
           },
                                         {
@@ -80,11 +80,11 @@
                                         {
             "group": "Partnerships",
             "pages": [
-              "partnerships/Data",
-              "partnerships/CoreAPI",
-              "partnerships/VPCAPI",
-              "partnerships/ProcessingDePIN",
-              "partnerships/BountyProgrammes"
+              "Data",
+              "CoreAPI",
+              "VPCAPI",
+              "ProcessingDePIN",
+              "BountyProgrammes"
 
             ]
           },
@@ -104,13 +104,13 @@
           {
             "group": "Essentials",
             "pages": [
-              "essentials/markdown",
-              "essentials/new",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
+              "markdown",
+              "new",
+              "code",
+              "images",
+              "settings",
+              "navigation",
+              "reusable-snippets"
             ]
           }
         ]
