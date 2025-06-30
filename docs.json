@@ -16,27 +16,26 @@
           {
             "group": "Introduction to Action Model",
             "pages": [
-              "TheCommunityOwnedAIFuture",
-              "TheProblemwithAPIs",
-              "GraphicalInterfacesareKing",
-              "LargeActionModelsAretheFuture"
+              "introduction-to-actionmodel/TheCommunityOwnedAIFuture",
+              "introduction-to-actionmodel/TheProblemwithAPIs",
+              "introduction-to-actionmodel/GraphicalInterfacesareKing",
+              "introduction-to-actionmodel/LargeActionModelsAretheFuture"
             ]
           },
           {
             "group": "Products & Technology",
             "pages": [
-              "Extension1",
-              "DesktopApp",
-              "VirtualPrivateComputer",
-              "TelegramBot",
-              "Extension2",
-              "API"
+              "productstechnology/Extension1",
+              "productstechnology/DesktopApp",
+              "productstechnology/VirtualPrivateComputer",
+              "productstechnology/TelegramBot",
+              "productstechnology/Extension2",
+              "productstechnology/API"
             ]
           },
           {
             "group": "Training the LAM",
             "pages": [
-              "trainingthelam/ActionTest",
               "trainingthelam/ActionTree",
               "trainingthelam/ExtensionDesktopTraining",
               "trainingthelam/BackgroundWorkflowTraining",
@@ -48,44 +47,44 @@
                     {
             "group": "Reward Mechanisms",
             "pages": [
-              "BackgroundTraining",
-              "Bounties",
-              "OtherRewardMechanisms"
+              "rewardmechanisms/BackgroundTraining1",
+              "rewardmechanisms/Bounties",
+              "rewardmechanisms/OtherRewardMechanisms"
             ]
           },
                               {
             "group": "Dashboard",
             "pages": [
-              "Referrals",
-              "Bounties",
-              "CustomAgent",
-              "BackgroundTraining2",
-              "WebsitesBlockList",
-              "VPCAgent"
+              "dashboard/Referrals",
+              "dashboard/Bounties",
+              "dashboard/CustomAgent",
+              "dashboard/BackgroundTraining2",
+              "dashboard/WebsitesBlockList",
+              "dashboard/VPCAgent"
             ]
           },
                                         {
             "group": "Tokenomics & $LAM Token Utility",
             "pages": [
-              "Training",
-              "TokenGas",
-              "CostPerAction",
-              "API",
-              "VPC",
-              "PrivateEnterpriseTraining",
-              "Marketplace",
-              "DeflationaryModel",
-              "TokenDistribution"
+              "tokenomics/Training",
+              "tokenomics/TokenGas",
+              "tokenomics/CostPerAction",
+              "tokenomics/API",
+              "tokenomics/VPC",
+              "tokenomics/PrivateEnterpriseTraining",
+              "tokenomics/Marketplace",
+              "tokenomics/DeflationaryModel",
+              "tokenomics/TokenDistribution"
             ]
           },
                                         {
             "group": "Partnerships",
             "pages": [
-              "Data",
-              "CoreAPI",
-              "VPCAPI",
-              "ProcessingDePIN",
-              "BountyProgrammes"
+              "partnerships/Data",
+              "partnerships/CoreAPI",
+              "partnerships/VPCAPI",
+              "partnerships/ProcessingDePIN",
+              "partnerships/BountyProgrammes"
 
             ]
           },
@@ -105,13 +104,13 @@
           {
             "group": "Essentials",
             "pages": [
-              "markdown",
-              "new",
-              "code",
-              "images",
-              "settings",
-              "navigation",
-              "reusable-snippets"
+              "essentials/markdown",
+              "essentials/new",
+              "essentials/code",
+              "essentials/images",
+              "essentials/settings",
+              "essentials/navigation",
+              "essentials/reusable-snippets"
             ]
           }
         ]
