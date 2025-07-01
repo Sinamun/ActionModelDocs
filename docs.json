@@ -25,66 +25,66 @@
           {
             "group": "Products & Technology",
             "pages": [
-              "productstechnology/Extension1",
-              "productstechnology/DesktopApp",
-              "productstechnology/VirtualPrivateComputer",
-              "productstechnology/TelegramBot",
-              "productstechnology/Extension2",
-              "productstechnology/API"
+              "productstechnology/Extension1.mdx",
+              "productstechnology/DesktopApp.mdx",
+              "productstechnology/VirtualPrivateComputer.mdx",
+              "productstechnology/TelegramBot.mdx",
+              "productstechnology/Extension2.mdx",
+              "productstechnology/API.mdx"
             ]
           },
           {
             "group": "Training the LAM",
             "pages": [
-              "trainingthelam/ActionTree",
-              "trainingthelam/ExtensionDesktopTraining",
-              "trainingthelam/BackgroundWorkflowTraining",
-              "trainingthelam/TheActionTreePublic",
-              "trainingthelam/TheActionTreePrivate",
-              "trainingthelam/SecurityPrivacy"
+              "trainingthelam/ActionTree.mdx",
+              "trainingthelam/ExtensionDesktopTraining.mdx",
+              "trainingthelam/BackgroundWorkflowTraining.mdx",
+              "trainingthelam/TheActionTreePublic.mdx",
+              "trainingthelam/TheActionTreePrivate.mdx",
+              "trainingthelam/SecurityPrivacy.mdx"
             ]
           },
                     {
             "group": "Reward Mechanisms",
             "pages": [
-              "rewardmechanisms/BackgroundTraining1",
-              "rewardmechanisms/Bounties",
-              "rewardmechanisms/OtherRewardMechanisms"
+              "rewardmechanisms/BackgroundTraining1.mdx",
+              "rewardmechanisms/Bounties.mdx",
+              "rewardmechanisms/OtherRewardMechanisms.mdx"
             ]
           },
                               {
             "group": "Dashboard",
             "pages": [
-              "dashboard/Referrals",
-              "dashboard/Bounties",
-              "dashboard/CustomAgent",
-              "dashboard/BackgroundTraining2",
-              "dashboard/WebsitesBlockList",
-              "dashboard/VPCAgent"
+              "dashboard/Referrals.mdx",
+              "dashboard/Bounties.mdx",
+              "dashboard/CustomAgent.mdx",
+              "dashboard/BackgroundTraining2.mdx",
+              "dashboard/WebsitesBlockList.mdx",
+              "dashboard/VPCAgent.mdx"
             ]
           },
                                         {
             "group": "Tokenomics & $LAM Token Utility",
             "pages": [
-              "tokenomics/Training",
-              "tokenomics/TokenGas",
-              "tokenomics/CostPerAction",
-              "tokenomics/API",
-              "tokenomics/VPC",
-              "tokenomics/PrivateEnterpriseTraining",
-              "tokenomics/Marketplace",
-              "tokenomics/DeflationaryModel",
-              "tokenomics/TokenDistribution"
+              "tokenomics/Training.mdx",
+              "tokenomics/TokenGas.mdx",
+              "tokenomics/CostPerAction.mdx",
+              "tokenomics/API.mdx",
+              "tokenomics/VPC.mdx",
+              "tokenomics/PrivateEnterpriseTraining.mdx",
+              "tokenomics/Marketplace.mdx",
+              "tokenomics/DeflationaryModel.mdx",
+              "tokenomics/TokenDistribution.mdx"
             ]
           },
                                         {
             "group": "Partnerships",
             "pages": [
-              "partnerships/Data",
-              "partnerships/CoreAPI",
-              "partnerships/VPCAPI",
-              "partnerships/ProcessingDePIN",
-              "partnerships/BountyProgrammes"
+              "partnerships/Data.mdx",
+              "partnerships/CoreAPI.mdx",
+              "partnerships/VPCAPI.mdx",
+              "partnerships/ProcessingDePIN.mdx",
+              "partnerships/BountyProgrammes.mdx"
 
             ]
           },
