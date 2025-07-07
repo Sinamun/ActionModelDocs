@@ -16,7 +16,7 @@
           {
             "group": "Introduction to Action Model",
             "pages": [
-              "introduction-to-actionmodel/TheCommunityOwnedAIFuture.mdx",
+              "introduction-to-actionmodel/TheCommunityOwnedAIFuture",
               "introduction-to-actionmodel/TheProblemwithAPIs.mdx",
               "introduction-to-actionmodel/GraphicalInterfacesareKing.mdx",
               "introduction-to-actionmodel/LargeActionModelsAretheFuture.mdx"
