@@ -25,11 +25,11 @@
           {
             "group": "Products & Technology",
             "pages": [
-              "productstechnology/Extension1.mdx",
-              "productstechnology/DesktopApp.mdx",
-              "productstechnology/VirtualPrivateComputer.mdx",
-              "productstechnology/TelegramBot.mdx",
-              "productstechnology/Extension2.mdx",
+              "productstechnology/Extension1",
+              "productstechnology/DesktopApp",
+              "productstechnology/VirtualPrivateComputer",
+              "productstechnology/TelegramBot",
+              "productstechnology/Extension2",
               "productstechnology/API"
             ]
           },
