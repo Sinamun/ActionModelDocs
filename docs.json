@@ -47,9 +47,9 @@
                     {
             "group": "Reward Mechanisms",
             "pages": [
-              "rewardmechanisms/BackgroundTraining1.mdx",
-              "rewardmechanisms/Bounties.mdx",
-              "rewardmechanisms/OtherRewardMechanisms.mdx"
+              "rewardmechanisms/BackgroundTraining1",
+              "rewardmechanisms/Bounties",
+              "rewardmechanisms/OtherRewardMechanisms"
             ]
           },
                               {
