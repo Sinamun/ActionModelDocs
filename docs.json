@@ -66,15 +66,15 @@
                                         {
             "group": "Tokenomics & $LAM Token Utility",
             "pages": [
-              "tokenomics/Training.mdx",
-              "tokenomics/TokenGas.mdx",
-              "tokenomics/CostPerAction.mdx",
-              "tokenomics/API.mdx",
-              "tokenomics/VPC.mdx",
-              "tokenomics/PrivateEnterpriseTraining.mdx",
-              "tokenomics/Marketplace.mdx",
-              "tokenomics/DeflationaryModel.mdx",
-              "tokenomics/TokenDistribution.mdx"
+              "tokenomics/Training",
+              "tokenomics/TokenGas",
+              "tokenomics/CostPerAction",
+              "tokenomics/API",
+              "tokenomics/VPC",
+              "tokenomics/PrivateEnterpriseTraining",
+              "tokenomics/Marketplace",
+              "tokenomics/DeflationaryModel",
+              "tokenomics/TokenDistribution"
             ]
           },
                                         {
