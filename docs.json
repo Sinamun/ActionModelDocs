@@ -55,12 +55,12 @@
                               {
             "group": "Dashboard",
             "pages": [
-              "dashboard/Referrals.mdx",
-              "dashboard/Bounties.mdx",
-              "dashboard/CustomAgent.mdx",
-              "dashboard/BackgroundTraining2.mdx",
-              "dashboard/WebsitesBlockList.mdx",
-              "dashboard/VPCAgent.mdx"
+              "dashboard/Referrals",
+              "dashboard/Bounties",
+              "dashboard/CustomAgent",
+              "dashboard/BackgroundTraining2",
+              "dashboard/WebsitesBlockList",
+              "dashboard/VPCAgent"
             ]
           },
                                         {
