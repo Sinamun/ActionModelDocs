@@ -80,11 +80,11 @@
                                         {
             "group": "Partnerships",
             "pages": [
-              "partnerships/Data.mdx",
-              "partnerships/CoreAPI.mdx",
-              "partnerships/VPCAPI.mdx",
-              "partnerships/ProcessingDePIN.mdx",
-              "partnerships/BountyProgrammes.mdx"
+              "partnerships/Data",
+              "partnerships/CoreAPI",
+              "partnerships/VPCAPI",
+              "partnerships/ProcessingDePIN",
+              "partnerships/BountyProgrammes"
 
             ]
           },
