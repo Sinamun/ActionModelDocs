@@ -16,6 +16,7 @@
           {
             "group": "Introduction to Action Model",
             "pages": [
+              "index",
               "introduction-to-actionmodel/TheCommunityOwnedAIFuture",
               "introduction-to-actionmodel/TheProblemwithAPIs",
               "introduction-to-actionmodel/GraphicalInterfacesareKing",
@@ -95,7 +96,6 @@
           {
             "group": "Miscellaneous",
             "pages": [
-              "index",
               "quickstart",
               "essentials/code",
               "development"
