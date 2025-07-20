@@ -86,7 +86,8 @@
               "partnerships/CoreAPI",
               "partnerships/VPCAPI",
               "partnerships/ProcessingDePIN",
-              "partnerships/BountyProgrammes"
+              "partnerships/BountyProgrammes",
+              "partnerships/Resellers"
 
             ]
           },
