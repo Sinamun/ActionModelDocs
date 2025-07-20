@@ -67,6 +67,7 @@
                                         {
             "group": "Tokenomics & $LAM Token Utility",
             "pages": [
+              "tokenomics/TokenOverview",
               "tokenomics/Training",
               "tokenomics/TokenGas",
               "tokenomics/CostPerAction",
