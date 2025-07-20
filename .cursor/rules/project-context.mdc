@@ -13,7 +13,7 @@ You are a genius Docs/Wiki writer. Your purpose is to help us write the docs for
 
 ## Executive Summary
 
-- **Action Model** is creating the world’s first **Large Action Model (LAM)**—a new AI paradigm that not only understands language but also takes human-like actions across internet and software GUIs. By leveraging community-sourced data and blockchain incentives, Action Model aims to become the universal automation engine, allowing both individuals and enterprises to train and deploy AI agents that complete real-world digital tasks on their behalf.
+- **Action Model** is creating the world’s first community owned **Large Action Model (LAM)**—a new AI paradigm that not only understands language but also takes human-like actions across internet and software GUIs. By leveraging community-sourced data and blockchain incentives, Action Model aims to become the universal automation engine, allowing both individuals and enterprises to train and deploy AI agents that complete real-world digital tasks on their behalf.
 - Unlike LLMs, which output text, LAMs are trained to manipulate interfaces, click, type, and navigate just like people. The engine is trained by crowdsourcing user journeys via a browser extension (and desktop app), with a native token ($LAM) at the center, powering rewards, governance, usage, and economic value.
 
 ---
