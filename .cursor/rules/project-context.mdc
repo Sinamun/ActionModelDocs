@@ -1,0 +1,255 @@
+---
+description: this is the context behind the entire project and the Action Model
+globs:
+  - "**/*"
+alwaysApply: true
+---
+
+# What is your purpose:
+You are a genius Docs/Wiki writer. Your purpose is to help us write the docs for the Action Model. There are many pages that we need to explain, and it needs to be written perfectly in the tone of top AI and Web3 projects.
+
+
+# Action Model: Complete Contextual Platform and Product Overview
+
+## Executive Summary
+
+- **Action Model** is creating the world’s first **Large Action Model (LAM)**—a new AI paradigm that not only understands language but also takes human-like actions across internet and software GUIs. By leveraging community-sourced data and blockchain incentives, Action Model aims to become the universal automation engine, allowing both individuals and enterprises to train and deploy AI agents that complete real-world digital tasks on their behalf.
+- Unlike LLMs, which output text, LAMs are trained to manipulate interfaces, click, type, and navigate just like people. The engine is trained by crowdsourcing user journeys via a browser extension (and desktop app), with a native token ($LAM) at the center, powering rewards, governance, usage, and economic value.
+
+---
+
+# Background: From LLMs to LAMs
+
+## The Limits of LLMs
+- Large Language Models (LLMs) such as GPT (OpenAI), Claude (Anthropic), and Llama (Meta) are exceptional at producing and understanding text, but they are not designed for interacting with user interfaces (GUIs). 
+- Today, over 99.9% of the internet’s services and workflows are accessible only by navigating GUIs—not via API or structured textual inputs. 
+- LLMs “imagine” how actions might be performed, but lack the sensory and procedural training necessary to act on websites/apps with reliability or precision.
+
+## The Next Evolution: Large Action Models (LAMs)
+- **LAMs** move beyond mere language—they are designed to *act* within digital environments, automating tasks by manipulating GUIs as a user would.
+- The goal is to create a generalized AI agent that can operate *any* website, *any* desktop/software app, and handle *any* workflow in *any* language, unlocking the world’s digital labor by acting as a true virtual worker.
+
+## Key Insight: APIs are Not the Solution
+- Less than 0.1% of web functionality exposes usable APIs; most platforms (e.g., Instagram, Booking.com) do not provide or actively limit API access.
+- APIs are for developers, not users, and often expose only limited or restricted functionality.
+- The real bottleneck is GUI navigation—models must be trained on the same interfaces and workflows that humans use.
+
+---
+
+# Action Model: Core Principles and Community-Centric Philosophy
+
+## Community Ownership and Open Value
+- Action Model is **community-owned**, contrasting with proprietary LLMs developed by major tech companies.
+- Contributors—users, developers, data trainers—are rewarded and empowered via the $LAM token.
+- The ecosystem operates as a **DAO-governed platform** (Cayman Islands foundation), emphasizing IP ownership, roadmapping, and revenue sharing for participants.
+
+## Gamification and User Motivation
+- Innovative gamification: multi-tiered point/reward/referral system incentivizes data contribution, quality labeling, and viral growth.
+- Bounty system targets high-value commercial workflows—e.g., AWS, Stripe, enterprise SaaS—steering the community’s training efforts.
+
+## Market Timing
+- AI is rapidly advancing but *cannot truly act*—LAMs are positioned as the inevitable next leap.
+- True, generalized, cross-platform automation does not exist—LAMs fill this gap.
+- First-mover advantage: community builds/trains/owns the model, enabling early mass participation and broad token distribution.
+
+---
+
+# Data Collection & Training: Building the Action Tree
+
+## The Action Model Browser Extension
+- Users install a browser extension that records every interaction—clicks, form fills, search queries, navigation events—along with environmental context (screenshots, HTML source, DOM tree, mouse coordinates, network requests).
+- Browser extension runs in two modes:
+  - **Passive:** Background collection with minimal user involvement (high volume, low fidelity).
+  - **Active:** Users manually label workflows, adding variables, rules, and confirmations for higher-reward, high-quality data (lower volume, high fidelity).
+
+## Desktop App for Personalization & Data Depth
+- The **Action Model Desktop App** records and learns from full desktop workflows, including mouse/keyboard events, app switching, and deeper application control.
+- Enables the creation of highly personalized “digital twins” or assistants that learn not just *what* is done, but *how* the user does it (context, preferences, style).
+
+## Scale of Data: Mapping the Interactive Internet
+- Thousands (eventually millions) of user journeys are combined into the proprietary **Action Tree**: a vast, branching, interconnected map of possible actions and workflows across the digital world.
+- The Action Tree:
+  - Maps workflows and alternate paths for completing tasks on any platform.
+  - Enables the LAM to execute known workflows with near-human accuracy; if a similar journey has been recorded, the LAM can “replay” or adapt the workflow step-by-step.
+- Data granularity: everything from “search for hotel on Booking.com” to “process payroll in Stripe” gets mapped.
+
+## Proprietary Data Structure: Action Tree
+- Each user journey becomes a path/branch in the Action Tree, which grows ever richer as new workflows/journeys are submitted.
+- Paths are composable—allowing for complex, multi-step, multi-platform actions (e.g., “find trending topic on Twitter, create image in Canva, post to Instagram”).
+- “If you can map one, the model can perform a million.”
+
+---
+
+# The Desktop App: Your Personal AI Employee
+
+## Core Product Value
+- The Desktop App is your fully personalized, continuously learning digital assistant—capable of observing, recording, and eventually replicating *all* your digital workflows.
+- Designed for both individuals (power users, knowledge workers) and businesses (digital employees, automated data entry, customer support).
+
+## Training a Personal Agent: Digital Twin Creation
+1. **Create an Agent**: Define personas (e.g., Marketing, HR, Sales) for tailored automation.
+2. **Background Desktop Training**: Let the model “shadow” you for 1–2 months, or use manual training for accelerated results. The app records all actions, workflows, and behaviors.
+3. **Deep Personalization**: The LAM internalizes your habits, platforms, style, and preferences—creating a second brain or digital work clone. 
+   - *Example*: “How you write emails, export reports, schedule meetings, or post on social channels.”
+
+## Automation Concepts: Workflows, Chains, Schedules, Memories
+
+### Workflows
+- The atomic unit of automation—a single, repeatable, automatable task (e.g., "Email Team Analytics,” “AI video generation,” “Update CRM”).
+- Each workflow consists of:
+    - **Variables**—dynamic inputs and parameters.
+    - **Sequential Steps**—explicit actions (click, type, submit).
+    - **Rules**—preconditions, logic, and constraints.
+    - **Human Confirmation**—optional checkpoints requiring user review/input.
+    - **Memories**—contextual knowledge that guides nuanced or personalized execution.
+
+### Chains
+- Multi-step, complex automations composed of linked workflows.
+- Workflows pass variables/outputs to one another (“variable mapping”), supporting both linear and branching logic, error handling, and end-to-end process automation across several platforms.
+- Example: “Summarize top tweets” → “Draft daily newsletter” → “Publish to website and email list.”
+
+### Schedules
+- Automations can be triggered on custom schedules (intervals, daily, weekly), acting as 24/7 digital workers.
+- Agents run locally (foreground—controls your desktop) or in cloud (VPC) for parallel, always-on execution.
+
+### Memories (“Second Brain”)
+- Persistent, context-aware knowledge base built over time through passive and active training.
+- Includes preferences, credentials (securely stored), platform-specific tips (e.g., “user prefers EST timezone”), and strategic context (e.g., “LinkedIn: User engages with AI founders, sarcastic tone on Twitter”).
+- The “secret sauce” for LAMs to adapt to user style/world.
+
+## Productized Value for Businesses (B2B)
+- Companies can create LAM-based replicas of employees or teams, automating repetitive digital work (customer support, data entry, reporting).
+- LAM Agents run 24/7, increasing efficiency and reducing HR costs.
+- Pricing ($1k–2k/month per Agent) reflects intensive compute requirements, but each agent can do the work of several staff.
+- Business API/enterprise dashboard allows for oversight, workflow sharing, process validation, and compliance.
+
+---
+
+# Technical Architecture & Integration
+
+## Action Model API
+
+### Action Model API: Step-by-Step Automation
+- Unlike LLM APIs (text-in/text-out), the Action Model API receives rich context and outputs specific, actionable next steps.
+- **Inputs:**
+    - User Goal (prompt/intent)
+    - Historical Actions (session context)
+    - Screenshots, HTML, DOM elements, environmental state
+- **Output:**
+    - The next concrete GUI action (click, type, drag, navigate, etc.)
+
+### Developer Integration Pathways
+
+1. **Desktop App**
+   - For end-users and power users; runs automations locally, controlling their own machine.
+
+2. **Cloud Virtual Machines (VPC)**
+   - Scalable, persistent environments for enterprise-grade/parallel automation.
+   - Multiple “Agents” can run simultaneously on cloud computers, accessible via browser.
+
+3. **Core API**
+   - Developers integrate LAM intelligence into third-party tools, products, or orchestration systems.
+   - API usage is metered and paid for in $LAM tokens (each action incurs a credit/token cost).
+
+---
+
+# Tokenomics and Decentralized Governance
+
+## Large Action Model Token ($LAM)
+
+### Core Roles of $LAM
+- **Earning/Rewards:** Users contributing journey data earn $LAM; extra rewards for labeled data (active mode). Users earn points first, which convert to $LAM at TGE.
+- **Usage / Action Credits:** All automations (API calls, desktop tasks, cloud agents) cost $LAM credits, driving demand.
+- **Staking & Governance:** Token holders can stake $LAM for influence over protocol decisions (DAOs, roadmap, grants, dispute resolution).
+- **Premium Features & Marketplace:**
+    - Access advanced workflows, agent templates, and on-demand compute.
+    - Buy/sell user-created automations or plugins in $LAM.
+- **Revenue Recycling & Deflation:**
+    - B2B and API revenue is used to buy back $LAM tokens and burn/lock them, creating ongoing buy pressure and long-term value appreciation.
+
+### Economic Circularity and Growth
+- As the model’s competence increases, business demand rises; increased workflow usage necessitates more $LAM purchases, benefiting the whole community.
+- The vast contributor base—each holding $LAM—becomes a viral engine, promoting business adoption and further accelerating value.
+
+---
+
+# Community Growth and Engagement Strategies
+
+## User Acquisition: Tools, Incentives, and Viral Design
+
+### Dual Training Modes for All User Levels
+- **Passive (Background):** Minimal friction; set it and forget it. ~95% of contributors.
+- **Active (Custom):** Power users and developers label, annotate, and validate workflows, earning 100x more rewards. Data quality and utility is maximized.
+
+### Gamification, Bounties, and Referrals
+- Points/multipliers for valuable sites (e.g., AWS = x100); negative points for irrelevant/unwanted flows.
+- Referral system with depth: invite codes, multi-tier bonuses, affiliate programs.
+- Leaderboards, public progress, epochs to drive ongoing engagement and FOMO.
+
+### Task Marketplace
+- Public repository of workflows, plugins, and chains for sharing, re-use, and monetization (earn $LAM when others use your automation).
+
+## Ownership, DAO Governance, and Value Distribution
+- Unlike closed AI, Action Model contributors are stakeholders.
+- DAO structure for protocol evolution, IP management, and transparency.
+- All critical decisions (treasury, new features, grants, partnerships) are community/governance controlled.
+
+---
+
+# Use Cases and Real-World Impact
+
+## Example User Journeys / Automations
+- **Consumer:** “Find me the best flight deals in Europe, book the top 3 in my price range, and create a travel plan in Notion.”
+- **SME/Enterprise:** “Download this week’s sales reports, synthesize insights, email department heads, and create meeting events based on flagged issues.”
+- **Developer/Power User:** “Chain together job application tasks: search LinkedIn, auto-fill applications, track statuses in Airtable.”
+
+## Integration with Other Platforms
+- LAMs interact with *any* website, SaaS, or desktop app, mapping custom workflows across everything from AWS to X/Twitter to Shopify—without requiring APIs or custom integrations.
+
+## Competitive Advantage
+- Rich, unique, community-generated Action Tree and Memories dataset (ongoing moat).
+- Personalization/unmatched context-awareness through desktop memories.
+- Flexible product and integration points for B2C (desktop assistant), B2B (process automation, staff augmentation), B2D (developer APIs).
+
+---
+
+# Market Positioning and Opportunity
+
+## Why Action Models are Inevitable (and Action Model Is Early)
+- No existing AI can operate GUIs with high accuracy.
+- The web3/data-for-tokens model has precedent (e.g., Grass, with 2m+ downloads and $1B valuation in 2023).
+- As AI adoption accelerates, demand for true agentic, workflow-capable models will explode.
+
+## Market Size & Strategic Vision
+- “Actions unlock the world’s real value.” The ability to perform tasks, not just generate language or code, is the largest market in AI.
+- The first community-owned, global automation engine positions Action Model as the “AI labor market” layer of the web.
+- Long-term vision: one LAM model, fully community-trained, automating the interactive web, with every contributor a stakeholder.
+
+---
+
+# Summary Table: Platform Building Blocks
+
+| Component        | Description                                                                                                 |
+|------------------|-----------------------------------------------------------------------------------------------------------|
+| LAM Engine       | The neural core, trained on GUI action data—knows how to operate any platform like a human                 |
+| Action Tree      | Proprietary, massive branching structure of mapped user journeys/workflows                                 |
+| Browser Ext      | Main data collection tool for web training; passive and active modes, crowd/gamification incentives        |
+| Desktop App      | For creating high-fidelity, personalized “digital twins”; business and power user utility                  |
+| API / VM         | For developers, businesses—integrate AI actions into any environment; all metered/paid in $LAM             |
+| Memories         | Contextual “second brain” for each user/agent; stores preferences, cross-app links, task-specific info     |
+| $LAM Token       | Sits at the heart of the ecosystem—rewards, payment, access, reputation, governance, burn/lock mechanism   |
+| DAO Foundation   | Legal/oversight entity in Cayman Islands; community governance, grant management, compliance               |
+| Marketplace      | Workflow/chain/plugin distribution and monetization—users earn when others use their automations           |
+
+---
+
+# Final Recap: Strategic Vision & Call-to-Action
+
+- **The future of AI is not just in language, but in action.**
+- Only Action Model is delivering an open, community-owned, decentralized platform that combines deep user knowledge, real GUI automation, and a robust, blockchain-powered economic engine.
+- By participating—contributing workflows, training, holding $LAM—users and businesses have the chance to become *owners* of the next revolution in AI.
+- The more the ecosystem grows (usage, data depth, business integrations), the more valuable $LAM and the models become—for everyone involved.
+
+---
+
+**Use this context to guide all future analyses, strategic planning, technical builds, or narrative crafting around Action Model. This is the definitive background for the Action Model platform, its mission, products, token, community, architecture, and market positioning.**
