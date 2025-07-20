@@ -7,7 +7,7 @@
     "light": "#9000FF",
     "dark": "#9000FF"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/favicon.png",
   "navigation": {
     "tabs": [
       {
@@ -158,6 +158,11 @@
         "href": "mailto:hello@actionmodel.com"
       }
     ],
+    "primary": {
+      "type": "button",
+      "label": "Download Extension",
+      "href": "https://chromewebstore.google.com/detail/action-model/lhciigpkocgkbnbjimbbiejpfijdbcag?authuser=0&hl=en"
+    }
     "primary": {
       "type": "button",
       "label": "Dashboard",
