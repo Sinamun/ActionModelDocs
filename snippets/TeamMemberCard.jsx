@@ -1,20 +1,16 @@
 export const TeamMemberCard = ({ imageUrl, title, name, description }) => {
   return (
-    <div className="flex flex-col md:flex-row items-center bg-[#461a64] rounded-2xl p-6 text-white overflow-hidden shadow-lg transform transition-transform hover:scale-105">
-      <div className="flex-shrink-0 mb-6 md:mb-0 md:mr-6">
-        <img
-          src={imageUrl}
-          alt={`Photo of ${name}`}
-          className="w-32 h-32 rounded-2xl object-cover"
-        />
-      </div>
-      <div className="text-center md:text-left">
-        <span className="text-xs font-semibold uppercase tracking-wider bg-white/10 text-white px-3 py-1 rounded-md">
-          {title}
-        </span>
-        <h3 className="text-2xl font-bold mt-3 mb-2">{name}</h3>
-        <p className="text-white/80">{description}</p>
-      </div>
+    <div className="w-full max-w-md mx-auto bg-slate-900/70 rounded-2xl border border-purple-500/30 p-8 text-center shadow-2xl shadow-purple-500/10 backdrop-blur-sm">
+      <img
+        src={imageUrl}
+        alt={`Photo of ${name}`}
+        className="w-32 h-32 rounded-full object-cover mb-5 mx-auto border-4 border-purple-500/50"
+      />
+      <span className="text-sm font-semibold text-purple-400 uppercase tracking-widest">
+        {title}
+      </span>
+      <h3 className="text-3xl font-bold text-white mt-2 mb-3">{name}</h3>
+      <p className="text-slate-400 text-base">{description}</p>
     </div>
   );
 }; 
