@@ -163,11 +163,6 @@
       "type": "button",
       "label": "Download Extension",
       "href": "https://chromewebstore.google.com/detail/action-model/lhciigpkocgkbnbjimbbiejpfijdbcag"
-    },
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://chromewebstore.google.com/detail/action-model/lhciigpkocgkbnbjimbbiejpfijdbcag"
     }
   },
   "footer": {
