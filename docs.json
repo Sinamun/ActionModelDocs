@@ -65,7 +65,6 @@
         "pages": [
           "tokenomics/TokenOverview",
           "tokenomics/Training",
-          "tokenomics/TokenGas",
           "tokenomics/CostPerAction",
           "tokenomics/Marketplace",
           "tokenomics/DeflationaryModel",
