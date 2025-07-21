@@ -23,11 +23,10 @@
       {
         "group": "Products & Technology",
         "pages": [
-          "productstechnology/Extension1",
           "productstechnology/DesktopApp",
+          "productstechnology/BrowserExtension",
           "productstechnology/VirtualPrivateComputer",
           "productstechnology/TelegramBot",
-          "productstechnology/Extension2",
           "productstechnology/API"
         ]
       },

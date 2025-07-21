@@ -1,16 +1,16 @@
 export const TeamMemberCard = ({ imageUrl, title, name, description }) => {
   return (
-    <div className="w-full max-w-md mx-auto bg-slate-900/70 rounded-2xl border border-purple-500/30 p-8 text-center shadow-2xl shadow-purple-500/10 backdrop-blur-sm">
+    <div className="w-full max-w-sm mx-auto bg-black rounded-2xl border-2 border-purple-600 p-8 text-center shadow-xl shadow-purple-600/20 backdrop-blur-sm transition-all duration-300 ease-in-out hover:scale-[1.02] hover:shadow-purple-600/50 my-4">
       <img
         src={imageUrl}
         alt={`Photo of ${name}`}
-        className="w-32 h-32 rounded-full object-cover mb-5 mx-auto border-4 border-purple-500/50"
+        className="w-28 h-28 rounded-full object-cover mb-4 mx-auto border-4 border-purple-600/50 pointer-events-none"
       />
-      <span className="text-sm font-semibold text-purple-400 uppercase tracking-widest">
+      <span className="text-sm font-semibold text-purple-500 uppercase tracking-widest">
         {title}
       </span>
-      <h3 className="text-3xl font-bold text-white mt-2 mb-3">{name}</h3>
-      <p className="text-slate-400 text-base">{description}</p>
+      <h3 className="text-2xl font-bold text-white mt-1.5 mb-2">{name}</h3>
+      <p className="text-slate-400 text-sm leading-relaxed">{description}</p>
     </div>
   );
 }; 
