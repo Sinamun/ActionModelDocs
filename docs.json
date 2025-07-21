@@ -9,112 +9,82 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "tabs": [
+    "groups": [
       {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Introduction to Action Model",
-            "pages": [
-              "index",
-              "introduction-to-actionmodel/TheCommunityOwnedAIFuture",
-              "introduction-to-actionmodel/TheProblemwithAPIs",
-              "introduction-to-actionmodel/GraphicalInterfacesareKing",
-              "introduction-to-actionmodel/LargeActionModelsAretheFuture"
-            ]
-          },
-          {
-            "group": "Products & Technology",
-            "pages": [
-              "productstechnology/Extension1",
-              "productstechnology/DesktopApp",
-              "productstechnology/VirtualPrivateComputer",
-              "productstechnology/TelegramBot",
-              "productstechnology/Extension2",
-              "productstechnology/API"
-            ]
-          },
-          {
-            "group": "Training the LAM",
-            "pages": [
-              "trainingthelam/ActionTree",
-              "trainingthelam/ExtensionDesktopTraining",
-              "trainingthelam/BackgroundWorkflowTraining",
-              "trainingthelam/TheActionTreePublic",
-              "trainingthelam/TheActionTreePrivate",
-              "trainingthelam/SecurityPrivacy"
-            ]
-          },
-                    {
-            "group": "Reward Mechanisms",
-            "pages": [
-              "rewardmechanisms/BackgroundTraining1",
-              "rewardmechanisms/Bounties",
-              "rewardmechanisms/OtherRewardMechanisms"
-            ]
-          },
-                              {
-            "group": "Dashboard",
-            "pages": [
-              "dashboard/Referrals",
-              "dashboard/Bounties",
-              "dashboard/CustomAgent",
-              "dashboard/BackgroundTraining2",
-              "dashboard/WebsitesBlockList",
-              "dashboard/VPCAgent"
-            ]
-          },
-                                        {
-            "group": "Tokenomics & $LAM Token Utility",
-            "pages": [
-              "tokenomics/TokenOverview",
-              "tokenomics/Training",
-              "tokenomics/TokenGas",
-              "tokenomics/CostPerAction",
-              "tokenomics/API",
-              "tokenomics/VPC",
-              "tokenomics/PrivateEnterpriseTraining",
-              "tokenomics/Marketplace",
-              "tokenomics/DeflationaryModel",
-              "tokenomics/TokenDistribution"
-            ]
-          },
-                                        {
-            "group": "Partnerships",
-            "pages": [
-              "partnerships/Data",
-              "partnerships/CoreAPI",
-              "partnerships/VPCAPI",
-              "partnerships/ProcessingDePIN",
-              "partnerships/BountyProgrammes",
-              "partnerships/Resellers"
-
-            ]
-          },
-          {
-            "group": "Get Started",
-            "pages": []
-          },
-          {
-            "group": "Miscellaneous",
-            "pages": [
-              "quickstart",
-              "essentials/code",
-              "development"
-            ]
-          },
-          {
-            "group": "Essentials",
-            "pages": [
-              "essentials/markdown",
-              "essentials/new",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
-            ]
-          }
+        "group": "Introduction to Action Model",
+        "pages": [
+          "index",
+          "introduction-to-actionmodel/TheCommunityOwnedAIFuture",
+          "introduction-to-actionmodel/TheProblemwithAPIs",
+          "introduction-to-actionmodel/GraphicalInterfacesareKing",
+          "introduction-to-actionmodel/LargeActionModelsAretheFuture"
+        ]
+      },
+      {
+        "group": "Products & Technology",
+        "pages": [
+          "productstechnology/Extension1",
+          "productstechnology/DesktopApp",
+          "productstechnology/VirtualPrivateComputer",
+          "productstechnology/TelegramBot",
+          "productstechnology/Extension2",
+          "productstechnology/API"
+        ]
+      },
+      {
+        "group": "Training the LAM",
+        "pages": [
+          "trainingthelam/ActionTree",
+          "trainingthelam/ExtensionDesktopTraining",
+          "trainingthelam/BackgroundWorkflowTraining",
+          "trainingthelam/TheActionTreePublic",
+          "trainingthelam/TheActionTreePrivate",
+          "trainingthelam/SecurityPrivacy"
+        ]
+      },
+      {
+        "group": "Reward Mechanisms",
+        "pages": [
+          "rewardmechanisms/BackgroundTraining1",
+          "rewardmechanisms/Bounties",
+          "rewardmechanisms/OtherRewardMechanisms"
+        ]
+      },
+      {
+        "group": "Dashboard",
+        "pages": [
+          "dashboard/Referrals",
+          "dashboard/Bounties",
+          "dashboard/CustomAgent",
+          "dashboard/BackgroundTraining2",
+          "dashboard/WebsitesBlockList",
+          "dashboard/VPCAgent"
+        ]
+      },
+      {
+        "group": "Tokenomics & $LAM Token Utility",
+        "pages": [
+          "tokenomics/TokenOverview",
+          "tokenomics/Training",
+          "tokenomics/TokenGas",
+          "tokenomics/CostPerAction",
+          "tokenomics/API",
+          "tokenomics/VPC",
+          "tokenomics/PrivateEnterpriseTraining",
+          "tokenomics/Marketplace",
+          "tokenomics/DeflationaryModel",
+          "tokenomics/TokenDistribution"
+        ]
+      },
+      {
+        "group": "Partnerships",
+        "pages": [
+          "partnerships/Data",
+          "partnerships/CoreAPI",
+          "partnerships/VPCAPI",
+          "partnerships/ProcessingDePIN",
+          "partnerships/BountyProgrammes",
+          "partnerships/Resellers"
         ]
       }
     ],
@@ -137,12 +107,12 @@
         },
         {
           "anchor": "Action Model Dashboard",
-          "href": "https://docs.actionmodel.com",
+          "href": "https://train.actionmodel.com",
           "icon": "gauge"
         },
         {
           "anchor": "Download Extension",
-          "href": "https://actionmodel.com",
+          "href": "https://chromewebstore.google.com/detail/action-model/lhciigpkocgkbnbjimbbiejpfijdbcag?authuser=0&hl=en",
           "icon": "download"
         }
       ]
