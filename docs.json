@@ -67,9 +67,6 @@
           "tokenomics/Training",
           "tokenomics/TokenGas",
           "tokenomics/CostPerAction",
-          "tokenomics/API",
-          "tokenomics/VPC",
-          "tokenomics/PrivateEnterpriseTraining",
           "tokenomics/Marketplace",
           "tokenomics/DeflationaryModel",
           "tokenomics/TokenDistribution"
