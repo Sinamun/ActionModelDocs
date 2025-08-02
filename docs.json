@@ -1,0 +1,143 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "Action Model - Docs",
+  "colors": {
+    "primary": "#9000FF",
+    "light": "#9000FF",
+    "dark": "#9000FF"
+  },
+  "favicon": "/favicon.svg",
+  "navigation": {
+    "groups": [
+      {
+        "group": "Introduction to Action Model",
+        "pages": [
+          "index",
+          "introduction-to-actionmodel/TheCommunityOwnedAIFuture",
+          "introduction-to-actionmodel/TheProblemwithAPIs",
+          "introduction-to-actionmodel/GraphicalInterfacesareKing",
+          "introduction-to-actionmodel/LargeActionModelsAretheFuture"
+        ]
+      },
+      {
+        "group": "Products & Technology",
+        "pages": [
+          "productstechnology/DesktopApp",
+          "productstechnology/BrowserExtension",
+          "productstechnology/VirtualPrivateComputer",
+          "productstechnology/TelegramBot",
+          "productstechnology/API"
+        ]
+      },
+      {
+        "group": "Training the LAM",
+        "pages": [
+          "trainingthelam/ActionTree",
+          "trainingthelam/ExtensionDesktopTraining",
+          "trainingthelam/BackgroundWorkflowTraining",
+          "trainingthelam/TheActionTreePublic",
+          "trainingthelam/TheActionTreePrivate",
+          "trainingthelam/SecurityPrivacy"
+        ]
+      },
+      {
+        "group": "Reward Mechanisms",
+        "pages": [
+          "rewardmechanisms/BackgroundTraining1",
+          "rewardmechanisms/Bounties",
+          "rewardmechanisms/OtherRewardMechanisms"
+        ]
+      },
+      {
+        "group": "Dashboard",
+        "pages": [
+          "dashboard/Referrals",
+          "dashboard/Bounties",
+          "dashboard/CustomAgent",
+          "dashboard/BackgroundTraining2",
+          "dashboard/WebsitesBlockList",
+          "dashboard/VPCAgent"
+        ]
+      },
+      {
+        "group": "Tokenomics & $LAM Token Utility",
+        "pages": [
+          "tokenomics/TokenOverview",
+          "tokenomics/Training",
+          "tokenomics/CostPerAction",
+          "tokenomics/Marketplace",
+          "tokenomics/DeflationaryModel",
+          "tokenomics/TokenDistribution"
+        ]
+      },
+      {
+        "group": "Partnerships",
+        "pages": [
+          "partnerships/Data",
+          "partnerships/CoreAPI",
+          "partnerships/VPCAPI",
+          "partnerships/ProcessingDePIN",
+          "partnerships/BountyProgrammes",
+          "partnerships/Resellers"
+        ]
+      }
+    ],
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Documentation",
+          "href": "https://docs.actionmodel.com",
+          "icon": "book-open-cover"
+        },
+        {
+          "anchor": "Community",
+          "href": "https://actionmodel.com",
+          "icon": "slack"
+        },
+        {
+          "anchor": "Blog",
+          "href": "https://actionmodel.com",
+          "icon": "newspaper"
+        },
+        {
+          "anchor": "Action Model Dashboard",
+          "href": "https://train.actionmodel.com",
+          "icon": "gauge"
+        },
+        {
+          "anchor": "Download Extension",
+          "href": "https://chromewebstore.google.com/detail/action-model/lhciigpkocgkbnbjimbbiejpfijdbcag?authuser=0&hl=en",
+          "icon": "download"
+        }
+      ]
+    }
+  },
+  "logo": {
+    "light": "/logo/actionmodellogodark.svg",
+    "dark": "/logo/actionmodellogolight.svg"
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Support",
+        "href": "mailto:hello@actionmodel.com"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Download Extension",
+      "href": "https://chromewebstore.google.com/detail/action-model/lhciigpkocgkbnbjimbbiejpfijdbcag"
+    }
+  },
+  "footer": {
+    "socials": {
+      "x": "https://x.com/actionmodel",
+      "linkedin": "https://linkedin.com/company/actionmodel",
+      "instagram": "https://instagram.com/actionmodel",
+      "youtube": "https://youtube.com/@actionmodel",
+      "discord": "https://discord.gg/actionmodel",
+      "telegram": "https://t.me/actionmodel"
+    }
+  }
+}
