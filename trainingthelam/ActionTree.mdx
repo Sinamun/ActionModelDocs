@@ -6,7 +6,8 @@ description: "The proprietary data structure that maps every possible user inter
 The Action Tree is the technological foundation of Action Model's Large Action Model (LAM). It's a comprehensive, interconnected map of how to perform virtually any task on the internet, built from millions of real user journeys contributed by the community.
 
 <Info>
-The Action Tree transforms unpredictable AI interactions into deterministic, pre-validated paths with near-perfect accuracy.
+  The Action Tree transforms unpredictable AI interactions into deterministic,
+  pre-validated paths with near-perfect accuracy.
 </Info>
 
 ## How the Action Tree Works
@@ -15,13 +16,16 @@ Unlike traditional LLMs that guess the next action or rigid RPA scripts that fol
 
 <CardGroup cols={3}>
   <Card title="Pre-Mapped Paths" icon="route">
-    Every possible user journey has been recorded and validated by real users, creating reliable paths to any goal
+    Every possible user journey has been recorded and validated by real users,
+    creating reliable paths to any goal
   </Card>
   <Card title="Visual Recognition" icon="eye">
-    Combines DOM analysis with screenshot data to understand both structure and appearance of UI elements
+    Combines DOM analysis with screenshot data to understand both structure and
+    appearance of UI elements
   </Card>
   <Card title="Adaptive Intelligence" icon="brain">
-    Automatically updates when websites change as users continue to interact with updated interfaces
+    Automatically updates when websites change as users continue to interact
+    with updated interfaces
   </Card>
 </CardGroup>
 
@@ -37,12 +41,9 @@ Each complete user journey captured through the browser extension becomes an **A
 </Step>
 
 <Step title="Action Sequence Recording">
-  Every interaction is captured with millisecond precision:
-  - Mouse movements and click coordinates
-  - Keyboard inputs and shortcuts
-  - Form field interactions
-  - Scroll positions
-  - Page transitions
+  Every interaction is captured with millisecond precision: - Mouse movements
+  and click coordinates - Keyboard inputs and shortcuts - Form field
+  interactions - Scroll positions - Page transitions
 </Step>
 
 <Step title="Goal Achievement">
@@ -108,18 +109,16 @@ The browser extension captures an incredibly rich dataset for each user interact
 </Accordion>
 
 <Accordion title="Structural Data" icon="code">
-  - **Complete DOM tree** at the moment of interaction
-  - **HTML element properties** (id, class, attributes)
-  - **CSS selectors** for precise element targeting
-  - **XPath expressions** for complex element identification
+  - **Complete DOM tree** at the moment of interaction - **HTML element
+  properties** (id, class, attributes) - **CSS selectors** for precise element
+  targeting - **XPath expressions** for complex element identification
 </Accordion>
 
 <Accordion title="Interaction Data" icon="hand-pointer">
-  - **Absolute mouse coordinates** at click time
-  - **Relative coordinates** as ratio to screen dimensions
-  - **Element-relative positions** for responsive design compatibility
-  - **Timing information** between actions
-  - **Keyboard inputs** including shortcuts and modifiers
+  - **Absolute mouse coordinates** at click time - **Relative coordinates** as
+  ratio to screen dimensions - **Element-relative positions** for responsive
+  design compatibility - **Timing information** between actions - **Keyboard
+  inputs** including shortcuts and modifiers
 </Accordion>
 
 <Accordion title="Context Data" icon="globe">
@@ -140,19 +139,21 @@ The Action Tree employs a sophisticated coordinate mapping system that ensures a
 ```javascript
 // Coordinate normalization for cross-device compatibility
 const normalizedCoordinates = {
-  x_ratio: clickX / screenWidth,   // e.g., 0.34 (34% from left)
-  y_ratio: clickY / screenHeight,  // e.g., 0.52 (52% from top)
+  x_ratio: clickX / screenWidth, // e.g., 0.34 (34% from left)
+  y_ratio: clickY / screenHeight, // e.g., 0.52 (52% from top)
   element_offset_x: clickX - elementBounds.left,
   element_offset_y: clickY - elementBounds.top,
   viewport_relative: {
     x: clickX / viewportWidth,
-    y: clickY / viewportHeight
-  }
+    y: clickY / viewportHeight,
+  },
 };
 ```
 
 <Note>
-This multi-layered coordinate system ensures that actions recorded on a 4K monitor work perfectly on a laptop screen, maintaining precision across all devices.
+  This multi-layered coordinate system ensures that actions recorded on a 4K
+  monitor work perfectly on a laptop screen, maintaining precision across all
+  devices.
 </Note>
 
 ## Tree Formation: From Branches to Forest
@@ -167,15 +168,18 @@ Millions of Action Branches are algorithmically combined to create the comprehen
 </Step>
 
 <Step title="Pattern Recognition">
-  AI algorithms identify common patterns and variations across similar tasks, recognizing different paths to the same goal
+  AI algorithms identify common patterns and variations across similar tasks,
+  recognizing different paths to the same goal
 </Step>
 
 <Step title="Branch Interconnection">
-  Related branches are linked at common junction points, creating a web of possible paths through any application
+  Related branches are linked at common junction points, creating a web of
+  possible paths through any application
 </Step>
 
 <Step title="Validation & Optimization">
-  The most efficient and reliable paths are prioritized, with success rates tracked for continuous improvement
+  The most efficient and reliable paths are prioritized, with success rates
+  tracked for continuous improvement
 </Step>
 
 <Step title="Tree Synthesis">
@@ -187,16 +191,20 @@ Millions of Action Branches are algorithmically combined to create the comprehen
 
 <CardGroup cols={2}>
   <Card title="Growing Coverage" icon="chart-line">
-    Each new user adds unique paths and edge cases, expanding the tree's capability to handle diverse scenarios
+    Each new user adds unique paths and edge cases, expanding the tree's
+    capability to handle diverse scenarios
   </Card>
   <Card title="Improved Accuracy" icon="bullseye">
-    Multiple recordings of the same task validate and refine the optimal path, increasing success rates
+    Multiple recordings of the same task validate and refine the optimal path,
+    increasing success rates
   </Card>
   <Card title="Faster Adaptation" icon="bolt">
-    When websites update, active users naturally retrain affected branches through normal usage
+    When websites update, active users naturally retrain affected branches
+    through normal usage
   </Card>
   <Card title="Language Agnostic" icon="language">
-    The visual and structural approach works across all languages and locales without translation
+    The visual and structural approach works across all languages and locales
+    without translation
   </Card>
 </CardGroup>
 
@@ -217,12 +225,12 @@ One of the Action Tree's most powerful features is its ability to automatically 
 </Tab>
 
 <Tab title="A/B Testing">
-  When sites run A/B tests with different interfaces:
-  
-  1. **Multiple Path Recognition**: The tree maintains branches for each variation
-  2. **Context Awareness**: The LAM identifies which version is currently active
-  3. **Adaptive Selection**: Chooses the appropriate branch based on the detected variant
-  4. **Continuous Learning**: Accumulates data on all variations for robust operation
+  When sites run A/B tests with different interfaces: 1. **Multiple Path
+  Recognition**: The tree maintains branches for each variation 2. **Context
+  Awareness**: The LAM identifies which version is currently active 3.
+  **Adaptive Selection**: Chooses the appropriate branch based on the detected
+  variant 4. **Continuous Learning**: Accumulates data on all variations for
+  robust operation
 </Tab>
 
 <Tab title="Dynamic Content">
@@ -236,7 +244,8 @@ One of the Action Tree's most powerful features is its ability to automatically 
 </Tabs>
 
 <Warning>
-Unlike traditional RPA that breaks with minor UI changes, the Action Tree's community-driven updates ensure continuous operation even as websites evolve.
+  Unlike traditional RPA that breaks with minor UI changes, the Action Tree's
+  community-driven updates ensure continuous operation even as websites evolve.
 </Warning>
 
 ## Enterprise Value: The Commercial Advantage
@@ -246,29 +255,26 @@ The Action Tree's comprehensive mapping provides immense value for enterprise au
 ### High-Value Branches
 
 <Info>
-The platform incentivizes training on enterprise platforms through bounty multipliers, ensuring rapid development of commercially valuable automation paths.
+  The platform incentivizes training on enterprise platforms through bounty
+  multipliers, ensuring rapid development of commercially valuable automation
+  paths.
 </Info>
 
 <CardGroup cols={2}>
   <Card title="DevOps Automation" icon="server">
-    **10x Bounty Multiplier**
-    
-    Kubernetes, Jenkins, GitLab, AWS Console automation paths
+    **10x Bounty Multiplier** Kubernetes, Jenkins, GitLab, AWS Console
+    automation paths
   </Card>
   <Card title="CRM Operations" icon="users">
-    **8x Bounty Multiplier**
-    
-    Salesforce, HubSpot, Pipedrive workflow automation
+    **8x Bounty Multiplier** Salesforce, HubSpot, Pipedrive workflow automation
   </Card>
   <Card title="Marketing Tools" icon="bullhorn">
-    **7x Bounty Multiplier**
-    
-    Google Ads, Facebook Business Manager, Mailchimp campaigns
+    **7x Bounty Multiplier** Google Ads, Facebook Business Manager, Mailchimp
+    campaigns
   </Card>
   <Card title="Data Analytics" icon="chart-bar">
-    **6x Bounty Multiplier**
-    
-    Tableau, PowerBI, Google Analytics report generation
+    **6x Bounty Multiplier** Tableau, PowerBI, Google Analytics report
+    generation
   </Card>
 </CardGroup>
 
@@ -333,7 +339,9 @@ The Action Tree uses advanced indexing and caching strategies to deliver millise
 ## Real-World Impact
 
 <Check>
-The Action Tree currently contains over 10 million validated Action Branches, covering thousands of websites and applications, with new branches added every second through community training.
+  The Action Tree currently contains over 10 million validated Action Branches,
+  covering thousands of websites and applications, with new branches added every
+  second through community training.
 </Check>
 
 ### Coverage Statistics
