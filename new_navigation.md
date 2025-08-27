@@ -8,76 +8,103 @@
 
 ## Proposed New Structure
 
-### 1. Introduction
-- Welcome/Overview (index.mdx)
-- The Community-Owned AI Future
-- Large Action Models Are the Future
-- Graphical Interfaces are King
-- The Problem with APIs
+CURRENT
+### 1. The Action Model (/introduction-to-actionmodel)
+- Overview (index.mdx) (TO INCLUDE PAIN, BIG TECH, SOLUTION)
+- The Community-Owned AI Future (introduction-to-actionmodel/TheCommunityOwnedAIFuture.mdx)
+- Large Action Models Are the Future (introduction-to-actionmodel/LargeActionModelsAretheFuture.mdx)
+- Graphical Interfaces are King (introduction-to-actionmodel/GraphicalInterfacesareKing.mdx)
+- The Problem with APIs (introduction-to-actionmodel/TheProblemwithAPIs.mdx)
 
-### 2. Desktop App
+PROPOSED
+### 1. The Action Model (/the-action-model)
+- 1 Billion jobs will be Displaced
+- Big Tech Owns 99% of the AI future
+- Action Model is the Uprising
+- How to own a piece of the AI Future
+- Large Action Models are the future
+--- (introduction-to-actionmodel/LargeActionModelsAretheFuture.mdx)
+--- (introduction-to-actionmodel/GraphicalInterfacesareKing.mdx)
+--- (introduction-to-actionmodel/TheProblemwithAPIs.mdx)
+
+
+
+### 2. Actionist.ai (/actionist)
+- Actionist Overview
 - Agents
 - Workflows
-- Workflow Training
-- Schedules
 - Chains
+- Schedules
 - Memories
+- History
+- Tool Usage
 
-### 3. Browser Extension & Training
-- Browser Extension Overview
-- The Action Tree
-- Extension & Desktop Training
-- Background Workflow Training
-- Public vs Private Action Trees
-- Security & Privacy
 
-### 4. Dashboard
+### 3. Training the Large Action Model (/training-the-large-action-model)
+- Training data required
+- The Action Tree (trainingthelam/ActionTree.mdx)
+- Browser Extension Overview (productstechnology/BrowserExtension.mdx)
+- Background Workflow Training (trainingthelam/BackgroundWorkflowTraining.mdx)
+?????? - Public vs Private Action Trees (trainingthelam/TheActionTreePublic.mdx & trainingthelam/TheActionTreePrivate.mdx)
+- Security & Privacy (trainingthelam/SecurityPrivacy.mdx) (Include Website Block List)
+
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!
+DO WE NEED DASHBOARD SECTION?
+!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!
+### 4. Dashboard (/dashboard)
 - Dashboard Overview
-- Referrals
-- Bounties
-- Background Training Management
-- Website Block Lists
+- Referrals (dashboard/Referrals.mdx)
+- Bounties (dashboard/Bounties.mdx)
+- Training History
+???? - Background Training Management (dashboard/BackgroundTraining2.mdx)
+- Website Block Lists (dashboard/WebsitesBlockList.mdx)
 - Statistics & Earnings
+!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!
+
 
 ### 5. Marketplace
-- Marketplace Overview
-- Buying & Selling Workflows
+- Marketplace Overview (tokenomics/Marketplace.mdx)
+- Marketplace Bounties
 - Workflow Creation Guidelines
-- Pricing & Revenue Sharing
+- Revenue Generation
 - Featured Workflows
 - Community Contributions
+- Agent Marketplace (Future)
 
 ### 6. Tokenomics
-- Token Overview ($LAM)
-- Earning Through Training
-- Cost Per Action
-- Deflationary Model
-- Token Distribution
+- Token Utility ($LAM) (tokenomics/TokenOverview.mdx)
+- Cost Per Action (tokenomics/CostPerAction.mdx)
+- Earning Through Training (tokenomics/Training.mdx)
+- Training Bounties
+- Deflationary Model (tokenomics/DeflationaryModel.mdx)
+- Token Distribution (tokenomics/TokenDistribution.mdx)
 
 ### 7. Partnerships
-- Data Partnerships
-- Processing DePIN
-- Bounty Programs
-- Resellers
+- Marketplace Partners
+- API Partners
+- Data Partnerships (partnerships/Data.mdx)
+- Processing DePIN (partnerships/ProcessingDePIN.mdx)
+- Bounty Programs (partnerships/BountyProgrammes.mdx)
+- Resellers (partnerships/Resellers.mdx)
 - Enterprise Solutions
 
-## Benefits of This Structure
 
-1. **Clearer Organization**: Each section has a distinct purpose without overlap
-2. **Desktop App Prominence**: Gets its own dedicated section reflecting its importance
-3. **Marketplace Visibility**: Dedicated section for the workflow marketplace ecosystem
-4. **Logical Grouping**: Browser Extension is grouped with Training since they're closely related
-5. **Simplified Navigation**: Removes redundant sections like "Reward Mechanisms"
-6. **Better User Journey**: Flows from introduction → products → how to earn → marketplace → economics → business
+========================================================
+========================================================
+========================================================
+========================================================
+========================================================
+========================================================
+========================================================
+SUMMARY OF PAGE CONTENTS
 
-## Implementation Notes
 
-### Files to Update
-- `docs.json`: Update the navigation groups structure
-- Move/reorganize existing MDX files to match new structure
-- Consider creating overview pages for each major section
 
-### Considerations
-- Some pages may need to be merged or split (e.g., consolidate all Background Training content)
-- May need to create new overview pages for sections like "Dashboard Overview" or "API Overview"
-- Ensure all existing content is accounted for in the new structure
+
+

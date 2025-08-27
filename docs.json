@@ -46,6 +46,7 @@
         "pages": [
           "rewardmechanisms/BackgroundTraining1",
           "rewardmechanisms/Bounties",
+          "trainingthelam/BackgroundWorkflowTraining",
           "rewardmechanisms/OtherRewardMechanisms"
         ]
       },
