@@ -24,7 +24,6 @@
         "group": "Products & Technology",
         "pages": [
           "productstechnology/DesktopApp",
-          "index",
           "productstechnology/BrowserExtension",
           "productstechnology/VirtualPrivateComputer",
           "productstechnology/TelegramBot",
