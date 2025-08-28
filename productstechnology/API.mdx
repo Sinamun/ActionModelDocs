@@ -1,5 +1,264 @@
 ---
-title: 'API'
-description: 'API'
+title: 'Action Model API'
+description: 'Integrate Large Action Model capabilities directly into your applications'
+icon: 'code'
 ---
+
+<Info>
+  The Action Model API enables developers to integrate LAM (Large Action Model) capabilities directly into their applications, providing precise GUI automation instructions based on context and goals.
+</Info>
+
+## Overview
+
+The Action Model API fundamentally differs from traditional LLM APIs by providing **deterministic next-action instructions** for GUI automation rather than text predictions. It leverages the proprietary Action Tree to deliver precise, context-aware automation instructions.
+
+<Card title="Key Differentiators" icon="sparkles">
+  - **Action-based outputs** instead of text generation
+  - **GUI interaction instructions** with exact coordinates and elements
+  - **Pre-mapped action paths** from the Action Tree database
+  - **Context-aware execution** based on screenshots and DOM analysis
+</Card>
+
+## How It Works
+
+The API operates on an action loop principle, continuously analyzing the current state and determining the next optimal action:
+
+<Steps>
+  <Step title="Send Context">
+    Provide the current environment state including:
+    - Goal or task description
+    - Historical actions taken
+    - Current screenshot
+    - HTML/DOM structure
+    - Any relevant memories or context
+  </Step>
+  
+  <Step title="Receive Action">
+    API returns the precise next GUI action:
+    - Element to interact with (XPath, CSS selector, or coordinates)
+    - Action type (click, type, scroll, hover, etc.)
+    - Any required parameters (text to type, scroll distance, etc.)
+    - Confidence score based on Action Tree mapping
+  </Step>
+  
+  <Step title="Execute &amp; Loop">
+    Your application executes the action and sends the updated state back to the API for the next instruction, continuing until task completion
+  </Step>
+</Steps>
+
+## Integration Options
+
+<Tabs>
+  <Tab title="Core API">
+    Direct REST API integration for maximum control and flexibility.
+    
+    ```json
+    {
+      "endpoint": "https://api.actionmodel.com/v1/actions",
+      "method": "POST",
+      "authentication": "$LAM token required"
+    }
+    ```
+    
+    **Best for:**
+    - Custom automation solutions
+    - Enterprise integrations
+    - Third-party app development
+  </Tab>
+  
+  <Tab title="SDK Libraries">
+    Pre-built SDKs for popular programming languages.
+    
+    **Available SDKs:**
+    - Python
+    - JavaScript/TypeScript
+    - Java
+    - Go
+    - .NET
+    
+    **Features:**
+    - Simplified authentication
+    - Automatic retry logic
+    - Built-in error handling
+  </Tab>
+  
+  <Tab title="Cloud VM Environment">
+    API-based execution in developer-managed cloud environments.
+    
+    **Capabilities:**
+    - Isolated execution environments
+    - Parallel agent instances
+    - Direct browser/desktop control
+    - Screen streaming for monitoring
+  </Tab>
+</Tabs>
+
+## API Request Structure
+
+<CodeGroup>
+```json Request Example
+{
+  "goal": "Book a flight from NYC to London for next Friday",
+  "context": {
+    "current_url": "https://booking-site.com",
+    "screenshot": "base64_encoded_image",
+    "dom": "html_structure",
+    "history": [
+      {
+        "action": "navigate",
+        "target": "https://booking-site.com",
+        "timestamp": "2024-01-15T10:00:00Z"
+      }
+    ],
+    "memories": {
+      "preferred_airline": "British Airways",
+      "seat_preference": "aisle",
+      "meal_preference": "vegetarian"
+    }
+  },
+  "session_id": "unique_session_identifier"
+}
+```
+
+```json Response Example
+{
+  "action": {
+    "type": "click",
+    "target": {
+      "xpath": "//input[@id='departure-city']",
+      "css": "#departure-city",
+      "coordinates": {"x": 250, "y": 180}
+    },
+    "confidence": 0.98,
+    "action_tree_match": true
+  },
+  "metadata": {
+    "tokens_consumed": 10,
+    "action_id": "act_1234567890",
+    "suggested_wait": 500
+  },
+  "status": {
+    "task_progress": 0.15,
+    "estimated_actions_remaining": 12
+  }
+}
+```
+</CodeGroup>
+
+## Token Consumption &amp; Pricing
+
+<Note>
+  Each API call consumes $LAM tokens based on the complexity of the action and the model version used.
+</Note>
+
+### Pricing Model
+
+| Model Version | Cost per Action | Use Case |
+|--------------|-----------------|----------|
+| LAM-1 Basic | 10 $LAM tokens | Simple navigation and form filling |
+| LAM-2 Advanced | 25 $LAM tokens | Complex multi-step workflows |
+| LAM-3 Enterprise | 50 $LAM tokens | High-accuracy critical operations |
+
+### Token Management
+
+- **Pre-purchase tokens** through the dashboard
+- **Automatic top-up** options available
+- **Usage analytics** and cost tracking
+- **Volume discounts** for enterprise customers
+
+## Use Cases
+
+<CardGroup cols={2}>
+  <Card title="Customer Service Automation" icon="headset">
+    Automate repetitive customer service tasks across multiple platforms without API integrations
+  </Card>
+  
+  <Card title="Data Extraction" icon="database">
+    Extract structured data from websites that don't provide APIs
+  </Card>
+  
+  <Card title="Testing &amp; QA" icon="vial">
+    Automated testing of web applications through realistic user interactions
+  </Card>
+  
+  <Card title="Process Automation" icon="gears">
+    Automate business processes across disparate systems and legacy applications
+  </Card>
+</CardGroup>
+
+## Authentication
+
+<Warning>
+  Always keep your API keys secure and never expose them in client-side code.
+</Warning>
+
+### API Key Generation
+
+1. Log into the [Action Model Dashboard](https://train.actionmodel.com)
+2. Navigate to API Settings
+3. Generate a new API key
+4. Store securely in environment variables
+
+### Request Headers
+
+```http
+POST /v1/actions HTTP/1.1
+Host: api.actionmodel.com
+Authorization: Bearer YOUR_API_KEY
+Content-Type: application/json
+X-LAM-Version: 2.0
+```
+
+## Rate Limits &amp; Quotas
+
+| Plan | Requests/Minute | Concurrent Sessions | Support Level |
+|------|-----------------|-------------------|---------------|
+| Developer | 60 | 5 | Community |
+| Professional | 300 | 25 | Email |
+| Enterprise | Unlimited | Unlimited | Dedicated |
+
+## Error Handling
+
+<Tip>
+  The API provides detailed error messages to help diagnose and resolve issues quickly.
+</Tip>
+
+Common error codes:
+
+- `400` - Invalid request format or missing required fields
+- `401` - Invalid or expired API key
+- `402` - Insufficient $LAM token balance
+- `429` - Rate limit exceeded
+- `503` - Service temporarily unavailable
+
+## Getting Started
+
+<Steps>
+  <Step title="Sign Up">
+    Create an account at [train.actionmodel.com](https://train.actionmodel.com)
+  </Step>
+  
+  <Step title="Purchase Tokens">
+    Buy $LAM tokens through the dashboard
+  </Step>
+  
+  <Step title="Generate API Key">
+    Create your API key in the settings panel
+  </Step>
+  
+  <Step title="Install SDK">
+    Choose and install your preferred SDK library
+  </Step>
+  
+  <Step title="Make First Call">
+    Test the API with a simple automation task
+  </Step>
+</Steps>
+
+## Support &amp; Resources
+
+- **Documentation**: [docs.actionmodel.com/api](https://docs.actionmodel.com/api)
+- **API Status**: [status.actionmodel.com](https://status.actionmodel.com)
+- **Developer Discord**: [discord.gg/actionmodel-dev](https://discord.gg/actionmodel)
+- **Support Email**: api@actionmodel.com
 
