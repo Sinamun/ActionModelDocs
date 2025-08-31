@@ -1,8 +1,621 @@
 ---
-title: "Agent Calendar Schedules"
-description: "Page description here"
+title: "Agent Calendar & Schedules"
+description: "Manage your AI workforce like real employees. Schedule automations, coordinate multiple agents, and run workflows 24/7 with intelligent calendar management."
 ---
 
-## Overview
+## Your Agents Have Calendars, Just Like Your Staff
 
-Content coming soon.
+In the traditional workplace, employees have calendars, schedules, and shifts. Your AI agents are no different—except they work **24/7 without breaks**, never call in sick, and execute with perfect consistency.
+
+The Agent Calendar system transforms chaotic automation into **organized, predictable, scalable operations**.
+
+<Warning>
+
+**The Paradigm Shift**: Stop thinking of automations as one-off scripts. Start thinking of them as scheduled work performed by digital employees who need proper time management.
+
+</Warning>
+
+## 📅 Calendar Overview
+
+<Frame caption="Agent Calendar Interface - Manage Your Digital Workforce">
+  <iframe
+    width="100%"
+    height="400"
+    src="https://www.youtube.com/embed/PLACEHOLDER_CALENDAR_VIDEO"
+    title="Agent Calendar and Scheduling System"
+    frameBorder="0"
+    allowFullScreen
+  ></iframe>
+</Frame>
+
+## Core Scheduling Concepts
+
+<CardGroup cols={3}>
+<Card title="One-Time Tasks" icon="calendar-day" color="#9333ea">
+
+Schedule workflows to run once at a specific date and time
+
+</Card>
+
+<Card title="Recurring Automation" icon="repeat" color="#3b82f6">
+
+Set up daily, weekly, or monthly recurring schedules
+
+</Card>
+
+<Card title="Continuous Execution" icon="infinity" color="#10b981">
+
+Run workflows continuously for specified durations
+
+</Card>
+
+<Card title="Event-Based Triggers" icon="bolt" color="#f59e0b">
+
+Launch workflows based on events or conditions
+
+</Card>
+
+<Card title="Agent Coordination" icon="users-gear" color="#ec4899">
+
+Orchestrate multiple agents working in sequence
+
+</Card>
+
+<Card title="Smart Scheduling" icon="brain" color="#8b5cf6">
+
+AI-optimized scheduling based on workload patterns
+
+</Card>
+</CardGroup>
+
+## 🗓️ Calendar Views
+
+### Visual Schedule Management
+
+<Tabs>
+<Tab title="Month View">
+
+**See the Big Picture**
+
+The monthly calendar displays all scheduled workflows as color-coded blocks:
+- **Blue**: Regular automated tasks
+- **Green**: Successfully completed
+- **Yellow**: Currently running
+- **Red**: Failed or requires attention
+- **Purple**: High-priority workflows
+
+**Features:**
+- Drag-and-drop rescheduling
+- Click to view workflow details
+- Bulk selection for mass updates
+- Export to standard calendar formats
+
+</Tab>
+<Tab title="Week View">
+
+**Detailed Weekly Planning**
+
+Perfect for managing intensive automation periods:
+- Hour-by-hour workflow visibility
+- Resource allocation overview
+- Conflict detection and resolution
+- Time zone management
+- Weekend automation planning
+
+**Optimization Tools:**
+- Load balancing suggestions
+- Peak time identification
+- Resource utilization metrics
+
+</Tab>
+<Tab title="Day View">
+
+**Granular Daily Control**
+
+Minute-by-minute execution tracking:
+- Real-time status updates
+- Execution timeline
+- Performance metrics
+- Error logs and debugging
+- Manual intervention points
+
+**Live Features:**
+- Stream agent screens
+- Pause/resume controls
+- Priority adjustments
+- Quick rescheduling
+
+</Tab>
+<Tab title="List View">
+
+**Data-Driven Management**
+
+Comprehensive schedule table with:
+- Workflow name and description
+- Next run time
+- Frequency/recurrence pattern
+- Success rate
+- Average duration
+- Resource consumption
+- Quick action buttons
+
+**Filtering & Sorting:**
+- By agent
+- By status
+- By department
+- By priority
+- By success rate
+
+</Tab>
+</Tabs>
+
+## ⚙️ Creating Schedules
+
+### Schedule Configuration Interface
+
+<Steps>
+<Step title="Select Target">
+
+Choose what to schedule:
+- **Individual Workflow**: Single task automation
+- **Workflow Chain**: Multi-step process
+- **Agent Shift**: Entire agent working period
+- **Department Batch**: Multiple agents coordinated
+
+</Step>
+
+<Step title="Define Timing">
+
+Set when it should run:
+
+<CardGroup cols={2}>
+<Card title="One-Time Execution" icon="clock">
+
+- Specific date and time
+- Time zone selection
+- Execution window tolerance
+- Deadline constraints
+
+</Card>
+
+<Card title="Recurring Pattern" icon="sync">
+
+- Daily/Weekly/Monthly
+- Custom intervals (every X hours/days)
+- Business days only option
+- Holiday calendar integration
+
+</Card>
+</CardGroup>
+
+</Step>
+
+<Step title="Configure Duration">
+
+Specify execution parameters:
+- **Estimated Duration**: How long the workflow typically takes
+- **Maximum Runtime**: Force stop after X minutes/hours
+- **Continuation Rules**: What happens if not completed
+- **Resource Allocation**: CPU/Memory limits
+
+</Step>
+
+<Step title="Set Variables">
+
+Pass dynamic data to workflows:
+```json
+{
+  "date_range": "last_7_days",
+  "target_metrics": ["sales", "leads", "conversions"],
+  "output_format": "pdf",
+  "recipients": ["team@company.com"],
+  "priority": "high"
+}
+```
+
+</Step>
+
+<Step title="Enable & Deploy">
+
+Activate your schedule:
+- Review configuration
+- Check for conflicts
+- Enable/disable toggle
+- Immediate or scheduled start
+- Notification preferences
+
+</Step>
+</Steps>
+
+## 🎯 Advanced Scheduling Features
+
+### Intelligent Automation Orchestration
+
+<AccordionGroup>
+<Accordion title="Dependency Management" icon="diagram-project">
+
+**Chain Workflows with Dependencies**
+
+Create complex automation sequences where workflows depend on others:
+- **Sequential Execution**: Workflow B starts only after A completes
+- **Parallel Processing**: Multiple workflows run simultaneously
+- **Conditional Branching**: Different paths based on outcomes
+- **Error Cascading**: Downstream handling of upstream failures
+
+**Example Chain:**
+1. Daily Data Collection (6 AM)
+2. → Data Processing (After #1 completes)
+3. → Report Generation (After #2 completes)
+4. → Email Distribution (After #3 completes)
+
+</Accordion>
+
+<Accordion title="Resource Optimization" icon="gauge">
+
+**Smart Resource Allocation**
+
+The scheduler intelligently manages system resources:
+- **Load Balancing**: Distributes workflows across available agents
+- **Peak Avoidance**: Schedules heavy tasks during off-peak hours
+- **Priority Queuing**: High-priority tasks get resources first
+- **Elastic Scaling**: Spins up cloud agents during busy periods
+
+**Optimization Metrics:**
+- CPU utilization targets
+- Memory allocation limits
+- Network bandwidth management
+- Cost optimization rules
+
+</Accordion>
+
+<Accordion title="Conflict Resolution" icon="shield-exclamation">
+
+**Automatic Conflict Detection**
+
+Prevents scheduling issues before they happen:
+- **Overlap Detection**: Warns when workflows conflict
+- **Resource Conflicts**: Identifies resource bottlenecks
+- **Data Lock Issues**: Prevents simultaneous file access
+- **API Rate Limits**: Manages third-party service limits
+
+**Resolution Strategies:**
+- Automatic rescheduling
+- Priority-based resolution
+- Manual override options
+- Conflict notifications
+
+</Accordion>
+
+<Accordion title="Time Zone Intelligence" icon="globe">
+
+**Global Schedule Coordination**
+
+Manage automations across time zones:
+- **Multi-timezone Support**: Schedule in any timezone
+- **DST Handling**: Automatic daylight saving adjustments
+- **Global Team Coordination**: Sync with international offices
+- **Follow-the-sun Operations**: 24/7 coverage across regions
+
+**Smart Features:**
+- Local business hours detection
+- Holiday calendar integration
+- Regional compliance windows
+- Cross-timezone reporting
+
+</Accordion>
+</AccordionGroup>
+
+## 📊 Schedule Analytics
+
+### Performance Metrics Dashboard
+
+<Info>
+
+**Data-Driven Optimization**: Track every aspect of your scheduled automations to identify bottlenecks, optimize timing, and maximize efficiency.
+
+</Info>
+
+<Tabs>
+<Tab title="Execution Metrics">
+
+**Track Performance Over Time**
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+| **Success Rate** | Percentage of successful completions | &gt;95% |
+| **Average Duration** | Mean execution time | Baseline -10% |
+| **On-Time Rate** | Schedules starting within window | &gt;99% |
+| **Error Frequency** | Failures per 100 executions | &lt;2 |
+| **Resource Efficiency** | CPU/Memory utilization | 60-80% |
+
+</Tab>
+<Tab title="Optimization Insights">
+
+**AI-Powered Recommendations**
+
+The system analyzes patterns and suggests:
+- **Optimal Execution Times**: When workflows run fastest
+- **Resource Allocation**: Better agent distribution
+- **Failure Patterns**: Common failure causes and fixes
+- **Bottleneck Identification**: Workflow steps that slow execution
+- **Cost Optimization**: Cheaper execution windows
+
+</Tab>
+<Tab title="Historical Analysis">
+
+**Learn from Past Performance**
+
+- **Trend Analysis**: Performance over weeks/months
+- **Seasonal Patterns**: Busy periods and slow times
+- **Failure Correlation**: What causes failures
+- **Duration Variations**: Why some runs take longer
+- **Success Factors**: What makes workflows succeed
+
+</Tab>
+</Tabs>
+
+## 🔄 Execution History
+
+### Complete Audit Trail
+
+Every scheduled execution is meticulously logged:
+
+<CardGroup cols={2}>
+<Card title="Execution Details" icon="file-lines">
+
+- Start/end timestamps
+- Duration
+- Status (success/failure/partial)
+- Error messages
+- Resource consumption
+- Variables used
+
+</Card>
+
+<Card title="Visual Playback" icon="video">
+
+- Screen recording of execution
+- Step-by-step action log
+- Decision points
+- Error screenshots
+- Performance timeline
+
+</Card>
+</CardGroup>
+
+### History Interface Features
+
+- **Search & Filter**: Find specific executions quickly
+- **Bulk Operations**: Retry, cancel, or reschedule multiple items
+- **Export Options**: CSV, JSON, or PDF reports
+- **Comparison Tools**: Compare different execution runs
+- **Debugging Mode**: Step through failed executions
+
+## 🚀 Real-World Scheduling Scenarios
+
+### Example 1: E-Commerce Operations
+
+<Tabs>
+<Tab title="The Schedule">
+
+**Daily Automation Calendar:**
+
+```
+6:00 AM - Inventory sync across all platforms
+7:00 AM - Competitor price monitoring
+8:00 AM - Update pricing based on competition
+9:00 AM - Process overnight orders
+10:00 AM - Customer service email responses
+12:00 PM - Social media content posting
+2:00 PM - Inventory reorder check
+4:00 PM - Sales report generation
+6:00 PM - Next-day promotion setup
+11:00 PM - Daily backup and cleanup
+```
+
+</Tab>
+<Tab title="The Results">
+
+- **Time Saved**: 8 hours daily
+- **Error Reduction**: 95% fewer mistakes
+- **Response Time**: Customer queries answered in minutes
+- **Revenue Impact**: 15% increase from optimized pricing
+
+</Tab>
+</Tabs>
+
+### Example 2: Marketing Agency
+
+<Tabs>
+<Tab title="The Schedule">
+
+**Client Campaign Automation:**
+
+**Weekly:**
+- Monday 9 AM: Collect analytics from all platforms
+- Tuesday 10 AM: Generate client reports
+- Wednesday 2 PM: Social media scheduling
+- Thursday 11 AM: Email campaign deployment
+- Friday 3 PM: Weekly performance summary
+
+**Daily:**
+- 8 AM & 4 PM: Social media engagement
+- 12 PM: Content calendar updates
+- 5 PM: Lead capture and CRM updates
+
+</Tab>
+<Tab title="The Results">
+
+- **Clients Managed**: 50+ with 3 employees
+- **Consistency**: Never miss a posting schedule
+- **Scalability**: Add clients without adding staff
+- **Client Satisfaction**: 98% retention rate
+
+</Tab>
+</Tabs>
+
+## 🎮 Schedule Management Best Practices
+
+<AccordionGroup>
+<Accordion title="Start with Simple Schedules" icon="seedling">
+
+Begin with basic daily/weekly schedules before complex orchestrations:
+1. Single workflow, daily execution
+2. Add time-based conditions
+3. Introduce dependencies
+4. Scale to multiple agents
+5. Implement full orchestration
+
+</Accordion>
+
+<Accordion title="Buffer Time Between Workflows" icon="clock">
+
+Always include buffer time:
+- 5-10 minutes between dependent workflows
+- 15-30 minutes for resource-intensive tasks
+- Account for API rate limits
+- Consider peak usage times
+- Plan for failure recovery
+
+</Accordion>
+
+<Accordion title="Monitor and Optimize" icon="chart-line">
+
+Continuously improve your schedules:
+- Review weekly performance metrics
+- Adjust timing based on success rates
+- Optimize resource allocation
+- Update duration estimates
+- Refine dependency chains
+
+</Accordion>
+
+<Accordion title="Document Your Schedules" icon="book">
+
+Maintain clear documentation:
+- Purpose of each scheduled workflow
+- Dependencies and relationships
+- Expected outcomes
+- Troubleshooting guides
+- Contact persons for issues
+
+</Accordion>
+</AccordionGroup>
+
+## 🔔 Notifications & Alerts
+
+### Stay Informed About Your Automations
+
+<CardGroup cols={2}>
+<Card title="Success Notifications" icon="check-circle" color="#10b981">
+
+- Completion confirmations
+- Performance summaries
+- Record-breaking executions
+- Milestone achievements
+
+</Card>
+
+<Card title="Failure Alerts" icon="triangle-exclamation" color="#ef4444">
+
+- Immediate error notifications
+- Failure reasons
+- Suggested fixes
+- Escalation to team members
+
+</Card>
+
+<Card title="Schedule Reminders" icon="bell" color="#3b82f6">
+
+- Upcoming schedule changes
+- Maintenance windows
+- Resource availability
+- Schedule conflicts
+
+</Card>
+
+<Card title="Performance Insights" icon="chart-line" color="#8b5cf6">
+
+- Weekly performance reports
+- Optimization suggestions
+- Cost saving opportunities
+- Efficiency improvements
+
+</Card>
+</CardGroup>
+
+## 🌟 The Future of Work Scheduling
+
+<Info>
+
+**Revolutionary Reality**: While human employees work 40 hours a week, your AI agents work 168 hours. The Agent Calendar system ensures every one of those hours is optimized, productive, and profitable.
+
+</Info>
+
+### Coming Soon
+
+- **AI Schedule Optimization**: ML-powered scheduling that learns and improves
+- **Cross-Platform Sync**: Integrate with Google Calendar, Outlook, etc.
+- **Mobile Management**: Manage schedules from your phone
+- **Voice Commands**: "Hey Actionist, reschedule the report to 3 PM"
+- **Predictive Scheduling**: AI suggests optimal schedules before you ask
+
+## Get Started with Scheduling
+
+<Steps>
+<Step title="Access Calendar">
+
+Open the Agent Calendar from your Actionist dashboard
+
+</Step>
+
+<Step title="Create First Schedule">
+
+Start with a simple daily workflow
+
+</Step>
+
+<Step title="Monitor Performance">
+
+Watch your first automated execution
+
+</Step>
+
+<Step title="Optimize Timing">
+
+Adjust based on performance metrics
+
+</Step>
+
+<Step title="Scale Operations">
+
+Add more workflows and agents as needed
+
+</Step>
+</Steps>
+
+<CardGroup cols={3}>
+<Card title="View Demo" icon="play" href="/actionist/app-demos-and-examples" color="#9333ea">
+
+See scheduling in action
+
+</Card>
+
+<Card title="Best Practices" icon="book" href="/actionist/agents-and-workflows" color="#3b82f6">
+
+Learn workflow optimization
+
+</Card>
+
+<Card title="Get Support" icon="headset" href="https://discord.gg/actionmodel" color="#10b981">
+
+Join the community
+
+</Card>
+</CardGroup>
+
+---
+
+**Agent Calendar & Schedules: Where time becomes automated, schedules become scalable, and your digital workforce never sleeps.**
+
+**24/7 productivity. Zero overtime. Infinite scale.**
