@@ -122,5 +122,14 @@
       "instagram": "https://www.instagram.com/getactionmodel",
       "telegram": "https://t.me/actionmodel"
     }
-  }
+  },
+  "modeToggle": {
+    "default": "dark"
+  },
+  "analytics": {
+    "posthog": {
+      "apiKey": ""
+    }
+  },
+  "hideMintlifyBranding": true
 }
