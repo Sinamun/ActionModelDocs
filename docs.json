@@ -11,76 +11,57 @@
   "navigation": {
     "groups": [
       {
-        "group": "Introduction to Action Model",
+        "group": "The Action Model",
         "pages": [
-          "index",
-          "introduction-to-actionmodel/TheCommunityOwnedAIFuture",
-          "introduction-to-actionmodel/TheProblemwithAPIs",
-          "introduction-to-actionmodel/GraphicalInterfacesareKing",
-          "introduction-to-actionmodel/LargeActionModelsAretheFuture"
+          "the-action-model/what-is-the-action-model",
+          "the-action-model/1-billion-jobs-will-be-displaced",
+          "the-action-model/big-tech-owns-99-percent-of-ai-future",
+          "the-action-model/action-model-is-the-uprising",
+          "the-action-model/how-to-be-part-of-the-ai-future"
         ]
       },
       {
-        "group": "Products & Technology",
+        "group": "Actionist.ai",
         "pages": [
-          "productstechnology/DesktopApp",
-          "productstechnology/BrowserExtension",
-          "productstechnology/VirtualPrivateComputer",
-          "productstechnology/TelegramBot",
-          "productstechnology/API"
+          "actionist/actionist-overview",
+          "actionist/app-demos-and-examples",
+          "actionist/agents-and-workflows",
+          "actionist/cloud-vpc",
+          "actionist/actionist-browser-extension",
+          "actionist/agent-calendar-schedules",
+          "actionist/agent-memory",
+          "actionist/agent-history",
+          "actionist/agent-tool-usage",
+          "actionist/triggers"
         ]
       },
       {
-        "group": "Training the LAM",
+        "group": "Marketplace",
         "pages": [
-          "trainingthelam/ActionTree",
-          "trainingthelam/ExtensionDesktopTraining",
-          "trainingthelam/BackgroundWorkflowTraining",
-          "trainingthelam/TheActionTreePublic",
-          "trainingthelam/TheActionTreePrivate",
-          "trainingthelam/SecurityPrivacy"
+          "marketplace/marketplace-overview",
+          "marketplace/marketplace-bounties",
+          "marketplace/revenue-generation",
+          "marketplace/marketplace-reputation-and-featured-workflows",
+          "marketplace/agent-marketplace"
         ]
       },
       {
-        "group": "Reward Mechanisms",
+        "group": "The Large Action Model (LAM)",
         "pages": [
-          "rewardmechanisms/BackgroundTraining1",
-          "rewardmechanisms/Bounties",
-          "trainingthelam/BackgroundWorkflowTraining",
-          "rewardmechanisms/OtherRewardMechanisms"
+          "the-large-action-model-lam/training-the-large-action-model",
+          "the-large-action-model-lam/browser-extension-overview",
+          "the-large-action-model-lam/security-and-privacy"
         ]
       },
       {
-        "group": "Dashboard",
+        "group": "Tokenomics",
         "pages": [
-          "dashboard/Referrals",
-          "dashboard/Bounties",
-          "dashboard/CustomAgent",
-          "dashboard/BackgroundTraining2",
-          "dashboard/WebsitesBlockList",
-          "dashboard/VPCAgent"
-        ]
-      },
-      {
-        "group": "Tokenomics & $LAM Token Utility",
-        "pages": [
-          "tokenomics/TokenOverview",
-          "tokenomics/Training",
-          "tokenomics/CostPerAction",
-          "tokenomics/Marketplace",
-          "tokenomics/DeflationaryModel",
-          "tokenomics/TokenDistribution"
-        ]
-      },
-      {
-        "group": "Partnerships",
-        "pages": [
-          "partnerships/Data",
-          "partnerships/CoreAPI",
-          "partnerships/VPCAPI",
-          "partnerships/ProcessingDePIN",
-          "partnerships/BountyProgrammes",
-          "partnerships/Resellers"
+          "tokenomics/token-utility",
+          "tokenomics/training-to-earn-tokens",
+          "tokenomics/marketplace-distributions",
+          "tokenomics/training-and-marketplace-bounties",
+          "tokenomics/referrals-and-affiliates",
+          "tokenomics/token-economics"
         ]
       }
     ],

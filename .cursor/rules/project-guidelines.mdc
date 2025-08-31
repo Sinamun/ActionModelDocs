@@ -301,6 +301,8 @@ Complete user object with all associated data.
 
 #### Frames for images
 
+** NOTE: When the user is providing you with content to create, if there is an image that they are referring to, please use a sample image, and the user will upload the image manually and then change the URL link.
+
 Wrap all images in frames:
 
 <Frame>
