@@ -3,511 +3,704 @@ title: "Agents and Workflows"
 description: "Master the art of creating AI employees and automations. Build agents with specific roles and workflows that execute complex tasks in human language, no coding required."
 ---
 
-## The Evolution Beyond Traditional Automation
+<Note>
 
-Forget everything you know about automation tools. Zapier, Make.com, n8n—they're all built for developers, excluding 99% of the population with their technical complexity.
+**No Code. No APIs. Just Human Language.** While Zapier, n8n, and Make.com built tools for developers, we built Actionist for humans. If you can describe a task to a colleague, you can create a workflow.
 
-Actionist workflows are different. They're written in **human language**. If you can describe a task to a colleague, you can create a workflow.
+</Note>
 
-<Warning>
+## Quick Start Video
 
-**The Paradigm Shift**: Traditional automation tools connect APIs. Actionist controls interfaces. This means it can automate literally anything you can do on a computer—no integration required.
+<Frame caption="Watch: Create Your First Agent and Workflow in 5 Minutes">
+  <iframe
+    width="100%"
+    height="400"
+    src="https://www.youtube.com/embed/PLACEHOLDER_VIDEO_ID"
+    title="Create Your First Agent and Workflow"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  ></iframe>
+</Frame>
 
-</Warning>
+## What Are Agents?
 
-## Understanding Agents
+<Info>
 
-### Your Digital Workforce
+**Think of Agents as Digital Employees**: Each agent is a specialized AI team member with a specific role, personality, and set of skills. They work 24/7, never need breaks, and get smarter with every task they complete.
 
-Agents are specialized AI employees, each with a specific role and personality. Think of them as digital team members who:
+</Info>
 
-- **Have defined roles**: Marketing Agent, Sales Agent, HR Agent
-- **Learn your style**: Adapt to your preferences and workflows
-- **Work autonomously**: Execute tasks without constant supervision
-- **Collaborate**: Pass work between each other via Chains
+<CardGroup cols={2}>
+<Card title="Marketing Manager Agent" icon="bullhorn" color="#9333ea">
 
-<CardGroup cols={3}>
-<Card title="Marketing Agent" icon="megaphone">
+**Responsibilities:**
+- Social media management
+- Content creation & scheduling
+- Engagement tracking
+- Campaign optimization
+- Competitor analysis
 
-Manages social media, creates content, engages audiences, tracks analytics
+**Example Personality:** Professional, creative, trend-aware
 
 </Card>
 
-<Card title="Sales Agent" icon="handshake">
+<Card title="Sales Executive Agent" icon="chart-line" color="#3b82f6">
 
-Qualifies leads, sends follow-ups, updates CRM, schedules meetings
+**Responsibilities:**
+- Lead qualification
+- CRM management
+- Follow-up sequences
+- Meeting scheduling
+- Pipeline reporting
+
+**Example Personality:** Persistent, friendly, results-driven
 
 </Card>
 
-<Card title="HR Agent" icon="users">
+<Card title="HR Specialist Agent" icon="users-gear" color="#10b981">
 
-Screens resumes, schedules interviews, onboards employees, manages documentation
+**Responsibilities:**
+- Resume screening
+- Interview coordination
+- Onboarding automation
+- Document management
+- Compliance tracking
+
+**Example Personality:** Detail-oriented, empathetic, organized
+
+</Card>
+
+<Card title="Operations Manager Agent" icon="gears" color="#f59e0b">
+
+**Responsibilities:**
+- Process optimization
+- Data entry & migration
+- Report generation
+- Inventory management
+- Quality assurance
+
+**Example Personality:** Efficient, analytical, systematic
 
 </Card>
 </CardGroup>
 
-### Creating Your First Agent
+## What Are Workflows?
 
-<Steps>
-<Step title="Define the Role">
-
-Choose a department or function (Marketing, Sales, Operations, etc.)
-
-</Step>
-
-<Step title="Set Personality">
-
-Define how the agent should behave and communicate
-
-</Step>
-
-<Step title="Assign Workflows">
-
-Attach specific tasks the agent should be able to perform
-
-</Step>
-
-<Step title="Configure Memory">
-
-Add context about your business, preferences, and platforms
-
-</Step>
-</Steps>
-
-## Workflows: The Building Blocks
-
-### Anatomy of a Workflow
-
-Every workflow consists of core components that work together to automate any task:
+Workflows are the **individual tasks** that agents perform. Think of them as detailed instructions written in plain English that tell your agent exactly what to do.
 
 <Tabs>
-<Tab title="Variables">
+<Tab title="🎯 Simple Example">
 
-**Dynamic inputs that make workflows flexible**
+**Workflow:** Daily LinkedIn Engagement
 
-Variables are placeholders for information that changes each time a workflow runs:
-- User-provided inputs (e.g., "email_subject", "target_audience")
-- Data gathered from screens (e.g., "product_price", "customer_name")
-- Values passed from other workflows in a chain
-- Environmental variables (e.g., "current_date", "user_timezone")
-
-Example:
 ```
-video_prompt = "Create a 30-second video about {topic}"
-email_list = "{csv_file_path}"
-budget_limit = "{max_spend}"
+1. Open LinkedIn
+2. Go to home feed
+3. Find posts about "AI" or "automation"
+4. Leave thoughtful comment on each post
+5. Connect with other commenters
+6. Log engagement in spreadsheet
 ```
 
-</Tab>
-<Tab title="Workflow Steps">
-
-**Human-readable instructions for task execution**
-
-Steps are written in plain English, describing exactly what the agent should do:
-
-1. Open Chrome browser
-2. Navigate to LinkedIn.com
-3. Search for "{job_title}" in "{location}"
-4. Filter results by "posted in last 24 hours"
-5. For each job posting:
-   - Extract company name and job requirements
-   - Save to spreadsheet
-6. Send summary email with top 10 matches
-
-No code. No technical jargon. Just clear instructions.
+Time to create: **2 minutes**
+Time saved daily: **2 hours**
 
 </Tab>
-<Tab title="Rules">
+<Tab title="🚀 Advanced Example">
 
-**Constraints and conditions that guide execution**
+**Workflow:** Complete Sales Pipeline
 
-Rules ensure the workflow behaves correctly:
-- "Only process emails from verified senders"
-- "Stop if budget exceeds $1000"
-- "Skip weekends and holidays"
-- "Use formal tone for enterprise clients"
-- "Prioritize urgent tickets first"
+```
+1. Import leads from CSV
+2. FOR EACH lead:
+   - Research company on LinkedIn
+   - Find decision maker's email
+   - Generate personalized email
+   - IF response received:
+     - Schedule meeting
+     - Send calendar invite
+   - ELSE:
+     - Add to follow-up sequence
+3. Update CRM with all activities
+4. Generate daily report
+```
 
-Rules can include:
-- IF/THEN conditions
-- Loops and iterations
-- Error handling
-- Success criteria
-
-</Tab>
-<Tab title="Human Confirmation">
-
-**Checkpoints requiring human oversight**
-
-Critical decisions can require human approval:
-- "Confirm before sending campaign to 10,000+ contacts"
-- "Review generated content before publishing"
-- "Approve purchases over $500"
-- "Verify candidate selection before sending offer"
-
-The agent will:
-1. Pause execution
-2. Send notification (chat, Telegram, WhatsApp)
-3. Wait for human response
-4. Continue based on input
-
-**Autopilot Mode**: Can be enabled to bypass all confirmations (use with caution!)
+Time to create: **10 minutes**
+Time saved weekly: **20 hours**
 
 </Tab>
 </Tabs>
 
-### Success Conditions
-
-Every workflow needs to know when it's done:
-- **Goal Achievement**: "All emails sent successfully"
-- **Time Limit**: "Stop after 2 hours"
-- **Quantity**: "Process 100 records"
-- **Condition Met**: "Found matching candidate"
-
-## Creating Workflows
-
-### Method 1: Screen Recording (Simplest)
-
-The easiest way to create a workflow—just show Actionist what to do:
+## 🎬 Creating Your First Agent
 
 <Steps>
-<Step title="Start Recording">
+<Step title="Choose Your Agent Type">
 
-Click the record button in Actionist
+Select from pre-configured templates or create custom:
 
-</Step>
+<CardGroup cols={3}>
+<Card title="Use Template" icon="clone">
 
-<Step title="Perform Your Task">
-
-Do the task normally on your computer while Actionist watches
-
-</Step>
-
-<Step title="Add Annotations">
-
-While recording, use the annotation tools:
-- **Variable**: Click to mark dynamic fields that change
-- **Rule**: Highlight important conditions or decisions
-- **Ask Human**: Mark points needing confirmation
-
-</Step>
-
-<Step title="Stop and Save">
-
-Actionist automatically generates a complete workflow from your recording
-
-</Step>
-</Steps>
-
-<Info>
-
-**Magic Translation**: Actionist converts your recorded actions into human-readable steps, making it easy to understand and modify later.
-
-</Info>
-
-### Method 2: Visual Workflow Editor
-
-For more complex automations, use the visual editor:
-
-<CardGroup cols={2}>
-<Card title="Node-Based Design" icon="diagram-project">
-
-Drag and drop nodes to build workflows visually
+Quick start with proven agent configurations
 
 </Card>
+<Card title="Custom Build" icon="hammer">
 
-<Card title="Advanced Logic" icon="code-branch">
+Design an agent for your specific needs
 
-Add branches, loops, conditions, and error handling
+</Card>
+<Card title="Import from Marketplace" icon="download">
+
+Get community-created agents instantly
 
 </Card>
 </CardGroup>
 
-**Available Nodes:**
-- **Action**: Click, type, navigate
-- **Decision**: IF/THEN branches
-- **Loop**: Repeat actions
-- **Wait**: Pause for conditions
-- **Merge**: Combine branches
-- **Error**: Handle failures
-- **Human**: Request input
-- **Chain**: Link to other workflows
+</Step>
 
-### Method 3: Import from Marketplace
+<Step title="Configure Personality & Role">
 
-Why reinvent the wheel? Import proven workflows:
+<Frame caption="Agent Configuration Interface">
+  <iframe
+    width="100%"
+    height="300"
+    src="https://www.youtube.com/embed/PLACEHOLDER_AGENT_CONFIG"
+    title="Configure Agent Personality"
+    frameBorder="0"
+    allowFullScreen
+  ></iframe>
+</Frame>
 
-1. Browse the [Marketplace](/marketplace/marketplace-overview)
-2. Find workflows for your platform/use case
-3. Click "Add to My Workflows"
-4. Customize variables for your needs
-5. Start using immediately
-
-<Tip>
-
-**Earn from Sharing**: When you create a great workflow, publish it to the marketplace. You earn tokens every time someone uses it!
-
-</Tip>
-
-## Advanced Workflow Features
-
-### Loops and Iterations
-
-Automate repetitive tasks with intelligent loops:
-
-```
-FOR EACH item in spreadsheet:
-  1. Copy item details
-  2. Search for item on supplier website
-  3. Extract price and availability
-  4. Update spreadsheet with information
-  5. Move to next item
-END LOOP
-```
-
-### Conditional Logic
-
-Make smart decisions during execution:
-
-```
-IF email contains "urgent":
-  - Flag as high priority
-  - Send immediate notification
-ELSE IF email from VIP client:
-  - Assign to senior team
-  - Send acknowledgment within 1 hour
-ELSE:
-  - Add to regular queue
-  - Process within 24 hours
-```
-
-### Error Handling
-
-Gracefully handle unexpected situations:
-
-```
-TRY:
-  - Complete purchase on website
-IF ERROR:
-  - Take screenshot of error
-  - Try alternative payment method
-  - If still fails, notify human
-  - Log error for analysis
-```
-
-## Chains: Orchestrating Complex Automation
-
-### Linking Workflows Together
-
-Chains connect multiple workflows to automate entire business processes:
-
-<Steps>
-<Step title="Workflow 1: Lead Generation">
-
-- Scrape LinkedIn for prospects
-- Output: CSV of qualified leads
+Define how your agent behaves:
+- **Department**: Marketing, Sales, HR, Operations, etc.
+- **Communication Style**: Formal, casual, friendly, professional
+- **Decision Making**: Conservative, balanced, aggressive
+- **Work Hours**: 24/7 or specific schedule
 
 </Step>
 
-<Step title="Workflow 2: Enrichment">
+<Step title="Assign Initial Workflows">
 
-- Takes CSV from Workflow 1
-- Finds email addresses and company info
-- Output: Enriched lead database
-
-</Step>
-
-<Step title="Workflow 3: Outreach">
-
-- Takes enriched database from Workflow 2
-- Sends personalized email sequences
-- Output: Campaign report
+Start with 2-3 core workflows:
+- Choose from marketplace
+- Record your own
+- Build with visual editor
 
 </Step>
 
-<Step title="Workflow 4: Follow-up">
+<Step title="Add Context with Memories">
 
-- Monitors responses from Workflow 3
-- Schedules meetings for interested prospects
-- Updates CRM with all activities
+Provide essential knowledge:
+- Login credentials (encrypted)
+- Platform preferences
+- Company information
+- Brand guidelines
 
 </Step>
 </Steps>
 
-### Variable Mapping
+## 🛠️ Building Workflows: Three Methods
 
-Chains pass data between workflows seamlessly:
-- Workflow A outputs `customer_list`
-- Workflow B receives it as `import_data`
-- No manual intervention required
+### Method 1: Screen Recording (Easiest)
 
-## Memory Integration
+<Frame caption="Demo: Recording a Workflow">
+  <iframe
+    width="100%"
+    height="400"
+    src="https://www.youtube.com/embed/PLACEHOLDER_RECORDING"
+    title="Screen Recording Method"
+    frameBorder="0"
+    allowFullScreen
+  ></iframe>
+</Frame>
 
-### How Memories Enhance Workflows
+<Steps>
+<Step title="Hit Record">
 
-Memories provide persistent context that makes workflows smarter:
+Click the record button and Actionist starts watching
 
-- **Platform Knowledge**: "In Gmail, the compose button is in the top left"
-- **Preferences**: "Always use British spelling for UK clients"
-- **Relationships**: "Project Alpha data is stored in Drive folder X"
-- **Business Context**: "Our fiscal year ends in March"
+</Step>
+<Step title="Do Your Task">
 
-[Learn more about Memory →](/actionist/agent-memory)
+Perform the task normally while Actionist learns
 
-## History and Learning
+</Step>
+<Step title="Add Smart Annotations">
 
-### Continuous Improvement
+<CardGroup cols={3}>
+<Card title="Variable" icon="dollar-sign" color="#9333ea">
 
-Every workflow execution is logged, creating a feedback loop:
+Mark fields that change each time
 
-1. **Execution Tracking**: See what worked and what didn't
-2. **Pattern Recognition**: AI learns from repeated tasks
-3. **Optimization**: Workflows become more efficient over time
-4. **Context Building**: Past executions inform future decisions
+</Card>
+<Card title="Rule" icon="scale-balanced" color="#3b82f6">
 
-[Explore History features →](/actionist/agent-history)
+Highlight decision points
 
-## Calendar and Scheduling
+</Card>
+<Card title="Ask Human" icon="hand" color="#10b981">
 
-### Automation on Autopilot
+Set confirmation checkpoints
 
-Schedule workflows to run automatically:
-- **One-time**: Run once at a specific date/time
-- **Recurring**: Daily, weekly, monthly patterns
-- **Triggered**: Based on events or conditions
-- **Continuous**: Run for X hours per day
+</Card>
+</CardGroup>
 
-[Set up Schedules →](/actionist/agent-calendar-schedules)
+</Step>
+<Step title="Auto-Generate Workflow">
 
-## Best Practices
+Actionist converts your actions into readable steps
 
-### Workflow Design Principles
+</Step>
+</Steps>
+
+### Method 2: Visual Workflow Builder
+
+<Frame caption="Demo: Visual Workflow Editor">
+  <iframe
+    width="100%"
+    height="400"
+    src="https://www.youtube.com/embed/PLACEHOLDER_VISUAL_EDITOR"
+    title="Visual Workflow Builder"
+    frameBorder="0"
+    allowFullScreen
+  ></iframe>
+</Frame>
 
 <AccordionGroup>
-<Accordion title="Start Simple">
+<Accordion title="Available Node Types" icon="shapes">
 
-Begin with basic workflows and gradually add complexity:
-1. Record a simple 3-5 step task
-2. Test thoroughly
-3. Add variables for flexibility
-4. Introduce conditions and loops
-5. Chain with other workflows
+Drag and drop these nodes to build complex logic:
 
-</Accordion>
-
-<Accordion title="Use Clear Naming">
-
-Name workflows and variables descriptively:
-- ✅ "LinkedIn_Lead_Generation_Tech_Companies"
-- ❌ "Workflow_1"
-- ✅ "customer_email_address"
-- ❌ "var1"
+| Node Type | Purpose | Example Use |
+|-----------|---------|-------------|
+| **Action** | Perform GUI actions | Click button, type text |
+| **Decision** | Branching logic | IF price > $100 THEN... |
+| **Loop** | Repeat actions | Process all items in list |
+| **Wait** | Pause execution | Wait for page load |
+| **Chain** | Link workflows | Start another workflow |
+| **Human** | Get approval | Confirm before sending |
+| **Error** | Handle failures | Retry or alert on error |
 
 </Accordion>
+<Accordion title="Connecting Nodes" icon="link">
 
-<Accordion title="Add Human Checkpoints">
-
-For critical actions, always add confirmation:
-- Financial transactions
-- Mass communications
-- Data deletion
-- Contract agreements
+- Draw connections between nodes
+- Set data flow direction
+- Configure pass-through variables
+- Add conditional paths
 
 </Accordion>
+<Accordion title="Testing Your Flow" icon="flask">
 
-<Accordion title="Test Thoroughly">
-
-Before scheduling or publishing:
-1. Run workflow manually first
-2. Test with different inputs
-3. Verify error handling works
-4. Check edge cases
-
-</Accordion>
-
-<Accordion title="Document Your Logic">
-
-Add descriptions explaining:
-- What the workflow does
-- Required prerequisites
-- Expected outputs
-- Potential issues
+- Run in test mode
+- Step through node by node
+- Inspect variables at each step
+- Fix issues before deploying
 
 </Accordion>
 </AccordionGroup>
 
-## Real-World Example
+### Method 3: Import from Marketplace
 
-### Complete Workflow: Content Publishing Pipeline
-
-```yaml
-Workflow: "Multi-Platform Content Publisher"
-Description: "Creates and publishes content across all channels"
-
-Variables:
-  - content_topic: "AI and automation"
-  - target_platforms: ["LinkedIn", "Twitter", "Blog"]
-  - tone: "Professional but approachable"
-
-Steps:
-  1. Research trending topics on Reddit and Twitter
-  2. Generate article outline using AI
-  3. Create full article (800-1000 words)
-  4. Generate social media variations:
-     - LinkedIn: Professional tone, 1300 characters
-     - Twitter: Casual tone, 280 characters
-     - Instagram: Visual focus with hashtags
-  5. Create featured image using Canva
-  6. Publish to blog with SEO optimization
-  7. Schedule social posts for optimal times
-  8. Set up engagement monitoring
-
-Rules:
-  - Only publish during business hours
-  - Include 3-5 relevant hashtags
-  - Always link back to main blog
-
-Human Confirmation:
-  - Review article before publishing
-  - Approve social media messages
-
-Success Condition:
-  - All platforms published successfully
-  - Monitoring dashboard updated
-```
-
-## The Revolution in Your Hands
+<Frame caption="Demo: Browsing the Marketplace">
+  <iframe
+    width="100%"
+    height="400"
+    src="https://www.youtube.com/embed/PLACEHOLDER_MARKETPLACE"
+    title="Import from Marketplace"
+    frameBorder="0"
+    allowFullScreen
+  ></iframe>
+</Frame>
 
 <Info>
 
-**You're Not Just Building Workflows**: Every automation you create is a step toward independence from Big Tech's AI monopoly. When you build and share workflows, you're contributing to a community-owned automation ecosystem that benefits everyone, not just shareholders.
+**Instant Automation**: Access thousands of pre-built workflows. Customize variables to match your needs and start automating in seconds.
 
 </Info>
 
-## Start Building Today
+## 📊 Workflow Configuration Deep Dive
+
+<Tabs>
+<Tab title="Variables" icon="brackets-square">
+
+### Dynamic Inputs for Flexibility
+
+Variables make workflows reusable and powerful:
+
+<CodeGroup>
+```yaml Basic Variables
+email_subject: "Weekly Report"
+recipient_list: "team@company.com"
+report_date: "{today}"
+priority_level: "high"
+```
+
+```yaml Advanced Variables
+customer_segments: ["enterprise", "SMB", "startup"]
+price_threshold: 1000
+discount_percentage: 15
+approval_required: true
+escalation_email: "manager@company.com"
+```
+</CodeGroup>
+
+**Variable Types:**
+- **Text**: Names, descriptions, messages
+- **Numbers**: Quantities, prices, thresholds
+- **Dates**: Deadlines, schedules, ranges
+- **Lists**: Multiple items, categories
+- **Booleans**: Yes/no decisions
+- **Files**: Paths, attachments, uploads
+
+</Tab>
+<Tab title="Steps" icon="list-check">
+
+### Human-Readable Instructions
+
+Write steps like you're explaining to a colleague:
+
+<CodeGroup>
+```text Simple Steps
+1. Open Gmail
+2. Click "Compose"
+3. Enter recipient email
+4. Type subject line
+5. Write message body
+6. Click "Send"
+```
+
+```text Complex Steps with Logic
+1. Open CRM dashboard
+2. Navigate to "Leads" section
+3. Filter by "Last 7 days"
+4. FOR EACH lead in list:
+   a. Check lead score
+   b. IF score > 80:
+      - Mark as "Hot Lead"
+      - Assign to senior sales
+   c. ELSE IF score > 50:
+      - Mark as "Warm Lead"
+      - Add to nurture campaign
+   d. ELSE:
+      - Mark as "Cold Lead"
+      - Schedule follow-up in 30 days
+5. Export results to CSV
+6. Email report to sales manager
+```
+</CodeGroup>
+
+</Tab>
+<Tab title="Rules" icon="gavel">
+
+### Constraints and Conditions
+
+Rules ensure workflows behave correctly:
+
+<AccordionGroup>
+<Accordion title="Business Rules">
+
+- Only process during business hours (9 AM - 6 PM)
+- Skip weekends and holidays
+- Respect rate limits (max 100 emails/hour)
+- Stay within budget constraints
+
+</Accordion>
+<Accordion title="Quality Rules">
+
+- Verify data before processing
+- Check for duplicates
+- Validate email formats
+- Ensure required fields are filled
+
+</Accordion>
+<Accordion title="Safety Rules">
+
+- Get approval for amounts > $1000
+- Confirm before bulk operations
+- Create backups before modifications
+- Log all critical actions
+
+</Accordion>
+</AccordionGroup>
+
+</Tab>
+<Tab title="Human Checkpoints" icon="user-check">
+
+### When to Require Confirmation
+
+Strategic points for human oversight:
+
+<Warning>
+
+**Critical Actions Always Need Confirmation:**
+- Financial transactions
+- Mass communications (>100 recipients)
+- Data deletion
+- Contract agreements
+- Hiring decisions
+
+</Warning>
+
+**How It Works:**
+1. Workflow reaches checkpoint
+2. Agent pauses execution
+3. Sends notification (App, Telegram, WhatsApp, Email)
+4. Waits for human response
+5. Continues based on input
+
+**Autopilot Mode:** Can bypass confirmations for trusted workflows (use carefully!)
+
+</Tab>
+</Tabs>
+
+## ⚡ Advanced Features
+
+### Chains: Multi-Workflow Orchestration
+
+<Frame caption="Demo: Building a Chain">
+  <iframe
+    width="100%"
+    height="400"
+    src="https://www.youtube.com/embed/PLACEHOLDER_CHAINS"
+    title="Building Workflow Chains"
+    frameBorder="0"
+    allowFullScreen
+  ></iframe>
+</Frame>
+
+Link workflows together for complex automation:
+
+<Steps>
+<Step title="Lead Generation Chain">
+
+**Workflow 1:** Scrape LinkedIn → **Output:** Lead list CSV
+
+</Step>
+<Step title="Data Enrichment">
+
+**Workflow 2:** Process CSV → **Output:** Enriched database
+
+</Step>
+<Step title="Outreach Campaign">
+
+**Workflow 3:** Send emails → **Output:** Campaign metrics
+
+</Step>
+<Step title="Follow-up Automation">
+
+**Workflow 4:** Monitor responses → **Output:** Meeting scheduled
+
+</Step>
+</Steps>
+
+### Intelligent Features
 
 <CardGroup cols={3}>
-<Card title="Quick Start" icon="play" href="/actionist/actionist-overview">
+<Card title="Smart Loops" icon="repeat">
 
-Get Actionist and create your first workflow in minutes
-
-</Card>
-
-<Card title="Browse Workflows" icon="store" href="/marketplace/marketplace-overview">
-
-Explore thousands of pre-built automations
+Process lists intelligently with conditional exits and error handling
 
 </Card>
+<Card title="Parallel Execution" icon="code-fork">
 
-<Card title="Watch Demos" icon="video" href="/actionist/app-demos-and-examples">
+Run multiple workflows simultaneously for maximum efficiency
 
-See real-world examples in action
+</Card>
+<Card title="AI Decision Making" icon="brain">
+
+Let the LAM make context-aware decisions during execution
+
+</Card>
+<Card title="Error Recovery" icon="shield-check">
+
+Automatic retry logic and graceful failure handling
+
+</Card>
+<Card title="Performance Analytics" icon="chart-mixed">
+
+Track execution time, success rates, and optimization opportunities
+
+</Card>
+<Card title="Version Control" icon="code-branch">
+
+Roll back to previous versions if needed
 
 </Card>
 </CardGroup>
 
+## 💡 Real-World Examples
+
+### Example 1: E-commerce Price Monitoring
+
+<Frame caption="Demo: E-commerce Automation">
+  <iframe
+    width="100%"
+    height="350"
+    src="https://www.youtube.com/embed/PLACEHOLDER_ECOMMERCE"
+    title="E-commerce Price Monitoring"
+    frameBorder="0"
+    allowFullScreen
+  ></iframe>
+</Frame>
+
+<Tabs>
+<Tab title="The Challenge">
+
+Monitor competitor prices across 50+ products daily and adjust your pricing automatically
+
+</Tab>
+<Tab title="The Solution">
+
+```yaml
+Agent: E-commerce Operations
+Workflow: Competitive Price Monitoring
+
+Schedule: Every 6 hours
+
+Steps:
+1. Open competitor websites
+2. Search for each product SKU
+3. Extract current price
+4. Compare with our price
+5. IF competitor cheaper by >5%:
+   - Adjust our price
+   - Notify pricing team
+6. Generate price change report
+7. Update price tracking dashboard
+```
+
+</Tab>
+<Tab title="The Result">
+
+- **Time Saved**: 4 hours daily
+- **Revenue Impact**: +15% from competitive pricing
+- **Human Hours**: Reduced by 95%
+
+</Tab>
+</Tabs>
+
+### Example 2: HR Recruitment Pipeline
+
+<Frame caption="Demo: HR Automation">
+  <iframe
+    width="100%"
+    height="350"
+    src="https://www.youtube.com/embed/PLACEHOLDER_HR"
+    title="HR Recruitment Automation"
+    frameBorder="0"
+    allowFullScreen
+  ></iframe>
+</Frame>
+
+<Tabs>
+<Tab title="The Challenge">
+
+Process 500+ job applications per role, schedule interviews, and manage communications
+
+</Tab>
+<Tab title="The Solution">
+
+```yaml
+Agent: HR Specialist
+Workflow Chain: Complete Recruitment
+
+Chain Components:
+1. Resume Screening (AI-powered)
+2. Candidate Communication
+3. Interview Scheduling
+4. Reference Checking
+5. Offer Generation
+
+Automation Level: 80%
+Human Touchpoints: Final interview, offer approval
+```
+
+</Tab>
+<Tab title="The Result">
+
+- **Applications Processed**: 500 → 50 qualified
+- **Time to Hire**: Reduced by 60%
+- **Candidate Experience**: Improved with instant responses
+
+</Tab>
+</Tabs>
+
+## 🎯 Best Practices
+
+<AccordionGroup>
+<Accordion title="Start Small, Scale Smart" icon="seedling">
+
+1. Begin with one simple workflow
+2. Test thoroughly before expanding
+3. Add complexity gradually
+4. Chain workflows once stable
+5. Share successful workflows in marketplace
+
+</Accordion>
+<Accordion title="Naming Conventions" icon="tag">
+
+**Good Names:**
+- `LinkedIn_Daily_Engagement_AI_Topics`
+- `Email_Campaign_Tech_Startups_Q4`
+- `Invoice_Processing_Accounts_Payable`
+
+**Bad Names:**
+- `Workflow_1`
+- `Test`
+- `LinkedIn_Thing`
+
+</Accordion>
+<Accordion title="Testing Strategy" icon="vial">
+
+Before deploying any workflow:
+- Run in test mode first
+- Try different input variations
+- Test error scenarios
+- Verify output quality
+- Check performance metrics
+
+</Accordion>
+<Accordion title="Security Considerations" icon="lock">
+
+- Store credentials in encrypted memory
+- Use approval checkpoints for sensitive actions
+- Implement rate limiting
+- Log all critical operations
+- Regular security audits
+
+</Accordion>
+</AccordionGroup>
+
+## 🚀 Get Started Now
+
+<CardGroup cols={3}>
+<Card title="Download Actionist" icon="download" href="/actionist/actionist-overview" color="#9333ea">
+
+Get the desktop app and start building
+
+</Card>
+<Card title="Browse Marketplace" icon="store" href="/marketplace/marketplace-overview" color="#3b82f6">
+
+Find pre-built workflows for instant automation
+
+</Card>
+<Card title="Watch Tutorials" icon="play-circle" href="/actionist/app-demos-and-examples" color="#10b981">
+
+See real examples across industries
+
+</Card>
+</CardGroup>
+
+<Note>
+
+**Remember**: Every workflow you create strengthens the community-owned alternative to Big Tech's automation monopoly. You're not just saving time—you're building the future of work.
+
+</Note>
+
 ---
 
-**Agents and Workflows: Where human creativity meets AI capability.**
+**Transform your computer into an autonomous workforce.**
 
-**Build once. Run forever. Own always.**
+**No code. No limits. Complete ownership.**
