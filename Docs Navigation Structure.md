@@ -42,91 +42,18 @@ Referrals, Affiliates & Quests (tokenomics/referrals-and-affiliates)
 Token Economics (tokenomics/token-economics)
 
 
-# 
 
-[**The Action Model (/the-action-model)	2**](#the-action-model-\(/the-action-model\))
 
-[What is the Action Model (/the-action-model/what-is-the-action-model)	2](#what-is-the-action-model-\(/the-action-model/what-is-the-action-model\))
 
-[1 Billion jobs will be Displaced (/the-action-model/1-billion-jobs-will-be-displaced)	2](#1-billion-jobs-will-be-displaced-\(/the-action-model/1-billion-jobs-will-be-displaced\))
 
-[Big Tech Owns 99% of the AI future (/the-action-model/big-tech-owns-99-percent-of-ai-future)	3](#big-tech-owns-99%-of-the-ai-future-\(/the-action-model/big-tech-owns-99-percent-of-ai-future\))
 
-[Action Model is the Uprising (/the-action-model/action-model-is-the-uprising)	4](#action-model-is-the-uprising-\(/the-action-model/action-model-is-the-uprising\))
 
-[How to be part of the AI Future (/the-action-model/how-to-be-part-of-the-ai-future)	5](#how-to-be-part-of-the-ai-future-\(/the-action-model/how-to-be-part-of-the-ai-future\))
 
-[**Actionist.ai (/actionist)	6**](#actionist.ai-\(/actionist\))
+======================================
+======================================
+======================================
 
-[Actionist Overview (/actionist/actionist-overview)	6](#actionist-overview-\(/actionist/actionist-overview\))
 
-[App Demos / Examples (/actionist/app-demos-and-examples)	8](#app-demos-/-examples-\(/actionist/app-demos-and-examples\))
-
-[Agents & Workflows (/actionist/agents-and-workflows)	10](#agents-&-workflows-\(/actionist/agents-and-workflows\))
-
-[Cloud VPC (/actionist/cloud-vpc)	12](#cloud-vpc-\(/actionist/cloud-vpc\))
-
-[Actionist Browser Extension	13](#actionist-browser-extension)
-
-[Agent Calendar (/actionist/agent-calendar-schedules)	13](#agent-calendar-\(/actionist/agent-calendar-schedules\))
-
-[Memories (/actionist/agent-memory)	13](#memories-\(/actionist/agent-memory\))
-
-[History (/actionist/agent-history)	14](#history-\(/actionist/agent-history\))
-
-[Tool Usage (/actionist/agent-tool-usage)	14](#tool-usage-\(/actionist/agent-tool-usage\))
-
-[Triggers (/actionist/triggers)	14](#triggers-\(/actionist/triggers\))
-
-[**Marketplace (/marketplace)	15**](#marketplace-\(/marketplace\))
-
-[Marketplace Overview (/marketplace/marketplace-overview)	15](#marketplace-overview-\(/marketplace/marketplace-overview\))
-
-[Marketplace Bounties (/marketplace/marketplace-bounties)	16](#marketplace-bounties-\(/marketplace/marketplace-bounties\))
-
-[Revenue Generation (/marketplace/revenue-generation)	18](#revenue-generation-\(/marketplace/revenue-generation\))
-
-[Featured Workflows and Reputation (/marketplace/marketplace-reputation-and-featured-workflows)	18](#featured-workflows-and-reputation-\(/marketplace/marketplace-reputation-and-featured-workflows\))
-
-[Workflow Creation Guidelines  (DO NOT INCLUDE THIS SECTION)	20](#workflow-creation-guidelines-\(do-not-include-this-section\))
-
-[Agent Marketplace (/marketplace/agent-marketplace)	20](#agent-marketplace-\(/marketplace/agent-marketplace\))
-
-[**The Large Action Model (LAM) (/the-large-action-model)	20**](#the-large-action-model-\(lam\)-\(/the-large-action-model\))
-
-[Training the LAM (/the-large-action-model-lam/training-the-large-action-model)	20](#training-the-lam-\(/the-large-action-model-lam/training-the-large-action-model\))
-
-[Browser Extension Overview (/the-large-action-model-lam/browser-extension-overview)	23](#browser-extension-overview-\(/the-large-action-model-lam/browser-extension-overview\))
-
-[Security & Privacy (/the-large-action-model-lam/security-and-privacy	25](#security-&-privacy-\(/the-large-action-model-lam/security-and-privacy)
-
-[**Tokenomics (/tokenomics)	26**](#tokenomics-\(/tokenomics\))
-
-[Token Utility ($LAM) (tokenomics/token-utility)	27](#token-utility-\($lam\)-\(tokenomics/token-utility\))
-
-[Point Tiers and Epochs (tokenomics/training-to-earn-tokens	33](#point-tiers-and-epochs-\(tokenomics/training-to-earn-tokens)
-
-[Marketplace Distributions (tokenomics/marketplace-distributions)	36](#marketplace-distributions-\(tokenomics/marketplace-distributions\))
-
-[Training & Marketplace Bounties (tokenomics/training-and-marketplace-bounties)	37](#training-&-marketplace-bounties-\(tokenomics/training-and-marketplace-bounties\))
-
-[Referrals, Affiliates & Quests (tokenomics/referrals-and-affiliates)	39](#referrals,-affiliates-&-quests-\(tokenomics/referrals-and-affiliates\))
-
-[Token Economics (tokenomics/token-economics)	42](#token-economics-\(tokenomics/token-economics\))
-
-[**Partnerships (DO NOT INCLUDE THIS SECTION)	43**](#partnerships-\(do-not-include-this-section\))
-
-[Marketplace Partners (/partnerships/marketplace-partners)	43](#marketplace-partners-\(/partnerships/marketplace-partners\))
-
-[API Partners (/partnerships/api-partners)	43](#api-partners-\(/partnerships/api-partners\))
-
-[Data Partnerships (/partnerships/data-partners)	43](#data-partnerships-\(/partnerships/data-partners\))
-
-[Processing DePIN (/partnerships/depin-processing-partners)	43](#processing-depin-\(/partnerships/depin-processing-partners\))
-
-[Resellers (/partnerships/reseller-partners)	43](#resellers-\(/partnerships/reseller-partners\))
-
-[Enterprise Solutions (/partnerships/enterprise-solutions)	43](#enterprise-solutions-\(/partnerships/enterprise-solutions\))
 
 # The Action Model (/the-action-model) {#the-action-model-(/the-action-model)}
 
@@ -134,6 +61,10 @@ Token Economics (tokenomics/token-economics)
 
 - High level summary  
 - Link to other pages
+
+
+
+
 
 ## 1 Billion jobs will be Displaced (/the-action-model/1-billion-jobs-will-be-displaced) {#1-billion-jobs-will-be-displaced-(/the-action-model/1-billion-jobs-will-be-displaced)}
 
@@ -163,6 +94,14 @@ Businesses are always opting for profit over everything else \- if an AI Agent d
 This means that hundreds of millions of jobs will be displayed in the next few years, with the workload being shifted directly to AI companies providing these services.
 
 Unfortunately, 99% of this is will be owned by Big Tech (see [Big Tech Owns 99% of the AI future](#big-tech-owns-99%-of-the-ai-future-\(/the-action-model/big-tech-owns-99-percent-of-ai-future\)))
+
+
+
+
+
+
+
+
 
 ## Big Tech Owns 99% of the AI future (/the-action-model/big-tech-owns-99-percent-of-ai-future) {#big-tech-owns-99%-of-the-ai-future-(/the-action-model/big-tech-owns-99-percent-of-ai-future)}
 
@@ -209,6 +148,8 @@ Unfortunately, 99% of this is will be owned by Big Tech (see [Big Tech Owns 99% 
 
 
 
+
+
 ## How to be part of the AI Future (/the-action-model/how-to-be-part-of-the-ai-future) {#how-to-be-part-of-the-ai-future-(/the-action-model/how-to-be-part-of-the-ai-future)}
 
 By contributing to the Action Model, you will receive tokens, which are you ownership stake of the AI future.
@@ -238,6 +179,22 @@ Further explanation:
   - By spreading the word about the Resistance, you are helping to grow the Action Model.  
   - As a result of this, you are rewarded with tokens  
   - Read more about this here:  Referrals, Affiliates & Quests (tokenomics/referrals-and-affiliates)
+
+
+
+
+
+
+
+======================================
+======================================
+======================================
+
+
+
+
+
+
 
 # Actionist.ai (/actionist) {#actionist.ai-(/actionist)}
 
@@ -311,6 +268,12 @@ System settings:
 - After logging, user will be prompted to provide access to certain permissions  
 - [ADD IMAGE:](https://www.figma.com/design/23Azr0HhLyUGNgVe74zD9f/LAM-Pitch-Decks?node-id=3968-5484&t=BKnVqnQS4uZPsBac-11%20) 
 
+
+
+
+
+
+
 ## App Demos / Examples (/actionist/app-demos-and-examples) {#app-demos-/-examples-(/actionist/app-demos-and-examples)}
 
 There are \~1 billion people who are employed to work behind a computer.
@@ -383,6 +346,13 @@ Here are a few use-cases:
 6. Launch Email Outreach Campaign  
 - Description: As part of a sequence of workflows (gather emails, create sheet, attach to ReachInbox, Review campaign), this workflow is for Marketing Agencies with many clients.
 
+
+
+
+
+
+
+
 ## Agents & Workflows (/actionist/agents-and-workflows) {#agents-&-workflows-(/actionist/agents-and-workflows)}
 
 - N8n, zapier, [make.com](http://make.com) \- ALL technical, excludes 99% of the population  
@@ -453,6 +423,12 @@ Marketplace \- Workflows and Agents
 - Instead of creating your own workflows, you can also access them from our marketplace  
 - Learn more here: [Marketplace Overview (/marketplace/marketplace-overview)](#marketplace-overview-\(/marketplace/marketplace-overview\))
 
+
+
+
+
+
+
 ## Cloud VPC (/actionist/cloud-vpc) {#cloud-vpc-(/actionist/cloud-vpc)}
 
 - The Actionist Desktop Application takes control the computers mouse and keyboard  
@@ -477,9 +453,23 @@ Subscription Revenue
 - See [Token Utility ($LAM) (tokenomics/token-utility)](#token-utility-\($lam\)-\(tokenomics/token-utility\))  
 - Web3 users can also connect their wallet to pay in $LAM tokens directly for a slight discount
 
+
+
+
+
+
+
 ## Actionist Browser Extension {#actionist-browser-extension}
 
 FUTURE (DO NOT DO THIS SECTION)
+
+
+
+
+
+
+
+
 
 ## Agent Calendar (/actionist/agent-calendar-schedules) {#agent-calendar-(/actionist/agent-calendar-schedules)}
 
@@ -494,6 +484,11 @@ IMAGES OF CALENDAR PAGES
 - History (PRevious executions)  
   - Opening the chat execution shows you everything that happened, along with a video playback of the entire session  
   - You can continue a session
+
+
+
+
+
 
 ## Memories (/actionist/agent-memory) {#memories-(/actionist/agent-memory)}
 
@@ -533,6 +528,11 @@ For example
 - Execution B (months later): Agent is sending an email to someone  
   - History automatically matches the previous execution, attaching the history from Execution A into the Agent running Execution B.
 
+
+
+
+
+
 ## Tool Usage (/actionist/agent-tool-usage) {#tool-usage-(/actionist/agent-tool-usage)}
 
 - (Private Beta)  
@@ -541,6 +541,11 @@ For example
   - Function calling  
   - APIs
 
+
+
+
+
+
 ## Triggers (/actionist/triggers) {#triggers-(/actionist/triggers)}
 
 (Private beta)
@@ -548,6 +553,23 @@ For example
 - Connect various apps as triggers (e.g. Gmail \-\> email received)  
   - Based on the email, trigger a workflow to execute  
   - Give examples
+
+
+
+
+
+
+
+======================================
+======================================
+======================================
+
+
+
+
+
+
+
 
 # Marketplace (/marketplace) {#marketplace-(/marketplace)}
 
@@ -600,6 +622,12 @@ Creator Profiles
 - \*\*Screenshot of the Creator Profile  
 - Link to [Featured Workflows and Reputation (/marketplace/marketplace-reputation-and-featured-workflows)](#featured-workflows-and-reputation-\(/marketplace/marketplace-reputation-and-featured-workflows\))
 
+
+
+
+
+
+
 ## Marketplace Bounties (/marketplace/marketplace-bounties) {#marketplace-bounties-(/marketplace/marketplace-bounties)}
 
 - Page: [train.actionmodel.com/bounties](http://train.actionmodel.com/bounties)  
@@ -633,6 +661,11 @@ For each of the platforms, you can see the workflows that have a high request ra
 You can review your earnings from Bounties via the Training History Tab ([train.actionmodel.com/training-history](http://train.actionmodel.com/training-history)), the Marketplace Tab ([train.actionmodel.com/marketplace](http://train.actionmodel.com/marketplace)) or the main Dashboard page  
 \*\*\*SCREENSHOTS OF EACH PAGE
 
+
+
+
+
+
 ## Revenue Generation (/marketplace/revenue-generation) {#revenue-generation-(/marketplace/revenue-generation)}
 
 In addition to earning $LAM for Training the Large Action Model ([Training the LAM (/the-large-action-model-lam/training-the-large-action-model)](#training-the-lam-\(/the-large-action-model-lam/training-the-large-action-model\)) you can also earn $LAM and generate revenue by publishing workflows that Actionist customers can use (see [Marketplace (/marketplace)](#marketplace-\(/marketplace\))
@@ -655,7 +688,12 @@ The earliest users in our community of creators (as long as they are contributin
 
 A breakdown of the distributions and tokenomics for marketplace creators can be found here: [Marketplace Distributions (tokenomics/marketplace-distributions)](#marketplace-distributions-\(tokenomics/marketplace-distributions\))
 
+
+
+
+
 ## Featured Workflows and Reputation (/marketplace/marketplace-reputation-and-featured-workflows) {#featured-workflows-and-reputation-(/marketplace/marketplace-reputation-and-featured-workflows)}
+
 
 We promote the workflows or accounts of the early adopters and contributors. Workflows will be pinned to Apps (so the first to create workflows for platforms will have the most advantageous position and generate the most money). 
 
@@ -685,15 +723,25 @@ Creator Profiles
 - This is designed to provide consultancy services to businesses, providing bespoke workflows or management  
 - \*\*Screenshot of the Creator Profile
 
-## Workflow Creation Guidelines  (DO NOT INCLUDE THIS SECTION) {#workflow-creation-guidelines-(do-not-include-this-section)}
 
-\*\*\*DO THIS SECTION LATER
 
-## 
 
-## Agent Marketplace (/marketplace/agent-marketplace) {#agent-marketplace-(/marketplace/agent-marketplace)}
 
-\*\*\*DO THIS SECTION LATER
+
+
+
+
+
+======================================
+======================================
+======================================
+
+
+
+
+
+
+
 
 # The Large Action Model (LAM) (/the-large-action-model) {#the-large-action-model-(lam)-(/the-large-action-model)}
 
@@ -782,6 +830,12 @@ Comparison data quality:
   - [https://www.youtube.com/watch?v=loWNs1KJSm8](https://www.youtube.com/watch?v=loWNs1KJSm8)  
 - This data quality is terrible, outdated and incomplete compared to the data that Action Model collects
 
+
+
+
+
+
+
 ## Browser Extension Overview (/the-large-action-model-lam/browser-extension-overview) {#browser-extension-overview-(/the-large-action-model-lam/browser-extension-overview)}
 
  
@@ -851,6 +905,13 @@ Training Bounties
 - You can earn additional rewards by training in the background on platforms that have higher bounty value. Learn more here:  
 - Link to [Training & Marketplace Bounties](#training-&-marketplace-bounties-\(tokenomics/training-and-marketplace-bounties\))
 
+
+
+
+
+
+
+
 ## Security & Privacy (/the-large-action-model-lam/security-and-privacy  {#security-&-privacy-(/the-large-action-model-lam/security-and-privacy}
 
 Custom Training Screenshots
@@ -891,11 +952,31 @@ PEN Tested
 - The Action Model Foundation has undertaken extensive Penetration Testing prior to launch by external firms.  
 - Explain what they do in normal pen tests
 
-## 
+
+
+
+
+
+
+
+
+======================================
+======================================
+======================================
+
+
+
+
+
+
+
+
+
 
 # Tokenomics (/tokenomics) {#tokenomics-(/tokenomics)}
 
 Calculations: [https://chatgpt.com/g/g-67c5583d21d8819180973a8633211e17-large-action-model/c/68b3ff51-f8c4-8331-ac9b-2f3f7f6929ac](https://chatgpt.com/g/g-67c5583d21d8819180973a8633211e17-large-action-model/c/68b3ff51-f8c4-8331-ac9b-2f3f7f6929ac) 
+
 
 ## Token Utility ($LAM) (tokenomics/token-utility) {#token-utility-($lam)-(tokenomics/token-utility)}
 
@@ -1074,6 +1155,11 @@ Unlike LLMs that are trained specifically to output text, the LAM is trained to 
 * **Per‑action burn builds long‑term scarcity.** Usage permanently removes supply; creators and the foundation recycle the remainder into growth.  
 * **Creators are aligned.** They earn **cash‑equivalent per action** regardless of $LAM price—rewarding utility, not speculation.
 
+
+
+
+
+
 ## Point Tiers and Epochs (tokenomics/training-to-earn-tokens {#point-tiers-and-epochs-(tokenomics/training-to-earn-tokens}
 
 **Points Tiers and Epochs**
@@ -1132,6 +1218,10 @@ Unlike LLMs that are trained specifically to output text, the LAM is trained to 
 * Bonuses: \+0% (background) \+0% (no epoch) \+30% (bronze bounty) \+5% (sprout badge)  
 * Total: 500 × (1 \+ 0 \+ 0 \+ 0.3 \+ 0.05) \= 500 × 1.35 \= **675 points**
 
+
+
+
+
 ## Marketplace Distributions (tokenomics/marketplace-distributions) {#marketplace-distributions-(tokenomics/marketplace-distributions)}
 
 You are incentivised to publish workflows by receiving a portion of the revenue generated from each Action Loop 
@@ -1157,6 +1247,12 @@ Creator USD per run=$0.033×k\\boxed{\\text{Creator USD per run} \= \\$0.033 \\t
 * As tokens get burnt/locked 
 
 This is a strong incentive to publish high‑quality reusable workflows.
+
+
+
+
+
+
 
 ## Training & Marketplace Bounties (tokenomics/training-and-marketplace-bounties) {#training-&-marketplace-bounties-(tokenomics/training-and-marketplace-bounties)}
 
@@ -1256,6 +1352,13 @@ Quests (Spreading the Word)
 - You can perform tasks and quests by visiting:  
 - [train.actionmodel.com/quests](http://train.actionmodel.com/quests) 
 
+
+
+
+
+
+
+
 ## Token Economics (tokenomics/token-economics) {#token-economics-(tokenomics/token-economics)}
 
 Deflationary Model / Token Buy-back and Burn (tokenomics/DeflationaryModel.mdx)
@@ -1294,23 +1397,7 @@ Initially, prior to TGE, users will receive points.
 
 These points will convert to tokens at the TGE. Community tokens released to contributors will initially for deployment of Fuel within the Actionist Agents.
 
-# Partnerships (DO NOT INCLUDE THIS SECTION) {#partnerships-(do-not-include-this-section)}
 
-## Marketplace Partners (/partnerships/marketplace-partners) {#marketplace-partners-(/partnerships/marketplace-partners)}
 
-Link to 
 
-## API Partners (/partnerships/api-partners) {#api-partners-(/partnerships/api-partners)}
-
-## Data Partnerships (/partnerships/data-partners) {#data-partnerships-(/partnerships/data-partners)}
-
-## Processing DePIN (/partnerships/depin-processing-partners) {#processing-depin-(/partnerships/depin-processing-partners)}
-
-## Resellers (/partnerships/reseller-partners) {#resellers-(/partnerships/reseller-partners)}
-
-## Enterprise Solutions (/partnerships/enterprise-solutions) {#enterprise-solutions-(/partnerships/enterprise-solutions)}
-
-# 
-
-# 
 
