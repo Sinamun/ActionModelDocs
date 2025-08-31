@@ -68,19 +68,19 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://docs.actionmodel.com",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://actionmodel.com",
-          "icon": "slack"
+          "anchor": "Creator Community",
+          "href": "https://discord.gg/2j633ANFj5",
+          "icon": "discord"
         },
         {
           "anchor": "Blog",
-          "href": "https://actionmodel.com",
+          "href": "https://actionmodel.com/blog",
           "icon": "newspaper"
+        },
+        {
+          "anchor": "Telegram",
+          "href": "https://t.me/actionmodel",
+          "icon": "telegram"
         },
         {
           "anchor": "Action Model Dashboard",
@@ -114,11 +114,13 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/actionmodel",
-      "linkedin": "https://linkedin.com/company/actionmodel",
-      "instagram": "https://instagram.com/actionmodel",
-      "youtube": "https://youtube.com/@actionmodel",
-      "discord": "https://discord.gg/actionmodel",
+      "x": "https://x.com/getactionmodel",
+      "discord": "https://discord.gg/2j633ANFj5",
+      "reddit": "https://www.reddit.com/r/ActionModel/",
+      "youtube": "https://www.youtube.com/@getactionmodel",
+      "linkedin": "https://www.linkedin.com/company/getactionmodel",
+      "tiktok": "https://www.tiktok.com/@getactionmodel",
+      "instagram": "https://www.instagram.com/getactionmodel",
       "telegram": "https://t.me/actionmodel"
     }
   }
