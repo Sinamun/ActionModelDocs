@@ -1,8 +1,1143 @@
 ---
 title: "Triggers"
-description: "Page description here"
+description: "Launch automations automatically based on any event. From emails to webhooks, file changes to time schedules, make your AI workforce truly autonomous with intelligent triggers."
 ---
 
-## Overview
+## Automation That Never Sleeps
 
-Content coming soon.
+Triggers transform your agents from on-demand workers into **proactive digital employees** that spring into action the moment something happens. No more manual starts, no more missed opportunities—just intelligent automation responding to your world in real-time.
+
+<Warning>
+
+**The Autonomy Revolution**: While others require you to manually start every automation, Action Model agents wake up and work based on ANY trigger—emails, messages, API calls, file changes, or custom events—creating truly autonomous operations.
+
+</Warning>
+
+## Core Trigger Types
+
+<CardGroup cols={3}>
+<Card title="Time-Based" icon="clock" color="#9333ea">
+
+Schedule workflows at specific times or intervals
+
+</Card>
+
+<Card title="Event-Based" icon="bolt" color="#3b82f6">
+
+React to system events, file changes, or application actions
+
+</Card>
+
+<Card title="Communication" icon="envelope" color="#10b981">
+
+Respond to emails, messages, or notifications
+
+</Card>
+
+<Card title="Web Hooks" icon="webhook" color="#f59e0b">
+
+Listen for API calls and external system events
+
+</Card>
+
+<Card title="Data Changes" icon="database" color="#ec4899">
+
+Monitor databases, spreadsheets, or APIs for updates
+
+</Card>
+
+<Card title="AI Detection" icon="brain" color="#8b5cf6">
+
+Intelligent triggers based on content analysis
+
+</Card>
+</CardGroup>
+
+## Time-Based Triggers
+
+### Schedule Your Digital Workforce
+
+<Tabs>
+<Tab title="Simple Scheduling">
+
+**Basic Time Triggers:**
+
+<AccordionGroup>
+<Accordion title="Daily Triggers" icon="sun">
+
+Run workflows at specific times each day:
+- **Morning Reports**: 9 AM daily summary
+- **Lunch Break Tasks**: 12 PM automation
+- **End of Day**: 5 PM cleanup and backup
+- **Overnight Processing**: 2 AM heavy tasks
+
+**Configuration:**
+```yaml
+trigger:
+  type: daily
+  time: "09:00"
+  timezone: "America/New_York"
+  skip_weekends: true
+  skip_holidays: true
+```
+
+</Accordion>
+
+<Accordion title="Weekly Triggers" icon="calendar-week">
+
+Execute on specific days and times:
+- **Monday Morning**: Week planning workflows
+- **Wednesday Check-ins**: Mid-week reports
+- **Friday Summaries**: Weekly wrap-ups
+- **Weekend Maintenance**: Saturday cleanups
+
+**Configuration:**
+```yaml
+trigger:
+  type: weekly
+  days: ["Monday", "Wednesday", "Friday"]
+  time: "10:00"
+  timezone: "UTC"
+```
+
+</Accordion>
+
+<Accordion title="Monthly Triggers" icon="calendar-days">
+
+Run on specific dates each month:
+- **Month Start**: First day processing
+- **Mid-Month**: 15th day reviews
+- **Month End**: Last day reports
+- **Quarterly**: Every 3 months
+
+**Configuration:**
+```yaml
+trigger:
+  type: monthly
+  day: 1  # or "last", "15", etc.
+  time: "08:00"
+  months: ["January", "April", "July", "October"]
+```
+
+</Accordion>
+</AccordionGroup>
+
+</Tab>
+<Tab title="Advanced Scheduling">
+
+**Complex Time Patterns:**
+
+<AccordionGroup>
+<Accordion title="Cron Expressions" icon="code">
+
+Use cron syntax for precise control:
+
+```yaml
+# Every 15 minutes during business hours
+trigger:
+  type: cron
+  expression: "*/15 9-17 * * MON-FRI"
+
+# First Monday of every month at 10 AM
+trigger:
+  type: cron
+  expression: "0 10 1-7 * MON"
+
+# Every hour between 8 AM and 8 PM
+trigger:
+  type: cron
+  expression: "0 8-20 * * *"
+```
+
+**Common Patterns:**
+- `*/5 * * * *` - Every 5 minutes
+- `0 */2 * * *` - Every 2 hours
+- `0 9-17 * * 1-5` - Every hour, 9-5, weekdays
+- `0 0 * * 0` - Weekly on Sunday midnight
+
+</Accordion>
+
+<Accordion title="Interval Triggers" icon="arrows-rotate">
+
+Run repeatedly with specific gaps:
+
+```yaml
+trigger:
+  type: interval
+  every: 30  # minutes
+  between:
+    start: "08:00"
+    end: "18:00"
+  conditions:
+    - business_hours_only: true
+    - max_runs_per_day: 20
+```
+
+**Use Cases:**
+- Check for new data every 10 minutes
+- Sync systems every hour
+- Monitor prices every 30 minutes
+- Process queue every 5 minutes
+
+</Accordion>
+
+<Accordion title="Smart Scheduling" icon="brain">
+
+AI-optimized timing based on patterns:
+
+**Adaptive Scheduling:**
+- Learn optimal execution times
+- Avoid system peak loads
+- Respect rate limits automatically
+- Adjust for time zones dynamically
+
+**Example:**
+```yaml
+trigger:
+  type: smart
+  goal: "maximize_success_rate"
+  constraints:
+    - avoid_peak_hours: true
+    - respect_api_limits: true
+    - optimize_for_speed: true
+```
+
+</Accordion>
+</AccordionGroup>
+
+</Tab>
+</Tabs>
+
+## Communication Triggers
+
+### React to Messages Instantly
+
+<Tabs>
+<Tab title="Email Triggers">
+
+**Monitor Inboxes and React:**
+
+<Steps>
+<Step title="Configure Email Monitoring">
+
+Set up email account access:
+```yaml
+trigger:
+  type: email
+  provider: "gmail"  # or outlook, yahoo, imap
+  account: "support@company.com"
+  folder: "INBOX"
+```
+
+</Step>
+
+<Step title="Define Trigger Conditions">
+
+Specify what emails trigger workflows:
+```yaml
+conditions:
+  - subject_contains: ["urgent", "invoice", "order"]
+  - from_domain: "@client.com"
+  - has_attachment: true
+  - is_unread: true
+```
+
+</Step>
+
+<Step title="Extract Email Data">
+
+Pass email content to workflow:
+```yaml
+variables:
+  - email_subject: "${trigger.subject}"
+  - email_body: "${trigger.body}"
+  - sender: "${trigger.from}"
+  - attachments: "${trigger.attachments}"
+```
+
+</Step>
+
+<Step title="Process and Respond">
+
+Workflow automatically processes the email and takes action
+
+</Step>
+</Steps>
+
+**Common Email Triggers:**
+- Invoice processing from specific vendors
+- Customer support ticket creation
+- Order confirmation handling
+- Newsletter subscription management
+- Out-of-office auto-responses
+
+</Tab>
+<Tab title="Messaging Triggers">
+
+**Instant Message Monitoring:**
+
+<CardGroup cols={2}>
+<Card title="Slack Triggers" icon="slack">
+
+```yaml
+trigger:
+  type: slack
+  events:
+    - message_posted
+    - mention
+    - file_shared
+    - reaction_added
+  channels: ["#sales", "#support"]
+  keywords: ["help", "urgent", "@bot"]
+```
+
+**Use Cases:**
+- Respond to mentions
+- Process commands
+- Archive important messages
+- Generate summaries
+
+</Card>
+
+<Card title="Teams Triggers" icon="microsoft">
+
+```yaml
+trigger:
+  type: teams
+  events:
+    - new_message
+    - meeting_scheduled
+    - file_uploaded
+  teams: ["Marketing", "Sales"]
+  respond_to: ["questions", "requests"]
+```
+
+**Use Cases:**
+- Meeting note automation
+- Task creation from messages
+- File organization
+- Status updates
+
+</Card>
+
+<Card title="WhatsApp Business" icon="whatsapp">
+
+```yaml
+trigger:
+  type: whatsapp
+  events:
+    - message_received
+    - media_received
+    - status_update
+  from_contacts: true
+  business_hours_only: false
+```
+
+**Use Cases:**
+- Customer inquiries
+- Order updates
+- Appointment reminders
+- Support tickets
+
+</Card>
+
+<Card title="SMS Triggers" icon="comment-sms">
+
+```yaml
+trigger:
+  type: sms
+  provider: "twilio"
+  events:
+    - incoming_message
+  keywords: ["STOP", "HELP", "ORDER"]
+  auto_response: true
+```
+
+**Use Cases:**
+- Verification codes
+- Alerts processing
+- Quick responses
+- Order tracking
+
+</Card>
+</CardGroup>
+
+</Tab>
+</Tabs>
+
+## Webhook Triggers
+
+### API-Driven Automation
+
+<Info>
+
+**Universal Integration**: Webhooks allow ANY system to trigger your workflows, making Action Model the universal automation hub for your entire tech stack.
+
+</Info>
+
+<Tabs>
+<Tab title="Incoming Webhooks">
+
+**Receive Data from Any System:**
+
+<Steps>
+<Step title="Generate Webhook URL">
+
+Create unique endpoint for your workflow:
+```
+https://api.actionmodel.com/webhooks/wf_abc123xyz
+```
+
+</Step>
+
+<Step title="Configure Authentication">
+
+Secure your webhook:
+```yaml
+webhook:
+  auth_type: "bearer_token"  # or basic_auth, api_key
+  token: "${WEBHOOK_SECRET}"
+  validate_signature: true
+  allowed_ips: ["192.168.1.0/24"]
+```
+
+</Step>
+
+<Step title="Parse Incoming Data">
+
+Extract and validate payload:
+```yaml
+data_mapping:
+  customer_id: "$.payload.customer.id"
+  order_amount: "$.payload.order.total"
+  items: "$.payload.order.items[*]"
+  timestamp: "$.headers.x-timestamp"
+```
+
+</Step>
+
+<Step title="Trigger Workflow">
+
+Process the data and execute automation
+
+</Step>
+</Steps>
+
+**Common Webhook Sources:**
+- E-commerce platforms (Shopify, WooCommerce)
+- Payment processors (Stripe, PayPal)
+- CRM systems (Salesforce, HubSpot)
+- Form builders (Typeform, Google Forms)
+- GitHub/GitLab/Bitbucket
+- Monitoring tools (Datadog, New Relic)
+
+</Tab>
+<Tab title="Platform Webhooks">
+
+**Pre-configured Platform Triggers:**
+
+<AccordionGroup>
+<Accordion title="Stripe Events" icon="stripe">
+
+```yaml
+trigger:
+  type: stripe_webhook
+  events:
+    - payment_intent.succeeded
+    - customer.subscription.created
+    - invoice.payment_failed
+    - charge.dispute.created
+  
+actions:
+  - update_crm
+  - send_receipt
+  - create_invoice
+  - alert_team
+```
+
+</Accordion>
+
+<Accordion title="GitHub Events" icon="github">
+
+```yaml
+trigger:
+  type: github_webhook
+  repository: "company/project"
+  events:
+    - push
+    - pull_request
+    - issue_created
+    - release_published
+    
+branch_filter: ["main", "develop"]
+```
+
+</Accordion>
+
+<Accordion title="Shopify Events" icon="shop">
+
+```yaml
+trigger:
+  type: shopify_webhook
+  events:
+    - orders/create
+    - orders/fulfilled
+    - customers/create
+    - products/update
+    
+filters:
+  - total_price: ">100"
+  - fulfillment_status: "fulfilled"
+```
+
+</Accordion>
+
+<Accordion title="Custom APIs" icon="code">
+
+```yaml
+trigger:
+  type: custom_webhook
+  endpoint: "/api/trigger/custom"
+  method: ["POST", "PUT"]
+  headers:
+    content_type: "application/json"
+    x_api_key: "${API_KEY}"
+    
+validation:
+  schema: "json_schema_v4"
+  required_fields: ["id", "action", "data"]
+```
+
+</Accordion>
+</AccordionGroup>
+
+</Tab>
+</Tabs>
+
+## File & Folder Triggers
+
+### Monitor Your File System
+
+<AccordionGroup>
+<Accordion title="Local File Monitoring" icon="folder">
+
+**Watch for File System Changes:**
+
+```yaml
+trigger:
+  type: file_system
+  paths:
+    - "/Users/Downloads/*.pdf"
+    - "/Documents/Invoices/"
+    - "C:/Data/Input/*.csv"
+    
+events:
+    - file_created
+    - file_modified
+    - file_deleted
+    - folder_created
+    
+filters:
+    - extension: [".pdf", ".xlsx", ".docx"]
+    - size: "<10MB"
+    - modified: "last_5_minutes"
+```
+
+**Use Cases:**
+- Process new downloads automatically
+- Backup modified files
+- Convert file formats
+- Organize incoming documents
+- Extract data from new reports
+
+</Accordion>
+
+<Accordion title="Cloud Storage Triggers" icon="cloud">
+
+**Monitor Cloud Drives:**
+
+<CardGroup cols={3}>
+<Card title="Google Drive">
+
+```yaml
+trigger:
+  type: google_drive
+  folder: "/Shared/Invoices"
+  events: ["file_uploaded"]
+  share_notification: true
+```
+
+</Card>
+
+<Card title="Dropbox">
+
+```yaml
+trigger:
+  type: dropbox
+  path: "/Team/Reports"
+  events: ["file_added", "file_modified"]
+  recursive: true
+```
+
+</Card>
+
+<Card title="OneDrive">
+
+```yaml
+trigger:
+  type: onedrive
+  folder: "/Documents/Contracts"
+  events: ["new_file"]
+  file_types: [".pdf", ".docx"]
+```
+
+</Card>
+</CardGroup>
+
+</Accordion>
+
+<Accordion title="FTP/SFTP Monitoring" icon="server">
+
+**Watch Remote Servers:**
+
+```yaml
+trigger:
+  type: ftp
+  server: "ftp.company.com"
+  path: "/incoming/"
+  poll_interval: 5  # minutes
+  events:
+    - new_file
+    - file_complete  # Wait for upload to finish
+    
+process:
+  - download_file
+  - process_locally
+  - move_to_processed
+  - delete_original
+```
+
+</Accordion>
+</AccordionGroup>
+
+## AI-Powered Triggers
+
+### Intelligent Event Detection
+
+<Tabs>
+<Tab title="Content Analysis">
+
+**Trigger Based on Content Understanding:**
+
+<AccordionGroup>
+<Accordion title="Sentiment Triggers" icon="face-smile">
+
+```yaml
+trigger:
+  type: sentiment_analysis
+  source: "twitter_mentions"
+  conditions:
+    - sentiment: "negative"
+    - confidence: ">0.8"
+    - urgency: "high"
+    
+actions:
+  - alert_support_team
+  - create_priority_ticket
+  - draft_response
+```
+
+**Applications:**
+- Crisis management
+- Customer satisfaction monitoring
+- Brand reputation tracking
+- Review response automation
+
+</Accordion>
+
+<Accordion title="Pattern Recognition" icon="magnifying-glass-chart">
+
+```yaml
+trigger:
+  type: pattern_detection
+  monitor: "sales_data"
+  patterns:
+    - anomaly_detection: true
+    - trend_reversal: true
+    - threshold_breach: ">$10000"
+    
+alert_when:
+  - unusual_spike
+  - sudden_drop
+  - pattern_break
+```
+
+**Applications:**
+- Fraud detection
+- Performance monitoring
+- Predictive maintenance
+- Market analysis
+
+</Accordion>
+
+<Accordion title="Visual Triggers" icon="eye">
+
+```yaml
+trigger:
+  type: image_recognition
+  source: "security_camera"
+  detect:
+    - object: "package"
+    - person: "at_door"
+    - text: "delivery"
+    - motion: true
+    
+confidence_threshold: 0.85
+```
+
+**Applications:**
+- Security monitoring
+- Inventory tracking
+- Quality control
+- Document processing
+
+</Accordion>
+</AccordionGroup>
+
+</Tab>
+<Tab title="Predictive Triggers">
+
+**Anticipate Events Before They Happen:**
+
+<Info>
+
+**Proactive Automation**: Don't just react—predict and prevent. AI triggers can forecast events and launch workflows preemptively.
+
+</Info>
+
+<AccordionGroup>
+<Accordion title="Forecast Triggers" icon="chart-line">
+
+```yaml
+trigger:
+  type: predictive
+  model: "sales_forecast"
+  conditions:
+    - predicted_value: "<threshold"
+    - confidence: ">0.75"
+    - time_horizon: "next_7_days"
+    
+preventive_actions:
+  - increase_marketing_spend
+  - alert_sales_team
+  - adjust_inventory
+```
+
+</Accordion>
+
+<Accordion title="Risk Triggers" icon="triangle-exclamation">
+
+```yaml
+trigger:
+  type: risk_assessment
+  monitor: ["customer_behavior", "payment_history"]
+  risk_factors:
+    - churn_probability: ">0.7"
+    - payment_default_risk: "high"
+    - usage_decline: ">30%"
+    
+mitigation:
+  - send_retention_offer
+  - schedule_check_in_call
+  - adjust_credit_limit
+```
+
+</Accordion>
+
+<Accordion title="Capacity Triggers" icon="gauge-high">
+
+```yaml
+trigger:
+  type: capacity_planning
+  metrics: ["cpu_usage", "queue_length", "response_time"]
+  predictions:
+    - overload_in: "30_minutes"
+    - capacity_breach: "imminent"
+    
+actions:
+  - scale_resources
+  - redistribute_load
+  - alert_ops_team
+```
+
+</Accordion>
+</AccordionGroup>
+
+</Tab>
+</Tabs>
+
+## Custom Triggers
+
+### Build Your Own Trigger Logic
+
+<Tabs>
+<Tab title="JavaScript Triggers">
+
+```javascript
+// Custom trigger that monitors multiple conditions
+class CustomTrigger {
+  constructor(config) {
+    this.config = config;
+    this.lastCheck = null;
+  }
+  
+  async shouldTrigger() {
+    // Check multiple data sources
+    const metrics = await this.fetchMetrics();
+    const alerts = await this.checkAlerts();
+    const time = new Date();
+    
+    // Complex trigger logic
+    if (metrics.sales < this.config.threshold && 
+        alerts.priority === 'high' &&
+        time.getHours() >= 9 && time.getHours() <= 17) {
+      
+      return {
+        trigger: true,
+        data: {
+          sales: metrics.sales,
+          alert: alerts.message,
+          timestamp: time.toISOString()
+        }
+      };
+    }
+    
+    return { trigger: false };
+  }
+  
+  async fetchMetrics() {
+    // Fetch from your data source
+    return await api.get('/metrics/sales');
+  }
+  
+  async checkAlerts() {
+    // Check alert system
+    return await api.get('/alerts/latest');
+  }
+}
+```
+
+</Tab>
+<Tab title="Composite Triggers">
+
+**Combine Multiple Trigger Conditions:**
+
+```yaml
+trigger:
+  type: composite
+  require: "all"  # or "any", "custom"
+  
+  conditions:
+    - time:
+        after: "09:00"
+        before: "17:00"
+        weekdays_only: true
+        
+    - email:
+        from: "@important-client.com"
+        subject_contains: "urgent"
+        
+    - file:
+        exists: "/data/ready.flag"
+        
+    - api:
+        endpoint: "https://api.service.com/status"
+        response_contains: "ready"
+        
+  logic: |
+    (time AND email) OR 
+    (file AND api) OR
+    (email.priority == "high")
+```
+
+</Tab>
+<Tab title="Chain Triggers">
+
+**Sequential Trigger Patterns:**
+
+```yaml
+trigger_chain:
+  name: "Order Processing Chain"
+  
+  step_1:
+    trigger: email
+    condition: "subject contains 'new order'"
+    output: order_id
+    
+  step_2:
+    trigger: webhook
+    condition: "payment.confirmed for {order_id}"
+    wait_timeout: 3600  # 1 hour
+    
+  step_3:
+    trigger: file
+    condition: "invoice_{order_id}.pdf created"
+    
+  on_complete:
+    action: "process_complete_order"
+    
+  on_timeout:
+    action: "escalate_to_human"
+```
+
+</Tab>
+</Tabs>
+
+## Trigger Management
+
+### Monitor and Control Your Triggers
+
+<AccordionGroup>
+<Accordion title="Trigger Dashboard" icon="gauge">
+
+**Real-time Trigger Monitoring:**
+
+| Metric | Description | Current |
+|--------|-------------|---------|
+| **Active Triggers** | Currently monitoring | 47 |
+| **Fired Today** | Triggers activated | 1,234 |
+| **Success Rate** | Successful workflow starts | 98.5% |
+| **Avg Response Time** | Trigger to action | 230ms |
+| **Failed Triggers** | Errors in last 24h | 12 |
+
+**Features:**
+- Live trigger status
+- Execution history
+- Performance metrics
+- Error logs
+- Testing interface
+
+</Accordion>
+
+<Accordion title="Trigger Conditions" icon="filter">
+
+**Advanced Filtering and Rules:**
+
+```yaml
+global_conditions:
+  business_hours:
+    timezone: "America/New_York"
+    days: ["Mon", "Tue", "Wed", "Thu", "Fri"]
+    hours: "09:00-17:00"
+    
+  rate_limiting:
+    max_per_minute: 10
+    max_per_hour: 100
+    max_per_day: 1000
+    
+  error_handling:
+    max_retries: 3
+    retry_delay: 60  # seconds
+    exponential_backoff: true
+    
+  deduplication:
+    enabled: true
+    window: 300  # seconds
+    key: "${trigger.id}"
+```
+
+</Accordion>
+
+<Accordion title="Trigger Testing" icon="flask">
+
+**Test Before Deploying:**
+
+<Steps>
+<Step title="Simulation Mode">
+
+Test triggers without executing workflows
+
+</Step>
+
+<Step title="Sample Data">
+
+Use test data to verify trigger logic
+
+</Step>
+
+<Step title="Debug Output">
+
+See exactly what data triggers pass to workflows
+
+</Step>
+
+<Step title="Performance Testing">
+
+Ensure triggers can handle expected load
+
+</Step>
+</Steps>
+
+</Accordion>
+</AccordionGroup>
+
+## Advanced Trigger Features
+
+<CardGroup cols={2}>
+<Card title="Priority Queuing" icon="arrow-up-9-1" color="#9333ea">
+
+**Smart Execution Order:**
+- High-priority triggers jump the queue
+- Critical alerts processed first
+- Business logic for prioritization
+- Fair scheduling for normal triggers
+
+</Card>
+
+<Card title="Trigger Groups" icon="object-group" color="#3b82f6">
+
+**Organize Related Triggers:**
+- Group by department or function
+- Bulk enable/disable
+- Shared configuration
+- Cascading triggers
+
+</Card>
+
+<Card title="Conditional Triggers" icon="code-branch" color="#10b981">
+
+**Dynamic Trigger Logic:**
+- If-then-else conditions
+- Multiple condition paths
+- Variable-based triggers
+- Context-aware activation
+
+</Card>
+
+<Card title="Trigger Templates" icon="copy" color="#f59e0b">
+
+**Reusable Trigger Patterns:**
+- Save common trigger configs
+- Share across workflows
+- Version control
+- Team collaboration
+
+</Card>
+</CardGroup>
+
+## Trigger Analytics
+
+### Understand Your Automation Patterns
+
+<Tabs>
+<Tab title="Usage Metrics">
+
+**Trigger Performance Data:**
+
+| Trigger Type | Fires/Day | Success Rate | Avg Response |
+|--------------|-----------|--------------|--------------|
+| **Time-based** | 450 | 99.8% | 50ms |
+| **Email** | 280 | 97.5% | 320ms |
+| **Webhook** | 620 | 98.2% | 180ms |
+| **File** | 150 | 99.1% | 450ms |
+| **AI Detection** | 85 | 95.3% | 1200ms |
+
+</Tab>
+<Tab title="Optimization">
+
+**Improve Trigger Efficiency:**
+
+<Steps>
+<Step title="Identify Patterns">
+
+Analyze when and why triggers fire most frequently
+
+</Step>
+
+<Step title="Reduce False Positives">
+
+Refine conditions to avoid unnecessary triggers
+
+</Step>
+
+<Step title="Batch Similar Triggers">
+
+Combine related triggers for efficiency
+
+</Step>
+
+<Step title="Optimize Timing">
+
+Adjust schedules based on actual usage patterns
+
+</Step>
+</Steps>
+
+</Tab>
+</Tabs>
+
+## Getting Started with Triggers
+
+<Steps>
+<Step title="Choose Trigger Type">
+
+Select the appropriate trigger for your automation needs
+
+</Step>
+
+<Step title="Configure Conditions">
+
+Set up when the trigger should activate
+
+</Step>
+
+<Step title="Map Data">
+
+Define what information passes to the workflow
+
+</Step>
+
+<Step title="Test Thoroughly">
+
+Use test mode to verify trigger behavior
+
+</Step>
+
+<Step title="Deploy and Monitor">
+
+Activate trigger and track performance
+
+</Step>
+</Steps>
+
+<Note>
+
+**The Power of Triggers**: Every trigger you configure is another step toward complete automation. Start with simple time-based triggers, then gradually add event-based and AI-powered triggers as your automation sophistication grows.
+
+</Note>
+
+<CardGroup cols={3}>
+<Card title="Trigger Library" icon="bolt" href="/marketplace/marketplace-overview" color="#9333ea">
+
+Browse pre-built triggers
+
+</Card>
+
+<Card title="Workflow Builder" icon="hammer" href="/actionist/agents-and-workflows" color="#3b82f6">
+
+Connect triggers to workflows
+
+</Card>
+
+<Card title="Best Practices" icon="book" href="/actionist/actionist-overview" color="#10b981">
+
+Trigger optimization guide
+
+</Card>
+</CardGroup>
+
+---
+
+**Triggers: Where automation becomes autonomous.**
+
+**Set it once. Runs forever. Never miss a moment.**
