@@ -1,8 +1,451 @@
 ---
 title: "Training the Large Action Model"
-description: "Page description here"
+description: "Discover how Action Model trains the world's first community-owned Large Action Model. Learn the fundamental differences between LLMs and LAMs, and how millions of user journeys create the Action Tree that powers true AI automation."
 ---
 
-## Overview
+<Warning>
 
-Content coming soon.
+**The AI Revolution's Dirty Secret**: LLMs can write poetry, but they can't book your flight. They can explain quantum physics, but they can't fill out a form. Action Model changes everything by training AI to actually *do* things, not just talk about them.
+
+</Warning>
+
+## The Problem: LLMs Can't Act
+
+### Language Models Were Never Trained to Use Platforms
+
+<CardGroup cols={3}>
+<Card title="LLMs Training: Just Text" icon="language" color="#ef4444">
+
+LLMs were trained on language—books, articles, websites. They never learned how to *use* platforms, only how to describe them.
+
+</Card>
+
+<Card title="99.9% Behind GUIs" icon="window-restore" color="#f59e0b">
+
+The internet isn't text or APIs—it's graphical interfaces. Every button, form, and menu that humans navigate daily.
+
+</Card>
+
+<Card title="Can't Click or Navigate" icon="mouse-pointer" color="#ef4444">
+
+LLMs weren't trained to click, type, or navigate. The internet remains unusable to traditional AI.
+
+</Card>
+</CardGroup>
+
+## LLMs vs LAMs: The Fundamental Difference
+
+<Tabs>
+<Tab title="Large Language Models" icon="comments">
+
+### What LLMs Do
+
+**Generate and understand text**
+- Predict the next word in a sequence
+- Generate human-like responses
+- Process and analyze text
+
+**Training Data**
+- Books, articles, journals
+- Websites, blogs, social media
+- Scientific papers
+- Easy to scrape from the internet
+
+**Limitations**
+- Cannot interact with GUIs
+- Cannot perform actual actions
+- Often hallucinate interface interactions
+- Require APIs or integrations
+
+</Tab>
+<Tab title="Large Action Models" icon="hand-pointer">
+
+### What LAMs Do
+
+**Perform real actions on interfaces**
+- Click buttons and links
+- Fill out forms
+- Navigate between pages
+- Complete complex workflows
+
+**Training Data**
+- Real user GUI interactions
+- Mouse movements and clicks
+- Keyboard inputs
+- Screenshots and DOM states
+- **Must be intentionally collected**
+
+**Capabilities**
+- Direct GUI manipulation
+- Platform-agnostic automation
+- Human-like task completion
+- No API requirements
+
+</Tab>
+</Tabs>
+
+## Why APIs Aren't the Solution
+
+<Info>
+
+**The API Myth**: Less than 0.1% of web functionality is exposed via APIs. Major platforms like Instagram and Booking.com actively restrict or eliminate API access. APIs are built for developers, not users—and they never expose full functionality.
+
+</Info>
+
+### GUIs Are for Humans, LAMs Are for Humans
+
+<CardGroup cols={2}>
+<Card title="API Limitations" icon="ban">
+
+- Restricted functionality
+- Developer-focused
+- Often blocked or rate-limited
+- Requires technical knowledge
+- Platform-specific integration
+
+</Card>
+
+<Card title="GUI Advantages" icon="desktop">
+
+- Full platform functionality
+- Human-friendly interaction
+- Universal approach
+- No integration needed
+- Works everywhere
+
+</Card>
+</CardGroup>
+
+## The Action Tree: Mapping the Interactive Internet
+
+<Frame caption="The Action Tree - How millions of user journeys create a map of every possible action">
+  <img src="/images/action-tree-concept.png" alt="Action Tree Visualization" />
+</Frame>
+
+### How User Journeys Become Intelligence
+
+<Steps>
+<Step title="User Performs Task">
+
+A user completes a task naturally—booking a hotel, posting on social media, or managing emails—while the browser extension records.
+
+</Step>
+
+<Step title="Journey Recorded">
+
+Every click, type, and navigation is captured along with context: DOM elements, screenshots, and environmental state.
+
+</Step>
+
+<Step title="Path Mapped">
+
+The journey becomes a branch in the Action Tree, connecting with similar paths from other users.
+
+</Step>
+
+<Step title="Tree Grows">
+
+Millions of journeys interweave, creating a comprehensive map of how to complete any task on any platform.
+
+</Step>
+
+<Step title="LAM Navigates">
+
+When given a goal, the LAM traverses the Action Tree to find the optimal path, executing actions with human-like precision.
+
+</Step>
+</Steps>
+
+## Training Data Requirements
+
+### The Complexity Challenge
+
+<AccordionGroup>
+<Accordion title="LLM Training Data" icon="book">
+
+**Readily Available**
+- 175B+ tokens available online
+- Books, articles, websites
+- Can be scraped automatically
+- Synthetic data generation possible
+- Static text content
+
+**Collection Method**
+- Web crawlers
+- Database dumps
+- Public datasets
+- API access
+
+</Accordion>
+
+<Accordion title="LAM Training Data" icon="route">
+
+**Must Be Created**
+- Requires active user participation
+- Dynamic interaction sequences
+- Context-dependent actions
+- Platform-specific nuances
+- Temporal relationships
+
+**Collection Method**
+- Browser extensions
+- Desktop recording
+- User journey tracking
+- Active labeling
+- Community contribution
+
+</Accordion>
+</AccordionGroup>
+
+## The Training Process
+
+### From Individual Actions to Collective Intelligence
+
+<Info>
+
+**The Network Effect**: Every user journey makes the model smarter. When one person books a flight on a new airline website, millions can now automate that same task. This is the power of community training.
+
+</Info>
+
+### Data Collection Methodology
+
+| Component | What's Captured | Purpose |
+|-----------|----------------|---------|
+| **DOM Elements** | HTML structure, element IDs, classes | Identify clickable/interactive elements |
+| **Screenshots** | Visual state at each step | Understand visual context and layout |
+| **Mouse Coordinates** | Exact click positions | Precise action replay |
+| **Keyboard Input** | Text entered, keys pressed | Form filling and navigation |
+| **URL Navigation** | Page transitions and routes | Understand site structure |
+| **Network Requests** | API calls and responses | Capture dynamic content |
+| **Timing Data** | Delays and load times | Realistic action pacing |
+| **Error States** | Failed attempts and recovery | Robust error handling |
+
+## Community Training at Scale
+
+### The Resistance Builds Together
+
+<CardGroup cols={3}>
+<Card title="2M+ Trainers" icon="users">
+
+Active community members training the LAM across millions of websites daily.
+
+</Card>
+
+<Card title="10B+ Actions" icon="mouse">
+
+Individual actions recorded, labeled, and integrated into the Action Tree.
+
+</Card>
+
+<Card title="100K+ Platforms" icon="globe">
+
+Websites and applications mapped with complete workflow coverage.
+
+</Card>
+</CardGroup>
+
+## Real-World Example: Multi-Platform Workflow
+
+<Note>
+
+**Complex Task**: "Find trending news on X/Twitter, create a graphic in Canva, and post to Instagram"
+
+</Note>
+
+### How LAMs Execute Complex Chains
+
+<Steps>
+<Step title="Understand Intent">
+
+Parse the user's goal into a sequence of sub-tasks across multiple platforms.
+
+</Step>
+
+<Step title="Navigate to X/Twitter">
+
+Use the Action Tree to find the path: Open browser → Navigate to X → Login if needed
+
+</Step>
+
+<Step title="Find Trending Content">
+
+Click explore → Identify trending topics → Extract relevant content
+
+</Step>
+
+<Step title="Open Canva">
+
+Navigate to Canva → Select template → Insert extracted content
+
+</Step>
+
+<Step title="Create Graphic">
+
+Use design tools → Apply styling → Download image
+
+</Step>
+
+<Step title="Post to Instagram">
+
+Navigate to Instagram → Click create post → Upload image → Add caption → Publish
+
+</Step>
+</Steps>
+
+## Why Community Training Wins
+
+<Tabs>
+<Tab title="Diversity" icon="globe">
+
+**Millions of Perspectives**
+- Different workflows for same goal
+- Cultural and regional variations
+- Platform-specific optimizations
+- Edge case coverage
+
+</Tab>
+<Tab title="Scale" icon="chart-line">
+
+**Exponential Growth**
+- 24/7 global training
+- Parallel data collection
+- Rapid platform coverage
+- Continuous improvement
+
+</Tab>
+<Tab title="Quality" icon="award">
+
+**Human Validation**
+- Real user workflows
+- Natural interaction patterns
+- Practical task completion
+- Active labeling and verification
+
+</Tab>
+<Tab title="Ownership" icon="handshake">
+
+**Community Owned**
+- Contributors earn tokens
+- Shared value creation
+- Democratic governance
+- Aligned incentives
+
+</Tab>
+</Tabs>
+
+## The Training Paradox
+
+<Warning>
+
+**Big Tech's Dilemma**: Training a LAM requires massive-scale user interaction data that even Google and Microsoft struggle to collect. Why? Because they can't watch every user's screen. But we can—with permission, transparency, and rewards.
+
+</Warning>
+
+### Why Action Model Will Win
+
+| Factor | Big Tech | Action Model |
+|--------|----------|--------------|
+| **Data Collection** | Limited to their platforms | Every website, every platform |
+| **User Incentive** | None (they take your data) | Earn tokens for contribution |
+| **Training Speed** | Slow, corporate processes | Rapid, community-driven |
+| **Coverage** | Their ecosystem only | The entire internet |
+| **Ownership** | Shareholders | Community members |
+
+## Technical Architecture
+
+### The Action Loop
+
+<Frame caption="How LAMs Make Decisions - The Action Loop in Practice">
+  <img src="/images/action-loop.png" alt="Action Loop Diagram" />
+</Frame>
+
+<Steps>
+<Step title="Observe Environment">
+
+Capture current screen state, DOM, and context
+
+</Step>
+
+<Step title="Search Action Tree">
+
+Find relevant paths based on current state and goal
+
+</Step>
+
+<Step title="Predict Next Action">
+
+Determine optimal next step with confidence scoring
+
+</Step>
+
+<Step title="Execute Action">
+
+Perform click, type, or navigation action
+
+</Step>
+
+<Step title="Verify Result">
+
+Check if action succeeded and goal is closer
+
+</Step>
+
+<Step title="Repeat or Complete">
+
+Continue loop until goal achieved or timeout
+
+</Step>
+</Steps>
+
+## Join the Training Revolution
+
+<CardGroup cols={3}>
+<Card title="Install Extension" icon="download" href="/the-large-action-model-lam/browser-extension-overview" color="#9333ea">
+
+Start training in 60 seconds and earn tokens for your contribution
+
+</Card>
+
+<Card title="Active Training" icon="bullseye" href="/training/active-training" color="#3b82f6">
+
+Label workflows for 100x rewards and higher impact
+
+</Card>
+
+<Card title="View Progress" icon="chart-line" href="https://train.actionmodel.com" color="#10b981">
+
+Track your training contribution and earnings in real-time
+
+</Card>
+</CardGroup>
+
+## The Future of AI Training
+
+<Info>
+
+**Projection**: By 2026, the Action Tree will contain paths for every significant task on every major platform in every language. This isn't just an AI model—it's a complete map of human digital interaction.
+
+</Info>
+
+### What Happens Next
+
+- **Phase 1**: Platform Coverage (Current)
+  - Mapping major platforms
+  - Building core workflows
+  - Community growth
+
+- **Phase 2**: Deep Personalization
+  - Individual preferences
+  - Company-specific workflows
+  - Cultural adaptations
+
+- **Phase 3**: Universal Automation
+  - Any task, any platform
+  - Cross-platform chains
+  - Natural language to completion
+
+---
+
+**You're not just training an AI. You're building the future of work.**
+
+**Train it. Own it. Control it.**
