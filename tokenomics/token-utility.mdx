@@ -476,6 +476,309 @@ Where:
 </Accordion>
 </AccordionGroup>
 
+## Formal Tokenomics Model
+
+### Mathematical Framework
+
+<Tabs>
+<Tab title="Per-Action Accounting" icon="calculator">
+
+For LAM version `v` with USD price per action `pᵥ`:
+
+**Tokens per action:**
+```
+τᵥ,ₜ = pᵥ / Pₜ
+```
+
+**Distribution per action:**
+- Burn: `Bₐct = β × τᵥ,ₜ` where β = 0.34
+- Creator: `Mₐct = μ × τᵥ,ₜ × 𝟙marketplace` where μ = 0.33
+- Foundation: `Fₐct = φ × τᵥ,ₜ` where φ = 0.33
+
+Where:
+- `τᵥ,ₜ` = Tokens required per action at time t
+- `Pₜ` = Market price of $LAM in USD at time t
+- `𝟙marketplace` = 1 if marketplace workflow, 0 otherwise
+
+</Tab>
+<Tab title="Network-Level Dynamics" icon="network-wired">
+
+### Period t Calculations (e.g., monthly)
+
+Let `Aₜ` be total actions executed in period t:
+
+**Token Flows:**
+```
+Tokens needed:     Dₜ = τᵥ,ₜ × Aₜ
+Burned tokens:     Bₜ = β × Dₜ
+Creator tokens:    Mₜ = μ × Dₜ × Pr(marketplace)
+Foundation tokens: Fₜ = φ × Dₜ
+USD spent:         Uₜ = pᵥ × Aₜ (price-invariant)
+```
+
+**Supply Dynamics:**
+```
+Sₜ₊₁ = Sₜ + Eₜ - Bₜ
+```
+
+Where:
+- `Sₜ` = Circulating supply at start of period t
+- `Eₜ` = New emissions (training rewards, grants)
+- `Bₜ` = Tokens burned in period t
+
+</Tab>
+<Tab title="Equilibrium Analysis" icon="balance-scale">
+
+### Deflationary Conditions
+
+**Break-even emissions (deflation-neutral):**
+```
+E*ₜ = β × τᵥ,ₜ × Aₜ
+```
+
+**Supply conditions:**
+- Deflationary: `Bₜ > Eₜ`
+- Neutral: `Bₜ = Eₜ`
+- Inflationary: `Bₜ < Eₜ`
+
+**Half-life under constant burn (no emissions):**
+```
+T₁/₂ = S₀ / (2 × β × τᵥ,ₜ × Aₜ)
+```
+
+Where `S₀` is initial supply and actions are steady.
+
+</Tab>
+</Tabs>
+
+## Token Training Distribution
+
+### Rewarding Data Contributors
+
+<Info>
+
+**Future Enhancement**: A portion of consumed $LAM may be distributed to trainers who provided the action branches/trees used in executed workflows.
+
+</Info>
+
+<CardGroup cols={2}>
+<Card title="How It Works" icon="share-nodes">
+
+When users train the LAM by demonstrating actions (e.g., creating an AWS EC2 instance), they contribute to the Action Tree. When workflows use these trained paths, contributors earn rewards.
+
+**Example Flow:**
+1. 1,000 users train "Create EC2 Instance" action
+2. Enterprise workflow uses this action path
+3. Training distribution portion flows to those 1,000 trainers
+4. Rewards proportional to contribution quality
+
+</Card>
+
+<Card title="Incentive Alignment" icon="handshake">
+
+**Benefits:**
+- Rewards quality training data
+- Incentivizes rare/complex actions
+- Creates passive income for trainers
+- Improves model accuracy
+
+**Distribution Formula:**
+```
+Trainer Reward = (Quality Score × Usage Count) / Total Contributors
+```
+
+</Card>
+</CardGroup>
+
+## Action Model API (Developers)
+
+### Building with the Large Action Model
+
+<Warning>
+
+Unlike LLMs that output text, the LAM outputs **actions**. Each API call returns the next GUI action to execute, not generated content.
+
+</Warning>
+
+<Tabs>
+<Tab title="LAM vs LLM APIs" icon="code-compare">
+
+### Fundamental Differences
+
+| Aspect | OpenAI API (LLM) | Action Model API (LAM) |
+|--------|------------------|------------------------|
+| **Input** | Text prompt | Environment state + goal |
+| **Output** | Generated text | Next action to execute |
+| **Pricing Unit** | Input/output tokens | Actions performed |
+| **Use Case** | Content generation | Task automation |
+| **Billing** | Per token | Per action |
+
+</Tab>
+<Tab title="OpenAI API Example" icon="robot">
+
+### Traditional LLM Flow
+
+**Request:**
+```json
+{
+  "prompt": "Write me a blog post about coffee",
+  "tokens": 7
+}
+```
+
+**Response:**
+```json
+{
+  "text": "The best coffee in the world is...",
+  "tokens": 1000
+}
+```
+
+**Pricing (GPT-4):**
+- Input: $2/1M tokens
+- Output: $8/1M tokens
+- Total cost: Based on combined token count
+
+</Tab>
+<Tab title="Action Model API" icon="mouse-pointer">
+
+### LAM API Flow
+
+**Request (Environment State):**
+```json
+{
+  "goal": "Configure an AWS EC2 instance",
+  "history": ["logged_in", "dashboard_open"],
+  "screenshot": "base64_image",
+  "html": "<full_page_source>",
+  "dom_elements": ["button#create", "input#name"],
+  "context": {
+    "instance_type": "t2.micro",
+    "region": "us-east-1"
+  }
+}
+```
+
+**Response (Next Action):**
+```json
+{
+  "action": "click",
+  "target": "button#create-instance",
+  "coordinates": {"x": 450, "y": 320},
+  "confidence": 0.98,
+  "tokens_consumed": 0.1
+}
+```
+
+**Pricing:**
+- LAM-1: $0.01 per action
+- No separate input/output costs
+- Predictable automation expenses
+
+</Tab>
+<Tab title="Integration Guide" icon="plug">
+
+### Quick Start
+
+**1. Initialize Client:**
+```javascript
+const LAM = require('@actionmodel/lam-sdk');
+const client = new LAM({
+  apiKey: 'your-api-key',
+  preloadTokens: 1000 // Pre-purchase $LAM
+});
+```
+
+**2. Execute Workflow:**
+```javascript
+const result = await client.executeWorkflow({
+  workflowId: 'aws-ec2-setup',
+  parameters: {
+    instanceType: 't2.micro',
+    securityGroup: 'web-servers'
+  }
+});
+```
+
+**3. Monitor Usage:**
+```javascript
+console.log(`Actions used: ${result.actionsConsumed}`);
+console.log(`Tokens spent: ${result.tokensUsed}`);
+console.log(`USD cost: $${result.usdCost}`);
+```
+
+</Tab>
+</Tabs>
+
+## Long-Term Economic Benefits
+
+### Why $LAM Creates Sustainable Value
+
+<CardGroup cols={2}>
+<Card title="Price-Stable UX" icon="shield-halved">
+
+**Predictable Costs for Business**
+
+Customers think in actions and USD, not token volatility. The floating token model ensures:
+- Fixed USD cost per action
+- No surprise bills from price swings
+- Easy budgeting for enterprises
+- Seamless B2B adoption
+
+</Card>
+
+<Card title="Automatic Market Clearing" icon="scale-balanced">
+
+**Counter-Cyclical Demand**
+
+As $LAM price changes, token consumption auto-adjusts:
+- Price rises → Fewer tokens needed per action
+- Price falls → More tokens needed per action
+- USD revenue remains stable
+- Natural price discovery mechanism
+
+</Card>
+
+<Card title="Permanent Scarcity Creation" icon="fire-flame-curved">
+
+**Usage = Value**
+
+Every action permanently removes supply:
+- 34% burn rate compounds over time
+- Millions of daily actions = massive burns
+- Supply decreases while demand grows
+- Mathematical path to appreciation
+
+</Card>
+
+<Card title="Creator Alignment" icon="hand-holding-dollar">
+
+**Earn Real Value, Not Speculation**
+
+Creators receive cash-equivalent rewards:
+- 33% of action value in any market
+- Income tied to usage, not price
+- Incentivizes quality over hype
+- Sustainable creator economy
+
+</Card>
+</CardGroup>
+
+### The Compound Effect
+
+<Info>
+
+**Mathematical Certainty**: With growing usage and constant burn rate, the following becomes inevitable:
+
+1. **Year 1**: 10M daily actions → 3.4M tokens burned daily
+2. **Year 2**: 100M daily actions → 34M tokens burned daily
+3. **Year 3**: 500M daily actions → 170M tokens burned daily
+4. **Year 5**: 2B daily actions → 680M tokens burned daily
+
+At scale, daily burns exceed total initial supply, creating extreme scarcity.
+
+</Info>
+
 ## Why $LAM is Different
 
 ### Comparing Token Models
