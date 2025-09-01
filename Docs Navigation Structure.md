@@ -35,7 +35,7 @@ Security & Privacy (/the-large-action-model-lam/security-and-privacy
 
 # Tokenomics (/tokenomics)
 Token Utility ($LAM) (tokenomics/token-utility)
-Point Tiers and Epochs (tokenomics/training-to-earn-tokens
+Point Tiers and Epochs (tokenomics/point-tiers-and-epochs
 Marketplace Distributions (tokenomics/marketplace-distributions)
 Training & Marketplace Bounties (tokenomics/training-and-marketplace-bounties)
 Referrals, Affiliates & Quests (tokenomics/referrals-and-affiliates)
@@ -1160,7 +1160,7 @@ Unlike LLMs that are trained specifically to output text, the LAM is trained to 
 
 
 
-## Point Tiers and Epochs (tokenomics/training-to-earn-tokens {#point-tiers-and-epochs-(tokenomics/training-to-earn-tokens}
+## Point Tiers and Epochs (tokenomics/point-tiers-and-epochs {#point-tiers-and-epochs-(tokenomics/training-to-earn-tokens}
 
 **Points Tiers and Epochs**
 

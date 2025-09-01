@@ -57,7 +57,7 @@
         "group": "Tokenomics",
         "pages": [
           "tokenomics/token-utility",
-          "tokenomics/training-to-earn-tokens",
+          "tokenomics/point-tiers-and-epochs",
           "tokenomics/marketplace-distributions",
           "tokenomics/training-and-marketplace-bounties",
           "tokenomics/referrals-and-affiliates",
