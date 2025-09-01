@@ -481,72 +481,172 @@ Where:
 ### Mathematical Framework
 
 <Tabs>
-<Tab title="Per-Action Accounting" icon="calculator">
+<Tab title="Pricing Model" icon="calculator">
 
-For LAM version `v` with USD price per action `pᵥ`:
+### Versioned "Price Per Action"
 
-**Tokens per action:**
+- Let `pᵥ` be the **USD price per action** for model version `v` (e.g., LAM-1 has `p₁ = $0.10` per action)
+- Let `Pₜ` be the **market price of $LAM in USD** at time `t`
+- **Tokens required per action** for version `v` at time `t` is:
+
+<Info>
+
+**Formula:**
 ```
 τᵥ,ₜ = pᵥ / Pₜ
 ```
 
-**Distribution per action:**
-- Burn: `Bₐct = β × τᵥ,ₜ` where β = 0.34
-- Creator: `Mₐct = μ × τᵥ,ₜ × 𝟙marketplace` where μ = 0.33
-- Foundation: `Fₐct = φ × τᵥ,ₜ` where φ = 0.33
+</Info>
 
-Where:
-- `τᵥ,ₜ` = Tokens required per action at time t
-- `Pₜ` = Market price of $LAM in USD at time t
-- `𝟙marketplace` = 1 if marketplace workflow, 0 otherwise
+**Fractional tokens** are supported to meter actions precisely.
+
+### Examples (LAM-1):
+- If `Pₜ = $0.01`, then `τ₁,ₜ = 0.10 / 0.01 = 10 tokens/action`
+- If `Pₜ = $0.10`, then `τ₁,ₜ = 1 token/action`
+- If `Pₜ = $1.00`, then `τ₁,ₜ = 0.1 token/action`
+
+**USD cost per action is stable for developers; tokens per action adjusts automatically to market price.**
 
 </Tab>
-<Tab title="Network-Level Dynamics" icon="network-wired">
+<Tab title="Token Distribution" icon="chart-pie">
 
-### Period t Calculations (e.g., monthly)
+### Token Fuel Distribution (Per Action)
 
-Let `Aₜ` be total actions executed in period t:
+Let the distribution shares be:
+- **Burn share** `β = 0.34`
+- **Marketplace creator share** `μ = 0.33`
+- **Foundation share** `φ = 0.33`
 
-**Token Flows:**
+For one action that consumes `τ` tokens:
+
 ```
-Tokens needed:     Dₜ = τᵥ,ₜ × Aₜ
-Burned tokens:     Bₜ = β × Dₜ
-Creator tokens:    Mₜ = μ × Dₜ × Pr(marketplace)
-Foundation tokens: Fₜ = φ × Dₜ
-USD spent:         Uₜ = pᵥ × Aₜ (price-invariant)
+Burned tokens/action = β · τ
+Creator tokens/action = μ · τ    (if a Marketplace workflow was used)
+Foundation tokens/action = φ · τ
 ```
 
-**Supply Dynamics:**
+### USD Equivalents Per Action:
+
+<CardGroup cols={3}>
+<Card>
+
+**USD burned/action = β · pᵥ**
+
+</Card>
+<Card>
+
+**USD to creator/action = μ · pᵥ**
+
+</Card>
+<Card>
+
+**USD to foundation/action = φ · pᵥ**
+
+</Card>
+</CardGroup>
+
+For LAM-1 (`p₁ = $0.10`): **$0.034** is burned, **$0.033** goes to the creator (if used), and **$0.033** to the foundation **per action**, independent of token price.
+
+<Note>
+
+**No-Marketplace case**: If a run doesn't use a Marketplace workflow, the creator share can be (a) retained in an **Ecosystem Rewards** pool or (b) redirected to the **Foundation**. The DAO should ratify the default.
+
+</Note>
+
+</Tab>
+<Tab title="Buyback Loop" icon="arrows-rotate">
+
+### Why Usage Creates Demand
+
+- **B2B subscriptions** (e.g., $1k–$2k per agent/month) and **API partners** include usage allowances measured in actions
+- To deliver those actions, **operators must acquire $LAM** (buy on the market or hold inventory)
+- When actions run, tokens flow through the **Fuel distribution** above (with 34% burned)
+
+### Paying Subscriptions in $LAM (10% Discount)
+
+- Paying a $1,000 subscription in $LAM yields a **10% discount**: you spend tokens equivalent to **$900** at the time of payment
+- Those tokens may be escrowed and released into the Fuel distribution as actions are consumed (implementation detail—DAO parameter)
+
+**Tokens needed to pay a subscription `S` in USD with a discount `d`:**
+
+<Info>
+
+**Formula:**
+```
+Tokens = S(1 - d) / Pₜ
+```
+
+</Info>
+
+</Tab>
+<Tab title="Per-Action Accounting" icon="sigma">
+
+### 9.1 Per-Action Accounting (LAM-v)
+
+- **Tokens per action:** `τᵥ,ₜ = pᵥ / Pₜ`
+- **Burn:** `Bₐcₜ = βτᵥ,ₜ`
+- **Creator:** `Mₐcₜ = μτᵥ,ₜ · 𝟙marketplace`
+- **Foundation:** `Fₐcₜ = φτᵥ,ₜ`
+
+</Tab>
+<Tab title="Network-Level" icon="network-wired">
+
+### 9.2 Network-Level, Period t (e.g., monthly)
+
+Let `Aₜ` be actions executed in `t`. Then:
+
+```
+Tokens needed    Dₜ = τᵥ,ₜ · Aₜ
+Burned tokens    Bₜ = β · Dₜ
+Creator tokens   Mₜ = μ · Dₜ · Pr(marketplace use)
+Foundation tokens Fₜ = φ · Dₜ
+USD spent on actions Uₜ = pᵥ · Aₜ    (price-invariant)
+```
+
+</Tab>
+<Tab title="Supply Dynamics" icon="chart-line">
+
+### 9.3 Supply Dynamics
+
+Let `Sₜ` be circulating supply at start of `t`. Let `Eₜ` be new emissions (training rewards, grants) approved by DAO.
+
+<Info>
+
+**Supply Evolution:**
 ```
 Sₜ₊₁ = Sₜ + Eₜ - Bₜ
 ```
 
-Where:
-- `Sₜ` = Circulating supply at start of period t
-- `Eₜ` = New emissions (training rewards, grants)
-- `Bₜ` = Tokens burned in period t
+</Info>
 
-</Tab>
-<Tab title="Equilibrium Analysis" icon="balance-scale">
-
-### Deflationary Conditions
+**Conditions:**
+- **Deflationary condition:** `Bₜ > Eₜ`
+- **Neutral:** `Bₜ = Eₜ`
+- **Inflationary:** `Bₜ < Eₜ`
 
 **Break-even emissions (deflation-neutral):**
+
+<Info>
+
+**Formula:**
 ```
-E*ₜ = β × τᵥ,ₜ × Aₜ
+E*ₜ = β · τᵥ,ₜ · Aₜ
 ```
 
-**Supply conditions:**
-- Deflationary: `Bₜ > Eₜ`
-- Neutral: `Bₜ = Eₜ`
-- Inflationary: `Bₜ < Eₜ`
+</Info>
 
-**Half-life under constant burn (no emissions):**
+### 9.4 "Half-Life" Under Constant Burn and No Emissions (Illustrative)
+
+If actions are steady and `Eₜ = 0`, supply declines linearly. Time to reduce supply by half:
+
+<Info>
+
+**Half-Life Formula:**
 ```
-T₁/₂ = S₀ / (2 × β × τᵥ,ₜ × Aₜ)
+T₁/₂ = S₀ / (2 · Bₜ) = S₀ / (2 · β · τᵥ,ₜ · Aₜ)
 ```
 
-Where `S₀` is initial supply and actions are steady.
+</Info>
 
 </Tab>
 </Tabs>
