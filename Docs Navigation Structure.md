@@ -1160,7 +1160,7 @@ Unlike LLMs that are trained specifically to output text, the LAM is trained to 
 
 
 
-## Point Tiers and Epochs (tokenomics/point-tiers-and-epochs {#point-tiers-and-epochs-(tokenomics/training-to-earn-tokens}
+## Point Tiers and Epochs (tokenomics/point-tiers-and-epochs) {#point-tiers-and-epochs-(tokenomics/point-tiers-and-epochs)}
 
 **Points Tiers and Epochs**
 
