@@ -271,12 +271,21 @@ Decreased supply + continued demand = price appreciation
 ### The Virtuous Cycle
 
 ```mermaid
-graph LR
-    A(More Business<br/>Usage) --> B(More Token<br/>Demand)
-    B --> C(More<br/>Burning 🔥)
-    C --> D(Higher Token<br/>Value 📈)
-    D --> E(More Creator<br/>Incentive)
-    E --> F(Better<br/>Workflows)
+flowchart TB
+    subgraph cycle [" "]
+        A(More Business<br/>Usage 🏢)
+        B(More Token<br/>Demand 💰)
+        C(More<br/>Burning 🔥)
+        D(Higher Token<br/>Value 📈)
+        E(More Creator<br/>Incentive 💡)
+        F(Better<br/>Workflows ⚡)
+    end
+    
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
     F --> A
     
     style A fill:#9333ea,stroke:#fff,stroke-width:3px,color:#fff,font-weight:bold
@@ -285,8 +294,7 @@ graph LR
     style D fill:#10b981,stroke:#fff,stroke-width:3px,color:#fff,font-weight:bold
     style E fill:#3b82f6,stroke:#fff,stroke-width:3px,color:#fff,font-weight:bold
     style F fill:#f59e0b,stroke:#fff,stroke-width:3px,color:#fff,font-weight:bold
-    
-    classDef default fill:#1f2937,stroke:#374151,color:#f3f4f6
+    style cycle fill:none,stroke:#9333ea,stroke-width:2px,stroke-dasharray: 5 5
 ```
 
 <Info>
