@@ -489,7 +489,7 @@ Where:
 
 ### Mathematical Framework
 
-### 4) Pricing Model (Versioned "Price Per Action")
+### Pricing Model (Versioned "Price Per Action")
 
 - Let `pᵥ` be the **USD price per action** for model version `v` (e.g., LAM-1 has `p₁ = $0.10` per action)
 - Let `Pₜ` be the **market price of $LAM in USD** at time `t`
@@ -515,7 +515,7 @@ Where:
 
 ---
 
-### 5) Token Fuel Distribution (Per Action)
+### Token Fuel Distribution (Per Action)
 
 Let the distribution shares be:
 - **Burn share** `β = 0.34`
@@ -560,7 +560,7 @@ For LAM-1 (`p₁ = $0.10`): **$0.034** is burned, **$0.033** goes to the creator
 
 ---
 
-### 6) The Buyback Loop (Why Usage Creates Demand)
+### The Buyback Loop (Why Usage Creates Demand)
 
 - **B2B subscriptions** (e.g., $1k–$2k per agent/month) and **API partners** include usage allowances measured in actions
 - To deliver those actions, **operators must acquire $LAM** (buy on the market or hold inventory)
@@ -584,16 +584,16 @@ Tokens = S(1 - d) / Pₜ
 
 ---
 
-### 9) Formal Tokenomics Model
+### Advanced Tokenomics Calculations
 
-### 9.1 Per-Action Accounting (LAM-v)
+#### Per-Action Accounting (LAM-v)
 
 - **Tokens per action:** `τᵥ,ₜ = pᵥ / Pₜ`
 - **Burn:** `Bₐcₜ = βτᵥ,ₜ`
 - **Creator:** `Mₐcₜ = μτᵥ,ₜ · 𝟙marketplace`
 - **Foundation:** `Fₐcₜ = φτᵥ,ₜ`
 
-### 9.2 Network-Level, Period t (e.g., monthly)
+#### Network-Level, Period t (e.g., monthly)
 
 Let `Aₜ` be actions executed in `t`. Then:
 
@@ -605,7 +605,7 @@ Foundation tokens Fₜ = φ · Dₜ
 USD spent on actions Uₜ = pᵥ · Aₜ    (price-invariant)
 ```
 
-### 9.3 Supply Dynamics
+#### Supply Dynamics
 
 Let `Sₜ` be circulating supply at start of `t`. Let `Eₜ` be new emissions (training rewards, grants) approved by DAO.
 
@@ -634,7 +634,7 @@ E*ₜ = β · τᵥ,ₜ · Aₜ
 
 </Info>
 
-### 9.4 "Half-Life" Under Constant Burn and No Emissions (Illustrative)
+#### "Half-Life" Under Constant Burn and No Emissions (Illustrative)
 
 If actions are steady and `Eₜ = 0`, supply declines linearly. Time to reduce supply by half:
 
