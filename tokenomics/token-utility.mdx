@@ -480,10 +480,7 @@ Where:
 
 ### Mathematical Framework
 
-<Tabs>
-<Tab title="Pricing Model" icon="calculator">
-
-### Versioned "Price Per Action"
+### 4) Pricing Model (Versioned "Price Per Action")
 
 - Let `pᵥ` be the **USD price per action** for model version `v` (e.g., LAM-1 has `p₁ = $0.10` per action)
 - Let `Pₜ` be the **market price of $LAM in USD** at time `t`
@@ -500,17 +497,16 @@ Where:
 
 **Fractional tokens** are supported to meter actions precisely.
 
-### Examples (LAM-1):
+#### Examples (LAM-1):
 - If `Pₜ = $0.01`, then `τ₁,ₜ = 0.10 / 0.01 = 10 tokens/action`
 - If `Pₜ = $0.10`, then `τ₁,ₜ = 1 token/action`
 - If `Pₜ = $1.00`, then `τ₁,ₜ = 0.1 token/action`
 
 **USD cost per action is stable for developers; tokens per action adjusts automatically to market price.**
 
-</Tab>
-<Tab title="Token Distribution" icon="chart-pie">
+---
 
-### Token Fuel Distribution (Per Action)
+### 5) Token Fuel Distribution (Per Action)
 
 Let the distribution shares be:
 - **Burn share** `β = 0.34`
@@ -525,7 +521,7 @@ Creator tokens/action = μ · τ    (if a Marketplace workflow was used)
 Foundation tokens/action = φ · τ
 ```
 
-### USD Equivalents Per Action:
+#### USD Equivalents Per Action:
 
 <CardGroup cols={3}>
 <Card>
@@ -553,16 +549,15 @@ For LAM-1 (`p₁ = $0.10`): **$0.034** is burned, **$0.033** goes to the creator
 
 </Note>
 
-</Tab>
-<Tab title="Buyback Loop" icon="arrows-rotate">
+---
 
-### Why Usage Creates Demand
+### 6) The Buyback Loop (Why Usage Creates Demand)
 
 - **B2B subscriptions** (e.g., $1k–$2k per agent/month) and **API partners** include usage allowances measured in actions
 - To deliver those actions, **operators must acquire $LAM** (buy on the market or hold inventory)
 - When actions run, tokens flow through the **Fuel distribution** above (with 34% burned)
 
-### Paying Subscriptions in $LAM (10% Discount)
+#### Paying Subscriptions in $LAM (10% Discount)
 
 - Paying a $1,000 subscription in $LAM yields a **10% discount**: you spend tokens equivalent to **$900** at the time of payment
 - Those tokens may be escrowed and released into the Fuel distribution as actions are consumed (implementation detail—DAO parameter)
@@ -578,8 +573,9 @@ Tokens = S(1 - d) / Pₜ
 
 </Info>
 
-</Tab>
-<Tab title="Per-Action Accounting" icon="sigma">
+---
+
+### 9) Formal Tokenomics Model
 
 ### 9.1 Per-Action Accounting (LAM-v)
 
@@ -587,9 +583,6 @@ Tokens = S(1 - d) / Pₜ
 - **Burn:** `Bₐcₜ = βτᵥ,ₜ`
 - **Creator:** `Mₐcₜ = μτᵥ,ₜ · 𝟙marketplace`
 - **Foundation:** `Fₐcₜ = φτᵥ,ₜ`
-
-</Tab>
-<Tab title="Network-Level" icon="network-wired">
 
 ### 9.2 Network-Level, Period t (e.g., monthly)
 
@@ -602,9 +595,6 @@ Creator tokens   Mₜ = μ · Dₜ · Pr(marketplace use)
 Foundation tokens Fₜ = φ · Dₜ
 USD spent on actions Uₜ = pᵥ · Aₜ    (price-invariant)
 ```
-
-</Tab>
-<Tab title="Supply Dynamics" icon="chart-line">
 
 ### 9.3 Supply Dynamics
 
@@ -647,9 +637,6 @@ T₁/₂ = S₀ / (2 · Bₜ) = S₀ / (2 · β · τᵥ,ₜ · Aₜ)
 ```
 
 </Info>
-
-</Tab>
-</Tabs>
 
 ## Token Training Distribution
 
