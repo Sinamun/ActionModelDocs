@@ -18,7 +18,7 @@ The referral system isn't just about inviting friends—it's about building a se
 <CardGroup cols={3}>
 <Card title="Layer 1 (Direct)" icon="user-plus">
 
-Earn 25% of all points your direct referrals generate—forever
+Earn 5-25% of all points your direct referrals generate (based on your tier)
 
 </Card>
 
@@ -87,17 +87,17 @@ As long as your network remains active, you earn without doing anything
 
 <Info>
 
-**Cascading Commission Model**: You earn 25% of what each layer below you earns. When your direct referrals earn commissions from their referrals, you get 25% of those commissions. This creates a cascading reward system where your earnings compound as your network grows deeper.
+**Hybrid Commission Model**: You earn based on your tier level (5-25%) from your direct referrals' training activity. Additionally, you earn 25% of what your referrals earn from their own referral networks, creating cascading rewards through layers 2 and 3.
 
 </Info>
 
-### How the Cascading 25% Works
+### How Your Earnings Work
 
 | Layer | Relationship | How You Earn | Example Calculation |
 |-------|--------------|--------------|---------------------|
-| **L1** | Direct Referrals | 25% of their training points | User trains 100k pts → You earn 25k |
-| **L2** | Their Referrals | 25% of what L1 earns from L2 | L1 earns 25k from their referral → You earn 6.25k |
-| **L3** | Third Generation | 25% of what L2 earns from L3 | L2 earns 6.25k from their referral → You earn 1.56k |
+| **L1** | Direct Referrals | Your tier % of their training points | User trains 100k pts, you're Tier 3 (15%) → You earn 15k |
+| **L2** | Their Referrals | 25% of what L1 earns from L2 | L1 earns 15k from their referral → You earn 3.75k |
+| **L3** | Third Generation | 25% of what L2 earns from L3 | L2 earns 3.75k from their referral → You earn 0.94k |
 
 <Warning>
 
@@ -123,10 +123,16 @@ As long as your network remains active, you earn without doing anything
 - **Total Network**: 310 people
 
 **Monthly Earnings** (100k points average per user):
-- L1: 10 users × 100k × 27% = 270,000 points (Silver tier rate)
-- L2: L1 earns 1.35M from their 50 referrals → You earn 25% = 337,500 points
-- L3: L2 earns 1.69M from their 250 referrals → You earn 25% = 421,875 points
-- **Total**: 1,029,375 points/month
+- L1: 10 users × 100k × 27% = 270,000 points (You're Silver tier with 10 referrals)
+- L2: Your L1 users (Bronze tier with 5 referrals each) earn 25% from their referrals
+  - Each L1 user earns: 5 × 100k × 25% = 125,000 points
+  - Total L1 earnings: 10 × 125,000 = 1,250,000 points
+  - You earn 25% of that: 312,500 points
+- L3: L2 users (Bronze tier) also earn 25% from their referrals
+  - Each L2 user earns: 5 × 100k × 25% = 125,000 points
+  - Total L2 earnings: 50 × 125,000 = 6,250,000 points
+  - You earn 25% of L1's 25% share: 390,625 points
+- **Total**: 973,125 points/month
 
 </Tab>
 <Tab title="Advocate" icon="bullhorn">
@@ -142,10 +148,16 @@ As long as your network remains active, you earn without doing anything
 - **Total Network**: 3,100 people
 
 **Monthly Earnings** (100k points average per user):
-- L1: 100 users × 100k × 30% = 3,000,000 points (Gold tier rate)
-- L2: L1 earns 15M from their 500 referrals → You earn 25% = 3,750,000 points
-- L3: L2 earns 18.75M from their 2,500 referrals → You earn 25% = 4,687,500 points
-- **Total**: 11,437,500 points/month
+- L1: 100 users × 100k × 30% = 3,000,000 points (You're Gold tier with 100 referrals)
+- L2: Your L1 users (Bronze tier with 5 referrals each) earn 25% from their referrals
+  - Each L1 user earns: 5 × 100k × 25% = 125,000 points
+  - Total L1 earnings: 100 × 125,000 = 12,500,000 points
+  - You earn 25% of that: 3,125,000 points
+- L3: L2 users (Bronze tier) also earn 25% from their referrals
+  - Each L2 user earns: 5 × 100k × 25% = 125,000 points
+  - Total L2 earnings: 500 × 125,000 = 62,500,000 points
+  - You earn 25% of L1's 25% share: 3,906,250 points
+- **Total**: 10,031,250 points/month
 
 </Tab>
 <Tab title="Viral" icon="rocket">
@@ -270,19 +282,19 @@ As long as your network remains active, you earn without doing anything
 
 <Info>
 
-**Performance-Based Bonuses**: The more successful your network, the higher your commission rates. Top affiliates can earn up to 35% from L1 referrals.
+**Performance-Based Bonuses**: The more successful your network, the higher your affiliate percentage. Top affiliates with 1,000+ referrals earn 25% of their referees' points.
 
 </Info>
 
 ### Affiliate Status Levels
 
-| Tier | Network Size | Base Commission | Cascade Bonus | Special Perks |
-|------|--------------|-----------------|---------------|---------------|
-| **Bronze** | 0-9 referrals | 25% (standard) | 25% of lower layers | Basic dashboard |
-| **Silver** | 10-49 referrals | 27% (+2% bonus) | 25% of lower layers | Priority support |
-| **Gold** | 50-249 referrals | 30% (+5% bonus) | 25% of lower layers | Custom landing page |
-| **Platinum** | 250-999 referrals | 32% (+7% bonus) | 25% of lower layers | Direct team access |
-| **Diamond** | 1,000+ referrals | 35% (+10% bonus) | 25% of lower layers | Revenue sharing |
+| Tier | Number of Referrals | Affiliate Bonus (% of Referees' Points) | Special Perks |
+|------|---------------------|------------------------------------------|---------------|
+| **Tier 1** | 0-5 referrals | 5% | Basic dashboard |
+| **Tier 2** | 6-20 referrals | 10% | Priority support |
+| **Tier 3** | 21-100 referrals | 15% | Custom landing page |
+| **Tier 4** | 101-999 referrals | 20% | Direct team access |
+| **Tier 5** | 1,000+ referrals | 25% | Revenue sharing |
 
 ## Tracking and Analytics
 
