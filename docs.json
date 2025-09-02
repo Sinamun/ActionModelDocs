@@ -10,8 +10,8 @@
   "favicon": "/favicon.svg",
   "background": {
     "image": {
-      "light": "/images/BG-IMG.jpg",
-      "dark": "/images/BG-IMG.jpg"
+      "light": "/images/BGG-IMG.png",
+      "dark": "/images/BGG-IMG.png"
     }
   },
   "navigation": {
