@@ -67,7 +67,8 @@
           "tokenomics/marketplace-distributions",
           "tokenomics/training-and-marketplace-bounties",
           "tokenomics/referrals-and-affiliates",
-          "tokenomics/token-economics"
+          "tokenomics/token-economics",
+          "tokenomics/market-opportunities"
         ]
       }
     ],
