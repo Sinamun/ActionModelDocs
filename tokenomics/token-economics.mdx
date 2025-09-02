@@ -186,9 +186,24 @@ Remaining tokens become more scarce, supporting price appreciation
 
 ### The B2B Buyback Loop
 
-<Frame caption="Revenue Cycle - How Business Demand Drives Token Value">
-  <img src="/images/revenue-cycle-diagram.png" alt="B2B Revenue Cycle" />
-</Frame>
+```mermaid
+graph TB
+    A[B2B Customer<br/>Subscription] -->|Pays $1-2k/month| B[Actionist Consumes<br/>$LAM]
+    B -->|Generates| C[B2B Revenue Used<br/>to Purchase $LAM]
+    C -->|Market Buy| D[LAM Consumed by<br/>Action Loop]
+    D -->|Distribution| E1[Ecosystem<br/>33%]
+    D -->|Distribution| E2[Marketplace<br/>up to 33%]
+    D -->|Distribution| E3[Burn<br/>34%]
+    D -->|Drives Demand| A
+    
+    style A fill:#9333ea,stroke:#fff,stroke-width:2px,color:#fff
+    style B fill:#3b82f6,stroke:#fff,stroke-width:2px,color:#fff
+    style C fill:#10b981,stroke:#fff,stroke-width:2px,color:#fff
+    style D fill:#f59e0b,stroke:#fff,stroke-width:2px,color:#fff
+    style E1 fill:#6366f1,stroke:#fff,stroke-width:2px,color:#fff
+    style E2 fill:#8b5cf6,stroke:#fff,stroke-width:2px,color:#fff
+    style E3 fill:#ef4444,stroke:#fff,stroke-width:2px,color:#fff
+```
 
 ### How Revenue Creates Value
 
