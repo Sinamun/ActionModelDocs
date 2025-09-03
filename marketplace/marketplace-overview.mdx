@@ -175,7 +175,7 @@ The marketplace is organized by platforms (apps, websites, and sub-domains), mak
 </Info>
 
 <Frame caption="Browse thousands of workflows organized by platform with clear bounty indicators">
-  <img src="/marketplace/images/marketplace-2.png" alt="Marketplace Homepage" />
+  <img src="/marketplace/images/marketplace-1.png" alt="Marketplace Homepage" />
 </Frame>
 
 **Key Features:**
@@ -187,9 +187,32 @@ The marketplace is organized by platforms (apps, websites, and sub-domains), mak
 
 ### App Workflows Page
 
-<Frame caption="View all published workflows for a specific platform">
+<Frame>
   <img src="/marketplace/images/marketplace-2.png" alt="App Workflows Page" />
 </Frame>
+<br/>
+
+<AccordionGroup>
+<Accordion title="Example: Stripe Workflows - Replace Your Payment Operations Team">
+
+**The Old Way:** Businesses typically need 2-5 staff members or expensive agencies (&#36;5,000-15,000/month) to manage Stripe operations:
+- Manual invoice processing and reconciliation
+- Customer support ticket handling
+- Payment dispute management  
+- Subscription billing maintenance
+- Financial reporting and analytics
+
+**The Actionist Way:** Marketplace Stripe workflows automate everything your payment team does:
+- **Create support tickets** for billing issues automatically
+- **Manage accounts** without manual intervention
+- **Automate ticket routing** based on issue categories
+- **Set up notifications** for payment events
+- **Handle refunds and disputes** with predefined rules
+- **Generate reports** on demand
+
+
+</Accordion>
+</AccordionGroup>
 
 When you click on any platform, you'll see:
 - All published workflows for that application
@@ -198,64 +221,94 @@ When you click on any platform, you'll see:
 - One-click "Add to Agent" functionality
 - Direct calendar scheduling options ([Learn more about scheduling](/actionist/agent-calendar-schedules))
 
-### Workflow Configuration
 
-<Frame caption="Detailed workflow configuration and preview">
-  <img src="/marketplace/images/workflow-config-screenshot.png" alt="Workflow Configuration" />
-</Frame>
 
-#### Two Types of Workflows
+#### Two Types of Workflows - Complex and Simple
 
-<Tabs>
-<Tab title="Basic Workflows" icon="list">
+<CardGroup cols={2}>
 
-**Linear, straightforward automations**
-- Simple step-by-step execution
-- No branching logic required
-- Perfect for routine tasks
-- Easy to understand and modify
-
-Example: "Post to LinkedIn at 9 AM daily"
-
-</Tab>
-<Tab title="Complex Workflows" icon="sitemap">
+<Card title="Complex Workflows" icon="sitemap" color="#3b82f6">
 
 **Advanced automations with logic**
-- **Chains**: Connect multiple workflows together
-- **Loops**: Repeat actions until conditions are met
-- **IF Conditions**: Branch based on specific criteria
-- **Variables**: Dynamic data handling
-- **Error Handling**: Built-in fallback mechanisms
 
-Example: "Scrape competitor prices, compare with ours, adjust if needed, notify team"
+Intelligent workflows that adapt based on conditions and handle multiple scenarios.
 
-</Tab>
-</Tabs>
+**Features:**
+- **Chains**: Connect workflows
+- **Loops**: Repeat until done
+- **IF/THEN**: Smart branching
+- **Variables**: Dynamic data
+- **Error Handling**: Auto-recovery
+
+**Best for:**
+- Multi-platform operations
+- Data processing pipelines
+- Customer service flows
+- Business intelligence
+
+**Example:** *"Scrape prices, compare, adjust, notify"*
+
+</Card>
+<Card title="Basic Workflows" icon="list" color="#9333ea">
+
+**Linear, straightforward automations**
+
+Perfect for simple, repetitive tasks that follow the same pattern every time.
+
+**Features:**
+- Step-by-step execution
+- No branching logic
+- Quick to set up
+- Easy to understand
+
+**Best for:**
+- Daily social media posts
+- Email responses
+- Data exports
+- Report generation
+
+**Example:** *"Post to LinkedIn at 9 AM daily"*
+
+</Card>
+
+</CardGroup>
+
+<Info>
+
+**Want to understand workflows in depth?** Learn about advanced workflow features, agent configuration, and best practices.
+
+[**Explore the Agents & Workflows Guide →**](/actionist/agents-and-workflows)
+
+</Info>
 
 #### Additional Configuration Options
 
 <CardGroup cols={2}>
-<Card title="Variables" icon="code">
+<Card title="Variables" icon="code" color="#9333ea">
 
-Customize workflow behavior with input parameters
-
-</Card>
-
-<Card title="Rules" icon="shield-check">
-
-Set conditions and constraints for execution
+**Customize with input parameters**
+Set dynamic values like emails, dates, or API keys
 
 </Card>
 
-<Card title="Ask Human" icon="user-check">
+<Card title="Rules" icon="shield-halved" color="#3b82f6">
 
-Require human approval at critical decision points
+**Set execution constraints**
+Define when and how workflows should run
 
 </Card>
 
-<Card title="Success Criteria" icon="circle-check">
+<Card title="Ask Human" icon="user" color="#10b981">
 
-Define what constitutes successful completion
+**Require human approval**
+Keep control over critical decision points
+
+</Card>
+
+<Card title="Success Criteria" icon="check" color="#f59e0b">
+
+**Define completion requirements**
+Set clear standards for successful execution
 
 </Card>
 </CardGroup>
